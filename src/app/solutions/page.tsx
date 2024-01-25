@@ -12,7 +12,7 @@ export default function SolutionsPage() {
 				altImg={'Técnico de TI Escrevendo em Prancheta'}
 				heading={'Soluções de TI Sob Medida para Seu Sucesso Empresarial'}
 				subHead={
-					'Inovando, Protegendo e Impulsionando Empresas por Meio da Tecnologia'
+					'Inovando, Protegendo e Impulsionando Empresas por Meio de Soluções Tecnológicas'
 				}
 			/>
 		</div>

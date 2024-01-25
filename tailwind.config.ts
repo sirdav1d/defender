@@ -1,4 +1,6 @@
-import type { Config } from "tailwindcss"
+/** @format */
+
+import type { Config } from 'tailwindcss';
 
 const config = {
 	darkMode: ['class'],
@@ -20,7 +22,7 @@ const config = {
 		extend: {
 			backgroundImage: {
 				bgButtomOrange:
-					'linear-gradient(92deg, #F27405 -14.96%, #914603 117.9%);',
+					'linear-gradient(93deg, #F27405 -5%, #914603 46.15%, #337A74 60.19%, #023531 105.16%)',
 			},
 			colors: {
 				brand: {
@@ -97,4 +99,4 @@ const config = {
 	plugins: [require('tailwindcss-animate')],
 } satisfies Config;
 
-export default config
+export default config;

@@ -12,7 +12,7 @@ export default function AboutPage() {
 				altImg={'Casal conversando em frente a uma sala de servidores'}
 				heading={'Inovação Guiada por Pessoas, Focada em Resultados'}
 				subHead={
-					'Somos uma Equipe Orientada por Pessoas, Movida por Inovação e Focada em Gerar Resultados Significativos para Nossos Clientes'
+					'Somos uma Equipe Orientada por Pessoas, Movida por Inovação e Focada em Gerar Resultados para Nossos Clientes'
 				}
 			/>
 		</div>
