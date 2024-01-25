@@ -1,13 +1,19 @@
 /** @format */
 
-import { Button } from '@/components/ui/button';
+import Hero from '@/components/sections/Hero';
+import bgImage from '@/../public/images/seguranca-do-computador.png';
 
 export default function Home() {
-  
 	return (
-		<div className='flex w-screen min-h-screen justify-center items-center flex-col gap-10'>
-			<h1>Hello world</h1>
-			<Button variant='outline' className='tracking-wider'>Button</Button>
+		<div className='overflow-x-hidden min-h-screen w-screen'>
+			<Hero
+				img={bgImage}
+				altImg={'Computador Com Cadeado'}
+				heading={'Potencialize seu Negócio com a Defender Soluções em TI'}
+				subHead={
+					'Oferecemos suporte de alta qualidade, proteção de dados eficiente e soluções Microsoft para impulsionar o seu negócio'
+				}
+			/>
 		</div>
 	);
 }
