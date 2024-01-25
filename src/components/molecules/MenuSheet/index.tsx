@@ -24,8 +24,8 @@ export default function MenuSheet() {
 				</SheetTrigger>
 				<SheetContent className='bg-stone-900 flex flex-col justify-between items-center text-stone-50'>
 					<SheetHeader className='text-stone-100'>
-						<SheetTitle className='text-stone-100 text-base mt-5'>
-							<span className='text-brand-orange-500 text-lg'>Defender</span>{' '}
+						<SheetTitle className='text-stone-100 text-xl mt-5'>
+							<span className='text-brand-orange-500'>Defender</span>{' '}
 							Soluções Em TI
 						</SheetTitle>
 					</SheetHeader>

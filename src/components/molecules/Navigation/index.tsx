@@ -10,7 +10,7 @@ export default function Navigation() {
 			{links.map((l, index) => {
 				return (
 					<Link
-						className='hover:text-brand-orange-500 transition-all duration-300 ease-linear text-lg lg:text-base'
+						className='hover:text-brand-orange-500 transition-all duration-300 ease-linear text-xl lg:text-base'
 						key={index}
 						href={l.href}>
 						<li>{l.nameLink}</li>

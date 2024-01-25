@@ -15,7 +15,7 @@ interface HeroProps {
 
 export default function Hero({ heading, img, subHead, altImg }: HeroProps) {
 	return (
-		<div className='w-screen relative h-screen '>
+		<div className='w-screen relative h-screen'>
 			<Container>
 				<>
 					<Image
@@ -23,7 +23,7 @@ export default function Hero({ heading, img, subHead, altImg }: HeroProps) {
 						src={img}
 						alt={altImg}
 					/>
-					<div className='flex flex-col gap-5 w-full h-full max-w-3xl items-start justify-center'>
+					<div className='flex flex-col gap-5 w-full h-full lg:max-w-3xl items-start justify-center'>
 						<h1 className='text-stone-50 font-bold text-3xl lg:text-4xl tracking-wider uppercase drop-shadow-md leading-snug'>
 							{heading}
 						</h1>
