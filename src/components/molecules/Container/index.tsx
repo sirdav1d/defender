@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Container({ children }: { children: JSX.Element }) {
 	return (
-		<div className='w-full max-w-7xl h-full  px-5 lg:mx-auto flex  flex-col'>
+		<div className=' max-w-7xl w-full h-full flex flex-col items-center justify-start  mx-auto px-5  '>
 			{children}
 		</div>
 	);

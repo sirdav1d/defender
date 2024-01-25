@@ -20,6 +20,13 @@ const config = {
 			},
 		},
 		extend: {
+			dropShadow: {
+				icon: '0px 2px 12px rgba(242,116,5,0.5)',
+			},
+			boxShadow: {
+				cardShadow:
+					'-6px -6px 18px 0px #FFF, 6px 6px 18px 0px rgba(0, 0, 0, 0.25);',
+			},
 			backgroundImage: {
 				bgButtomOrange:
 					'linear-gradient(93deg, #F27405 -5%, #914603 46.15%, #337A74 60.19%, #023531 105.16%)',
@@ -96,7 +103,7 @@ const config = {
 			},
 		},
 	},
-	plugins: [require('tailwindcss-animate')],
+	plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
 } satisfies Config;
 
 export default config;

@@ -15,15 +15,15 @@ interface HeroProps {
 
 export default function Hero({ heading, img, subHead, altImg }: HeroProps) {
 	return (
-		<div className='w-screen relative h-screen'>
+		<div className='relative h-screen'>
 			<Container>
 				<>
 					<Image
-						className='absolute left-0 top-0 w-screen h-screen object-cover -z-10'
+						className='w-full lg:w-screen h-screen absolute object-cover object-left-bottom -z-10 bg-fixed'
 						src={img}
 						alt={altImg}
 					/>
-					<div className='flex flex-col gap-5 w-full h-full lg:max-w-2xl items-start justify-center'>
+					<div className='flex flex-col gap-5 w-full h-full lg:max-w-2xl  items-start justify-center lg:mr-auto'>
 						<h1 className='text-stone-50 font-bold text-3xl lg:text-4xl tracking-wider uppercase drop-shadow-md leading-snug lg:leading-tight'>
 							{heading}
 						</h1>

@@ -2,10 +2,12 @@
 
 import Hero from '@/components/sections/Hero';
 import bgImage from '@/../public/images/seguranca-do-computador.png';
+import Services from '@/components/sections/Services';
+import Who from '@/components/sections/Who';
 
 export default function Home() {
 	return (
-		<div className='overflow-x-hidden min-h-screen w-screen'>
+		<div className='overflow-x-hidden w-full'>
 			<Hero
 				img={bgImage}
 				altImg={'Computador Com Cadeado'}
@@ -14,6 +16,8 @@ export default function Home() {
 					'Oferecemos suporte de alta qualidade, proteção de dados eficiente e soluções Microsoft para impulsionar o seu negócio'
 				}
 			/>
+			<Services />
+			<Who />
 		</div>
 	);
 }
