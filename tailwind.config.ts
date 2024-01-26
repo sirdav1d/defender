@@ -30,6 +30,7 @@ const config = {
 			backgroundImage: {
 				bgButtomOrange:
 					'linear-gradient(93deg, #F27405 -5%, #914603 46.15%, #337A74 60.19%, #023531 105.16%)',
+				bgCTA: 'linear-gradient(104deg, #035951 42.57%, #F27405 92.18%)',
 			},
 			colors: {
 				brand: {

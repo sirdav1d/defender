@@ -40,9 +40,9 @@ export default function BenefitsList() {
 											height={240}
 											src={b.image}
 											alt={b.title}></Image>
-										<div className='flex flex-col gap-5'>
+										<div className='flex flex-col gap-2'>
 											<Tag text={b.tag}></Tag>
-											<h3 className='text-2xl font-bold uppercase'>
+											<h3 className='text-xl lg:text-2xl font-bold uppercase mt-2'>
 												{b.title}
 											</h3>
 											<p className='prose prose-sm'>{b.description}</p>

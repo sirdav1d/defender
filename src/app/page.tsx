@@ -7,6 +7,7 @@ import Who from '@/components/sections/Who';
 import BenefitsList from '@/components/sections/BenefitsList';
 import Rating from '@/components/sections/Rating';
 import LogoList from '@/components/sections/LogoList';
+import CTA from '@/components/molecules/CTA';
 
 export default function Home() {
 	return (
@@ -24,6 +25,7 @@ export default function Home() {
 			<BenefitsList />
 			<Rating />
 			<LogoList />
+			<CTA />
 		</div>
 	);
 }
