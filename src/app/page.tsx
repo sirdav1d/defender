@@ -6,6 +6,7 @@ import Services from '@/components/sections/Services';
 import Who from '@/components/sections/Who';
 import BenefitsList from '@/components/sections/BenefitsList';
 import Rating from '@/components/sections/Rating';
+import LogoList from '@/components/sections/LogoList';
 
 export default function Home() {
 	return (
@@ -22,6 +23,7 @@ export default function Home() {
 			<Who />
 			<BenefitsList />
 			<Rating />
+			<LogoList />
 		</div>
 	);
 }

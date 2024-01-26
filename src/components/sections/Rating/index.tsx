@@ -3,13 +3,15 @@
 import Container from '@/components/molecules/Container';
 import Tag from '@/components/molecules/Tag';
 import { Button } from '@/components/ui/button';
+import { ratings } from '@/constants/ratings';
 import { MoveRight } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 export default function Rating() {
 	return (
-		<div>
+		<div className='pb-20'>
 			<Container>
 				<>
 					<div className='flex flex-col gap-5 w-full'>
@@ -29,6 +31,27 @@ export default function Rating() {
 							</Button>
 						</Link>
 					</div>
+					<ul className='flex gap-10 justify-between w-full items-end mt-10 flex-col lg:flex-row'>
+						{ratings.map((r, index) => {
+							return (
+								<li
+									key={index}
+									className='flex gap-10 justify-center items-center'>
+									<div className='flex-col flex gap-5'>
+										<p className='prose text-center'>{r.testimonial}</p>
+										<div className='flex gap-2 items-center justify-center'>
+											<Image
+												width={60}
+												height={60}
+												src={r.image}
+												alt={r.name}></Image>
+											<h3 className='font-bold text-lg'>{r.name}</h3>
+										</div>
+									</div>
+								</li>
+							);
+						})}
+					</ul>
 				</>
 			</Container>
 		</div>
