@@ -1,11 +1,11 @@
 /** @format */
 
-import supIcon from '@/../public/icons/apoio-suporte 1.png';
-import protecIcon from '@/../public/icons/protecao-de-dados 1.png';
-import fireIcon from '@/../public/icons/firewall 1.png';
-import wifiIcon from '@/../public/icons/sinal-wifi 1.png';
-import recIcon from '@/../public/icons/recuperacao-de-desastres 1.png';
-import secIcon from '@/../public/icons/camera-de-cftv 1.png';
+import supIcon from '@/../public/icons/apoio-suporte.png';
+import protecIcon from '@/../public/icons/protecao-de-dados.png';
+import fireIcon from '@/../public/icons/firewall.png';
+import wifiIcon from '@/../public/icons/sinal-wifi.png';
+import recIcon from '@/../public/icons/recuperacao-de-desastres.png';
+import secIcon from '@/../public/icons/camera-de-cftv.png';
 
 export const servs = [
 	{

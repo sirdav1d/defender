@@ -4,10 +4,11 @@ import Hero from '@/components/sections/Hero';
 import bgImage from '@/../public/images/seguranca-do-computador.png';
 import Services from '@/components/sections/Services';
 import Who from '@/components/sections/Who';
-import BenefitsList from '@/components/sections/BenefitsList';
+import Feature from '@/components/sections/Feature';
 import Rating from '@/components/sections/Rating';
 import LogoList from '@/components/sections/LogoList';
 import CTA from '@/components/molecules/CTA';
+import { homeFeatures } from '@/constants/homeFeatures';
 
 export default function Home() {
 	return (
@@ -22,7 +23,14 @@ export default function Home() {
 			/>
 			<Services />
 			<Who />
-			<BenefitsList />
+			<Feature
+				tag={'Vantagens'}
+				heading={'Transformando Desafios em Vantagens Competitivas'}
+				description={
+					'Nossos benefícios vão além do convencional, proporcionando inovação, segurança e suporte contínuo para manter sua empresa à frente do jogo.'
+				}
+				featureList={homeFeatures}
+			/>
 			<Rating />
 			<LogoList />
 			<CTA />
