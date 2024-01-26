@@ -30,7 +30,7 @@ export default function Services() {
 							</Button>
 						</Link>
 					</div>
-					<ul className='grid lg:grid-cols-3 grid-cols-1 gap-5 w-full   mt-10  mr-auto'>
+					<ul className='grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-5 w-full   mt-10  '>
 						{servs.map((s, index) => {
 							return (
 								<li key={index}>

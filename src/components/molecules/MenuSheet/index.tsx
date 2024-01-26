@@ -11,6 +11,8 @@ import {
 } from '@/components/ui/sheet';
 import { AlignJustify } from 'lucide-react';
 import Navigation from '../Navigation';
+import Image from 'next/image';
+import logo from '@/../public/logos/defender-logo.png'
 
 export default function MenuSheet() {
 	return (
@@ -25,8 +27,7 @@ export default function MenuSheet() {
 				<SheetContent className='bg-stone-900 flex flex-col justify-between items-center text-stone-50'>
 					<SheetHeader className='text-stone-100'>
 						<SheetTitle className='text-stone-100 text-xl mt-5'>
-							<span className='text-brand-orange-500'>Defender</span>{' '}
-							Soluções Em TI
+							<Image src={logo} alt='logo Defender Soluções em TI' width={180} height={80}/>
 						</SheetTitle>
 					</SheetHeader>
 					<Navigation />

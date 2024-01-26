@@ -4,6 +4,8 @@ import Hero from '@/components/sections/Hero';
 import bgImage from '@/../public/images/seguranca-do-computador.png';
 import Services from '@/components/sections/Services';
 import Who from '@/components/sections/Who';
+import BenefitsList from '@/components/sections/BenefitsList';
+import Rating from '@/components/sections/Rating';
 
 export default function Home() {
 	return (
@@ -18,6 +20,8 @@ export default function Home() {
 			/>
 			<Services />
 			<Who />
+			<BenefitsList />
+			<Rating />
 		</div>
 	);
 }
