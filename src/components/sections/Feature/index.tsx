@@ -26,9 +26,9 @@ export default function Feature(props:AllFeatureProps) {
 		<div className='py-20 w-full'>
 			<Container>
 				<>
-					<div className='flex flex-col gap-5'>
-						<Tag text={'Vantagens'}></Tag>
-						<div className='flex justify-between mt-2 items-start flex-col lg:flex-row gap-5'>
+					<div className='flex flex-col gap-5 w-full'>
+						<Tag text={props.tag}></Tag>
+						<div className='flex justify-between mt-2 items-start flex-col xl:flex-row gap-5 w-full'>
 							<h2 className='font-bold uppercase text-2xl lg:text-3xl  mt-2'>
 								{props.heading}
 							</h2>
@@ -46,7 +46,7 @@ export default function Feature(props:AllFeatureProps) {
 									className='mt-10 w-full '>
 									<div
 										data-role={b.side}
-										className='flex items-start lg:items-center w-full flex-col-reverse lg:flex-row  justify-between gap-10 lg:data-[role=right]:flex-row-reverse'>
+										className='flex items-center w-full flex-col-reverse lg:flex-row  justify-between gap-10 lg:data-[role=right]:flex-row-reverse'>
 										<Image
 											className='drop-shadow-md'
 											width={580}

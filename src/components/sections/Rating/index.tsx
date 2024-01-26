@@ -38,14 +38,14 @@ export default function Rating() {
 									key={index}
 									className='flex gap-10 justify-center items-center'>
 									<div className='flex-col flex gap-5'>
-										<p className='prose text-center'>{r.testimonial}</p>
+										<p className='lg:prose prose-sm text-center'>{r.testimonial}</p>
 										<div className='flex gap-2 items-center justify-center'>
 											<Image
 												width={60}
 												height={60}
 												src={r.image}
 												alt={r.name}></Image>
-											<h3 className='font-bold text-lg'>{r.name}</h3>
+											<h3 className='font-bold lg:text-lg text-base'>{r.name}</h3>
 										</div>
 									</div>
 								</li>

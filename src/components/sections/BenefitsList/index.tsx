@@ -8,13 +8,13 @@ import Image from 'next/image';
 
 export default function BenefitsList() {
 	return (
-		<div className='py-20'>
+		<div className='pt-20'>
 			<Container>
 				<>
 					<div>
 						<div className='flex flex-col gap-5'>
 							<Tag text={'Tecnologia'} />
-							<div className='flex justify-between mt-2 items-start flex-col lg:flex-row gap-5'>
+							<div className='flex justify-between mt-2 items-start flex-col xl:flex-row gap-5'>
 								<h2 className='font-bold uppercase text-2xl lg:text-3xl  mt-2'>
 									Benefícios Personalizados para Sua Empresa
 								</h2>
@@ -24,19 +24,21 @@ export default function BenefitsList() {
 								</p>
 							</div>
 						</div>
-						<ul className='w-full mt-10 grid grid-cols-4 gap-10'>
+						<ul className='w-full mt-10 grid grid-cols-2 lg:grid-cols-4 gap-10'>
 							{benefits.map((b, index) => {
 								return (
 									<li
 										key={index}
 										className='flex flex-col justify-center items-center gap-5 w-full'>
 										<Image
-                    className='drop-shadow-icon'
+											className='drop-shadow-icon'
 											width={60}
 											height={60}
 											src={b.icon}
 											alt={b.title}></Image>
-										<h3 className='font-bold uppercase text-center'>{b.title}</h3>
+										<h3 className='font-bold uppercase text-center'>
+											{b.title}
+										</h3>
 									</li>
 								);
 							})}
