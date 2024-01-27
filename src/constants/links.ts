@@ -1,9 +1,9 @@
 /** @format */
 
 export const links = [
-	{ nameLink: 'Home', href: '/' },
-	{ nameLink: 'Sobre Nós', href: '/about' },
-	{ nameLink: 'Soluções', href: '/solutions' },
-	{ nameLink: 'Projetos', href: '/projects' },
-	{ nameLink: 'Contato', href: '/contact' },
+	{ nameLink: 'Home', href: '/', slug: 'home' },
+	{ nameLink: 'Sobre Nós', href: '/about', slug: 'about' },
+	{ nameLink: 'Soluções', href: '/solutions', slug: 'solutions' },
+	{ nameLink: 'Projetos', href: '/projects', slug: 'projects' },
+	{ nameLink: 'Contato', href: '/contact', slug: 'contact' },
 ];

@@ -32,8 +32,8 @@ export default function BenefitsList() {
 										className='flex flex-col justify-center items-center gap-5 w-full'>
 										<Image
 											className='drop-shadow-icon'
-											width={60}
-											height={60}
+											width={48}
+											height={48}
 											src={b.icon}
 											alt={b.title}></Image>
 										<h3 className='font-bold uppercase text-center'>

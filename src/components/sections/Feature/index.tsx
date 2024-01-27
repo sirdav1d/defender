@@ -14,14 +14,14 @@ interface FeatureProps {
 	description: string;
 }
 
-interface AllFeatureProps{
-	tag:string,
-	heading:string,
-	description:string,
-	featureList:FeatureProps[]
+interface AllFeatureProps {
+	tag: string;
+	heading: string;
+	description: string;
+	featureList: FeatureProps[];
 }
 
-export default function Feature(props:AllFeatureProps) {
+export default function Feature(props: AllFeatureProps) {
 	return (
 		<div className='py-20 w-full'>
 			<Container>
@@ -32,9 +32,7 @@ export default function Feature(props:AllFeatureProps) {
 							<h2 className='font-bold uppercase text-2xl lg:text-3xl  mt-2'>
 								{props.heading}
 							</h2>
-							<p className='lg:prose prose-sm'>
-							{props.description}
-							</p>
+							<p className='lg:prose prose-sm'>{props.description}</p>
 						</div>
 					</div>
 					<ul className=' w-full'>
@@ -53,7 +51,7 @@ export default function Feature(props:AllFeatureProps) {
 											height={240}
 											src={b.image}
 											alt={b.title}></Image>
-										<div className='flex flex-col gap-2'>
+										<div className='flex flex-col gap-5'>
 											<Tag text={b.tag}></Tag>
 											<h3 className='text-xl lg:text-2xl font-bold uppercase mt-2'>
 												{b.title}

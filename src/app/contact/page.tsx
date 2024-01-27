@@ -6,7 +6,7 @@ import Hero from '@/components/sections/Hero';
 
 export default function ContactPage() {
 	return (
-		<div className='overflow-x-hidden min-h-screen w-screen'>
+		<div className='overflow-x-hidden w-full'>
 			<Hero
 				img={bgImage}
 				altImg={'Homem falando no celular'}
