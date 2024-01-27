@@ -3,6 +3,8 @@
 import React from 'react';
 import bgImage from '@/../public/images/contact-bg.png';
 import Hero from '@/components/sections/Hero';
+import ContactInfo from '@/components/sections/ContactInfo';
+import CTA from '@/components/molecules/CTA';
 
 export default function ContactPage() {
 	return (
@@ -15,6 +17,8 @@ export default function ContactPage() {
 					'Entre em Contato e Descubra Como Podemos Fortalecer Sua Presença Digital e Impulsionar Seu Sucesso'
 				}
 			/>
+			<ContactInfo />
+			<CTA />
 		</div>
 	);
 }
