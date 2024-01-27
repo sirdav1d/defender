@@ -20,6 +20,8 @@ export default function Hero({ heading, img, subHead, altImg }: HeroProps) {
 				<>
 					<Image
 						className='w-full lg:w-screen h-screen absolute object-cover object-left-bottom -z-10 bg-fixed'
+						width={1600}
+						height={800}
 						src={img}
 						alt={altImg}
 					/>

@@ -6,6 +6,7 @@ import Hero from '@/components/sections/Hero';
 import CTA from '@/components/molecules/CTA';
 import Culture from '@/components/sections/Culture';
 import Team from '@/components/sections/Team';
+import Timeline from '@/components/sections/Timeline';
 
 export default function AboutPage() {
 	return (
@@ -20,6 +21,7 @@ export default function AboutPage() {
 			/>
 			<Culture />
 			<Team />
+			<Timeline />
 			<CTA />
 		</div>
 	);

@@ -1,6 +1,5 @@
 /** @format */
 
-import React from 'react';
 import Navigation from '../Navigation';
 import Container from '../Container';
 import Image from 'next/image';
@@ -24,7 +23,6 @@ export default function Header() {
 						<div className='hidden lg:flex border-l-brand-orange-500'>
 							<Navigation />
 						</div>
-
 						<MenuSheet />
 					</div>
 				</>

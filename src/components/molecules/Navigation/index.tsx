@@ -9,13 +9,13 @@ import { useEffect, useState } from 'react';
 import Transition from '../Transition';
 
 export default function Navigation() {
-	const [isRouting, setisRouting] = useState(false);
+	const [isRouting, setIsRouting] = useState(false);
 	const path = usePathname();
 	const [prevPath, setPrevPath] = useState('/');
 
 	useEffect(() => {
 		if (prevPath !== path) {
-			setisRouting(true);
+			setIsRouting(true);
 		}
 
 		console.log(path);
@@ -25,8 +25,8 @@ export default function Navigation() {
 		if (isRouting) {
 			setPrevPath(path);
 			const timeout = setTimeout(() => {
-				setisRouting(false);
-			}, 1200);
+				setIsRouting(false);
+			}, 800);
 
 			return () => clearTimeout(timeout);
 		}

@@ -10,7 +10,7 @@ export default function CTA() {
 	return (
 		<div className='mb-20'>
 			<div className='bg-bgCTA w-full px-4  py-8 flex flex-col justify-center items-center gap-5 shadow-xl'>
-				<h2 className='font-bold text-stone-50 text-2xl lg:text-3xl uppercase text-center'>
+				<h2 className='font-bold text-stone-50 text-2xl lg:text-3xl uppercase text-center tracking-wide'>
 					Proteja Seu Negócio Hoje
 				</h2>
 				<p className='prose lg:prose-lg capitalize text-stone-100 mb-5 text-center'>

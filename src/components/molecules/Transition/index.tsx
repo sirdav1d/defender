@@ -14,8 +14,8 @@ export default function Transition() {
 				exit='exit'
 				animate='open'
 				transition={{
-					duration: 0.6,
-					ease: 'easeInOut',
+					duration: 0.2,
+					ease: 'linear',
 				}}
 			/>
 			<MotionDiv
@@ -26,8 +26,8 @@ export default function Transition() {
 				animate='open'
 				transition={{
 					delay: 0.2,
-					duration: 0.6,
-					ease: 'easeInOut',
+					duration: 0.2,
+					ease: 'linear',
 				}}
 			/>
 			<MotionDiv
@@ -38,8 +38,8 @@ export default function Transition() {
 				animate='open'
 				transition={{
 					delay: 0.4,
-					duration: 0.6,
-					ease: 'easeInOut',
+					duration: 0.2,
+					ease: 'linear',
 				}}
 			/>
 		</div>
