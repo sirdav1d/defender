@@ -10,8 +10,8 @@ export default function ContactInfo() {
 		<div className='py-20'>
 			<Container>
 				<>
-					<div className='flex w-full justify-between items-baseline'>
-						<div className='w-1/2 justify-between flex flex-col'>
+					<div className='flex w-full justify-between items-baseline flex-col gap-10 lg:flex-row'>
+						<div className='lg:w-1/2 justify-between flex flex-col'>
 							<div className='flex flex-col gap-5'>
 								<Tag text={'iniciativa'}></Tag>
 								<h2 className='font-bold uppercase text-2xl lg:text-3xl  mt-2'>
@@ -43,7 +43,7 @@ export default function ContactInfo() {
 								</div>
 							</div>
 						</div>
-						<div className='w-1/2 flex items-end justify-end'>
+						<div className='lg:w-1/2 w-full flex items-end justify-center lg:justify-end'>
 							<FormComponent />
 						</div>
 					</div>
