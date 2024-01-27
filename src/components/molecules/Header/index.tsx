@@ -8,7 +8,7 @@ import MenuSheet from '../MenuSheet';
 
 export default function Header() {
 	return (
-		<div className='z-50 bg-black/40 backdrop-blur-sm w-full fixed py-5 '>
+		<div className='z-50 bg-black/60 backdrop-blur-sm w-full fixed py-5 '>
 			<Container>
 				<>
 					<div className='flex justify-between items-center w-full '>
