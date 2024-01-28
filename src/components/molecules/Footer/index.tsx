@@ -5,7 +5,6 @@ import { siteMap } from '@/constants/siteMap';
 import Image from 'next/image';
 import { FaWhatsapp } from 'react-icons/fa6';
 import Container from '../Container';
-
 import { Instagram, Mail } from 'lucide-react';
 
 export default function Footer() {
