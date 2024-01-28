@@ -1,17 +1,28 @@
 /** @format */
+'use client';
 
-import Navigation from '../Navigation';
-import Container from '../Container';
-import Image from 'next/image';
 import logo from '@/../public/logos/defender-logo.png';
+import { useScroll } from 'framer-motion';
+import Image from 'next/image';
+import Container from '../Container';
 import MenuSheet from '../MenuSheet';
+import Navigation from '../Navigation';
+import { MotionDiv } from '../motionDIv';
 
 export default function Header() {
+	const { scrollYProgress } = useScroll({
+		offset: ['start start', 'center center'],
+	});
+
 	return (
-		<div className='z-50 bg-black/60 backdrop-blur-sm w-full fixed py-5 '>
+		<div className={`z-50 backdrop-blur-sm w-full fixed py-5 `}>
+			<MotionDiv
+				style={{ opacity: scrollYProgress }}
+				className='w-full absolute h-full top-0 left-0 bg-stone-800 -z-10'
+			/>
 			<Container>
 				<>
-					<div className='flex justify-between items-center w-full '>
+					<div className='flex justify-between items-center w-full opacity-100 '>
 						<a href='/'>
 							<Image
 								width={180}

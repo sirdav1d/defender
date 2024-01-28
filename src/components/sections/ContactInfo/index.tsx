@@ -10,9 +10,9 @@ export default function ContactInfo() {
 		<div className='py-20'>
 			<Container>
 				<>
-					<div className='flex w-full justify-between items-baseline flex-col gap-10 lg:flex-row'>
-						<div className='lg:w-1/2 justify-between flex flex-col'>
-							<div className='flex flex-col gap-5'>
+					<div className='flex w-full justify-between items-baseline flex-col gap-10 lg:gap-0 lg:flex-row'>
+						<div className='lg:w-1/2 justify-between flex flex-col  '>
+							<div className='flex flex-col gap-5 '>
 								<Tag text={'iniciativa'}></Tag>
 								<h2 className='font-bold uppercase text-2xl lg:text-3xl  mt-2'>
 									Explore Oportunidades de Colaboração
@@ -32,18 +32,19 @@ export default function ContactInfo() {
 										<h4 className='uppercase font-bold text-base lg:text-lg'>
 											E-mail
 										</h4>
-										<p className='prose prose-sm'>email@email.com</p>
+										<p className='prose prose-sm'>ulysses@defenderinfo.com</p>
 									</div>
 									<div className='flex flex-col gap-3'>
 										<h4 className='uppercase font-bold text-base lg:text-lg'>
 											Telefone
 										</h4>
-										<p className='prose prose-sm'>(00) 00000 - 0000</p>
+										<p className='prose prose-sm'>(21) 98378 - 0161</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className='lg:w-1/2 w-full flex items-end justify-center lg:justify-end'>
+
+						<div className='lg:w-1/2 w-full flex items-end justify-center lg:justify-end '>
 							<FormComponent />
 						</div>
 					</div>

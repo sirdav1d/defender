@@ -16,7 +16,7 @@ import Navigation from '../Navigation';
 export default function MenuSheet() {
 	return (
 		<div className='block lg:hidden'>
-			<Sheet>
+			<Sheet >
 				<SheetTrigger className='text-stone-100'>
 					<AlignJustify
 						color='white'

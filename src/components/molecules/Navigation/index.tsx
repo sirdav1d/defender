@@ -18,7 +18,7 @@ export default function Navigation() {
 			setIsRouting(true);
 		}
 
-		console.log(path);
+		console.log({ path, prevPath });
 	}, [path, prevPath]);
 
 	useEffect(() => {
