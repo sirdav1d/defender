@@ -31,13 +31,13 @@ export default function Footer() {
 									target='_blank'
 									rel='noopener noreferrer'>
 									<Instagram
-										className='hover:text-brand-orange-500 transition-all duration-300 ease-in-out text-stone-100'
+										className='hover:text-brand-orange-500 text-brand-orange-500 transition-all duration-300 ease-in-out lg:text-stone-100'
 										size={32}
 									/>
 								</a>
 
 								<a
-									className='hover:text-brand-orange-500 transition-all duration-300 ease-in-out text-stone-100'
+									className='hover:text-brand-orange-500 transition-all duration-300 ease-in-out text-brand-orange-500 lg:text-stone-100'
 									href='#'
 									target='_blank'
 									rel='noopener noreferrer'>
@@ -48,7 +48,7 @@ export default function Footer() {
 									target='_blank'
 									rel='noopener noreferrer'>
 									<Mail
-										className='hover:text-brand-orange-500 transition-all duration-300 ease-in-out text-stone-100'
+										className='hover:text-brand-orange-500 transition-all duration-300 ease-in-out text-brand-orange-500 lg:text-stone-100'
 										size={32}
 									/>
 								</a>
@@ -96,7 +96,7 @@ export default function Footer() {
 						<p>
 							Desenvolvido por{' '}
 							<a
-								className='transition-all duration-300 ease-in-out hover:text-brand-orange-500'
+								className='transition-all duration-300 ease-in-out hover:text-brand-orange-500 '
 								href='http://tarsprojetos.com/'
 								target='_blank'
 								rel='noopener noreferrer'>

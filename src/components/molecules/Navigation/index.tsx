@@ -44,8 +44,8 @@ export default function Navigation() {
 						<>
 							<li
 								className={`${
-									path === l.href ? 'text-brand-orange-500' : 'text-white'
-								}`}>
+									path === l.href ? 'text-brand-orange-500' : 'text-stone-950'
+								} hover:text-brand-orange-500 transition-all ease-linear duration-200`}>
 								{l.nameLink}
 							</li>
 							<span
@@ -54,7 +54,7 @@ export default function Navigation() {
 									path === l.href
 										? 'bg-brand-orange-500'
 										: 'bg-transparent translate-x-4'
-								} h-[2px] w-6  rounded-full mt-2 group-hover:bg-brand-orange-500 group-hover:translate-x-0 transition-all duration-300 ease-linear`}
+								} h-[2px] w-6  rounded-full mt-2 transition-all duration-300 ease-linear`}
 							/>
 						</>
 					</Link>

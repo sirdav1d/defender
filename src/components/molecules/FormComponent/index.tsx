@@ -44,7 +44,7 @@ export default function FormComponent() {
 			<Form {...form}>
 				<form
 					onSubmit={form.handleSubmit(onSubmit)}
-					className='border border-brand-orange-500/20 shadow-cardShadow flex flex-col bg-stone-50 items-center py-5 px-10 justify-center gap-10 w-full max-w-[368px] lg:max-w-[480px]'>
+					className='border border-brand-orange-500/20 shadow-cardShadow flex flex-col bg-stone-50 items-center py-5 px-10 justify-center gap-10 w-full lg:max-w-[480px]'>
 					<FormField
 						control={form.control}
 						name='email'
