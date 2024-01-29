@@ -19,6 +19,7 @@ import { MoveRight } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { useToast } from '@/components/ui/use-toast';
+import { sendEmail } from '@/app/action/send';
 
 export default function FormComponent() {
 	const form = useForm<z.infer<typeof formSchema>>({
@@ -35,6 +36,7 @@ export default function FormComponent() {
 	function onSubmit(values: z.infer<typeof formSchema>) {
 		// Do something with the form values.
 		// ✅ This will be type-safe and validated.
+		sendEmail(values);
 
 		console.log(values);
 	}

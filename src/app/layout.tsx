@@ -5,6 +5,8 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/molecules/Header';
 import Footer from '@/components/molecules/Footer';
+import NProgress from 'nprogress';
+import Router from 'next/router';
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -34,7 +36,7 @@ export default function RootLayout({
 			<body className={poppins.className}>
 				<Header />
 				{children}
-				<Footer/>
+				<Footer />
 			</body>
 		</html>
 	);
