@@ -12,18 +12,17 @@ import Transition from '../Transition';
 
 export default function Header() {
 	const { scrollYProgress } = useScroll({
-		offset: ['0% 40%', '15% 100%'],
+		offset: ['0% 100%', '10% 100%'],
 	});
 
 	return (
 		<MotionDiv
-			initial={{ y: -24, opacity: 0 }}
+			initial={{ y: -20, opacity: 0 }}
 			animate={{ y: 0, opacity: 1 }}
 			className={`z-50 backdrop-blur-sm w-full fixed py-5 shadow-md`}>
 			<>
-		
 				<MotionDiv
-					// style={{ opacity: scrollYProgress }}
+					style={{ opacity: scrollYProgress }}
 					className='w-full absolute h-full top-0 left-0 bg-stone-50 -z-10'
 				/>
 				<Container>

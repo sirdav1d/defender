@@ -24,10 +24,9 @@ export default function Navigation() {
 	useEffect(() => {
 		if (isRouting) {
 			setPrevPath(path);
-			const timeout = setTimeout(() => {
+			setTimeout(() => {
 				setIsRouting(false);
 			}, 5000);
-
 		}
 	}, [isRouting]);
 
