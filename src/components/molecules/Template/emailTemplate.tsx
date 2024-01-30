@@ -31,11 +31,11 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
 		<Head />
 		<Preview>Você Recebeu Um Novo Lead!</Preview>
 		<Tailwind>
-			<Body>
+			<Body className='bg-stone-200 text-stone-900 p-8'>
 				<Container>
-					<Section>
+					<Section className='bg-stone-50 border border-stone-950/80 rounded-lg p-6'>
 						<Heading className='text-center'>
-							{fullName} Acabou de Preencher O Formulário, Confira Os Dados
+							{fullName} Preencheu O Formulário Em Seu Website, Confira Os Dados
 							Enviados Abaixo:
 						</Heading>
 						<Hr />
