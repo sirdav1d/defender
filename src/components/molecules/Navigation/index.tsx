@@ -31,7 +31,7 @@ export default function Navigation() {
 	}, [isRouting]);
 
 	return (
-		<ul className='gap-5 text-stone-100 font-medium flex flex-col lg:flex-row'>
+		<ul className='gap-5 text-stone-100 font-semibold flex flex-col lg:flex-row uppercase'>
 			{isRouting && <Transition />}
 			{links.map((l, index) => {
 				return (
@@ -42,17 +42,16 @@ export default function Navigation() {
 						<>
 							<li
 								className={`${
-									path === l.href ? 'text-brand-orange-500' : 'text-stone-950'
+									path === l.href ? 'text-brand-orange-500' : 'text-stone-700'
 								} hover:text-brand-orange-500 transition-all ease-linear duration-200`}>
 								{l.nameLink}
 							</li>
 							<span
-								key={l.href}
 								className={`${
 									path === l.href
 										? 'bg-brand-orange-500'
 										: 'bg-transparent translate-x-4'
-								} h-[2px] w-6  rounded-full mt-2 transition-all duration-300 ease-linear`}
+								} h-[2px] w-6  rounded-full mt-1 transition-all duration-300 ease-linear`}
 							/>
 						</>
 					</Link>
