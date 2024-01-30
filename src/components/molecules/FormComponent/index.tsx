@@ -20,8 +20,11 @@ import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { useToast } from '@/components/ui/use-toast';
 import { sendEmail } from '@/app/action/send';
+import { useEffect, useState } from 'react';
 
 export default function FormComponent() {
+	const [disabled, setDisabled] = useState(true);
+
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
@@ -33,12 +36,41 @@ export default function FormComponent() {
 	});
 	const { toast } = useToast();
 
+	useEffect(() => {
+		const cel = form.getValues('cel');
+		const name = form.getValues('name');
+		const email = form.getValues('email');
+
+		if (!cel || !name || !email) {
+			setDisabled(true);
+		} else {
+			setDisabled(false);
+		}
+	}, [form.formState, disabled]);
+
 	function onSubmit(values: z.infer<typeof formSchema>) {
 		// Do something with the form values.
 		// ✅ This will be type-safe and validated.
-		sendEmail(values);
+		try {
+			sendEmail(values);
+			toast({
+				title: 'Formulário Enviado Com Sucesso 🚀',
+				description: 'Em breve, nosso setor comercial entrará em contato ',
+				variant: 'success',
+			});
+			form.reset();
+			setDisabled(true);
 
-		console.log(values);
+			console.log(values);
+		} catch (error) {
+			console.log(error);
+			toast({
+				title: 'Algo Deu Errado',
+				description: 'Não foi possível enviar sua mensagem, tente novamente',
+				variant: 'destructive',
+			});
+		}
+		setDisabled(true);
 	}
 
 	return (
@@ -52,7 +84,8 @@ export default function FormComponent() {
 						name='email'
 						render={({ field }) => (
 							<FormItem className='w-full flex flex-col gap-3'>
-								<FormLabel className='uppercase font-bold text-base'>
+								<FormLabel className='uppercase font-bold text-base flex gap-1'>
+									<span className='text-sm text-red-500'>*</span>
 									E-mail:
 								</FormLabel>
 								<FormControl>
@@ -72,7 +105,8 @@ export default function FormComponent() {
 						name='name'
 						render={({ field }) => (
 							<FormItem className='w-full flex flex-col gap-3'>
-								<FormLabel className='uppercase font-bold text-base'>
+								<FormLabel className='uppercase font-bold text-base flex gap-1'>
+									<span className='text-sm text-red-500'>*</span>
 									Nome Completo:
 								</FormLabel>
 								<FormControl>
@@ -94,7 +128,8 @@ export default function FormComponent() {
 							<FormItem className='w-full flex flex-col gap-3'>
 								<FormLabel
 									aria-required
-									className='uppercase font-bold text-base'>
+									className='uppercase font-bold text-base flex gap-1'>
+									<span className='text-sm text-red-500'>*</span>
 									Telefone:
 								</FormLabel>
 								<FormControl>
@@ -129,7 +164,8 @@ export default function FormComponent() {
 						)}
 					/>
 					<Button
-						className='font-medium w-full tracking-wider text-lg p-8 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:896px_100px] group rounded-none drop-shadow-xl'
+						disabled={form.formState !== null ? disabled : true}
+						className='font-medium active:bg-right disabled:grayscale hover:disabled:grayscale checked:bg-right w-full tracking-wider text-lg p-8 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:896px_100px] group rounded-none drop-shadow-xl'
 						type='submit'>
 						Enviar Mensagem
 						<MoveRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />

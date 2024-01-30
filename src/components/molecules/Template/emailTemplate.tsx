@@ -1,5 +1,17 @@
 /** @format */
 
+import {
+	Body,
+	Container,
+	Head,
+	Heading,
+	Hr,
+	Html,
+	Preview,
+	Section,
+	Text,
+} from '@react-email/components';
+import { Tailwind } from '@react-email/tailwind';
 import React from 'react';
 
 interface EmailTemplateProps {
@@ -15,21 +27,28 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
 	email,
 	message,
 }) => (
-	<div className='w-full h-full p-5 flex justify-center flex-col items-center gap-4'>
-		<h2 className='text-stone-900 font-bold text-3xl'>
-			Parabéns Por Mais Um Lead
-		</h2>
-		<br />
-		<br />
-		<h3 className='font-bold text-stone-700 text-xl'>
-			Confira os Dados Abaixo:
-		</h3>
-		<div className='flex flex-col gap-2 items-center justify-center'>
-			<p>{fullName}</p>
-			<p>{email}</p>
-			<p>{cel}</p>
-			<br />
-			<p>{message}</p>
-		</div>
-	</div>
+	<Html>
+		<Head />
+		<Preview>Você Recebeu Um Novo Lead!</Preview>
+		<Tailwind>
+			<Body>
+				<Container>
+					<Section>
+						<Heading className='text-center'>
+							{fullName} Acabou de Preencher O Formulário, Confira Os Dados
+							Enviados Abaixo:
+						</Heading>
+						<Hr />
+						<Text>{fullName}</Text>
+						<Text>{email}</Text>
+						<Text>{cel}</Text>
+						<Hr />
+						<Text>{message}</Text>
+						<Hr />
+						<Text>Retornaremos em breve com novidades</Text>
+					</Section>
+				</Container>
+			</Body>
+		</Tailwind>
+	</Html>
 );

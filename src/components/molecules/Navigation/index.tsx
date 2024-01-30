@@ -26,9 +26,8 @@ export default function Navigation() {
 			setPrevPath(path);
 			const timeout = setTimeout(() => {
 				setIsRouting(false);
-			}, 500);
+			}, 5000);
 
-			return () => clearTimeout(timeout);
 		}
 	}, [isRouting]);
 
