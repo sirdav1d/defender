@@ -21,6 +21,7 @@ import * as z from 'zod';
 import { useToast } from '@/components/ui/use-toast';
 import { sendEmail } from '@/app/action/send';
 import { useEffect, useState } from 'react';
+import { Checkbox } from '@/components/ui/checkbox';
 
 export default function FormComponent() {
 	const [disabled, setDisabled] = useState(true);
@@ -32,6 +33,7 @@ export default function FormComponent() {
 			name: '',
 			cel: '',
 			message: '',
+			consent: false,
 		},
 	});
 	const { toast } = useToast();
@@ -40,8 +42,9 @@ export default function FormComponent() {
 		const cel = form.getValues('cel');
 		const name = form.getValues('name');
 		const email = form.getValues('email');
+		const consent = form.getValues('consent');
 
-		if (!cel || !name || !email) {
+		if (!cel || !name || !email || !consent) {
 			setDisabled(true);
 		} else {
 			setDisabled(false);
@@ -91,7 +94,7 @@ export default function FormComponent() {
 								<FormControl>
 									<Input
 										required
-										className='bg-stone-100 border-b border-brand-orange-500 focus-visible:ring-1 focus-visible:ring-brand-orange-300'
+										className='bg-stone-100 border-b rounded-sm border-brand-orange-500 focus-visible:ring-1 focus-visible:ring-brand-orange-300'
 										placeholder='Digite Seu E-mail'
 										{...field}
 									/>
@@ -112,7 +115,7 @@ export default function FormComponent() {
 								<FormControl>
 									<Input
 										required
-										className='bg-stone-100 border-b border-brand-orange-500 focus-visible:ring-1 focus-visible:ring-brand-orange-300'
+										className='bg-stone-100 border-b rounded-sm border-brand-orange-500 focus-visible:ring-1 focus-visible:ring-brand-orange-300'
 										placeholder='Digite Seu Nome Completo'
 										{...field}
 									/>
@@ -135,7 +138,7 @@ export default function FormComponent() {
 								<FormControl>
 									<Input
 										required
-										className='bg-stone-100 border-b border-brand-orange-500 focus-visible:ring-1 focus-visible:ring-brand-orange-300'
+										className='bg-stone-100 border-b rounded-sm border-brand-orange-500 focus-visible:ring-1 focus-visible:ring-brand-orange-300'
 										placeholder='Digite Seu Telefone'
 										{...field}
 									/>
@@ -159,6 +162,43 @@ export default function FormComponent() {
 										{...field}
 									/>
 								</FormControl>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
+					<FormField
+						control={form.control}
+						name='consent'
+						render={({ field }) => (
+							<FormItem className='w-full flex gap-3 items-center justify-center'>
+								<FormControl>
+									<Checkbox
+										checked={field.value}
+										onCheckedChange={field.onChange}
+										required
+										className='bg-stone-50 border checked:bg-brand-orange-300 border-brand-orange-500 focus-visible:ring-1 focus-visible:ring-brand-orange-300'
+									/>
+								</FormControl>
+								<FormLabel className='uppercase font-bold text-xs flex gap-1 flex-row'>
+									<p>
+										Aceito receber contatos, {''}
+										<a
+											className='underline hover:text-brand-orange-500 duration-200 ease-linear transition-all'
+											href='/terms'
+											target='_blank'
+											rel='noopener noreferrer'>
+											Termos de Uso
+										</a>
+										, {''} e {''}
+										<a
+											className='underline hover:text-brand-orange-500 duration-200 ease-linear transition-all'
+											href='/politics'
+											target='_blank'
+											rel='noopener noreferrer'>
+											Políticas de Privacidade
+										</a>
+									</p>
+								</FormLabel>
 								<FormMessage />
 							</FormItem>
 						)}

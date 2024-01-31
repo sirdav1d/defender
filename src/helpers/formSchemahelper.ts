@@ -1,7 +1,6 @@
 /** @format */
 import * as z from 'zod';
 
-
 export const formSchema = z.object({
 	email: z.string({ required_error: 'O e-mail é obrigatório' }).email({
 		message: 'Digite um e-mail válido',
@@ -18,4 +17,10 @@ export const formSchema = z.object({
 			},
 		),
 	message: z.string().max(90),
+	consent: z
+		.boolean({
+			required_error:
+				'Você Precisa Aceitar os Termos e Políticas Para Prosseguir',
+		})
+		.default(false),
 });

@@ -27,7 +27,7 @@ export default function Footer() {
 							</h2>
 							<div className=' flex gap-5 items-center justify-center'>
 								<a
-									href='https://www.instagram.com/sodre_revestimentos'
+									href='https://www.instagram.com/defenderinfo/'
 									target='_blank'
 									rel='noopener noreferrer'>
 									<Instagram
@@ -44,8 +44,7 @@ export default function Footer() {
 									<FaWhatsapp size={32} />
 								</a>
 								<a
-									href='#'
-									target='_blank'
+									href='/contact'
 									rel='noopener noreferrer'>
 									<Mail
 										className='hover:text-brand-orange-500 transition-all duration-300 ease-in-out text-brand-orange-500 lg:text-stone-100'
