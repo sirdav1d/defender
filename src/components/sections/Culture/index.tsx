@@ -19,9 +19,7 @@ export default function Culture() {
 						<p className='prose prose-sm lg:prose-lg'>
 							Com dedicação, responsabilidade e segurança a Defender Informática
 							vêm conquistando a confiança de diversos escritórios e empresas
-							dos mais diversos segmentos. Uma empresa que nasceu da paixão de
-							seus profissionais pela utilização da tecnologia da informação. A
-							Defender Informática é capaz de atender clientes corporativos e
+							dos mais diversos segmentos. A Defender Informática é capaz de atender clientes corporativos e
 							residenciais com rapidez, eficiência e qualidade
 						</p>
 					</div>
@@ -30,12 +28,12 @@ export default function Culture() {
 							return (
 								<li
 									key={index}
-									className='flex flex-col gap-5 text-center items-center justify-center'>
-									<div className='flex gap-3 items-center justify-center'>
+									className='flex flex-col gap-4  justify-center shadow-cardShadow p-5'>
+									<div className='flex gap-3 items-center '>
 										<Image
 											className='drop-shadow-icon'
-											width={48}
-											height={48}
+											width={40}
+											height={40}
 											src={c.icon}
 											alt={c.title}
 										/>
