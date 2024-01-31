@@ -54,7 +54,7 @@ export default function Terms() {
 									propriedade dos materiais;
 								</li>
 								<li>
-									Transferir os materiais para outra pessoa ou 'espelhe' os
+									Transferir os materiais para outra pessoa ou espelhe os
 									materiais em qualquer outro servidor.
 								</li>
 							</ol>
@@ -73,7 +73,7 @@ export default function Terms() {
 							<ol className='prose mt-5 min-w-full list-decimal flex flex-col items-start justify-start'>
 								<li>
 									Os materiais no site da Defender Soluções Em TI são fornecidos
-									'como estão'. Defender Soluções Em TI não oferece garantias,
+									como estão. Defender Soluções Em TI não oferece garantias,
 									expressas ou implícitas, e, por este meio, isenta e nega todas
 									as outras garantias, incluindo, sem limitação, garantias
 									implícitas ou condições de comercialização, adequação a um fim
