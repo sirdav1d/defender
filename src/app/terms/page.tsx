@@ -14,14 +14,14 @@ export default function Terms() {
 								1. Termos
 							</h2>
 							<p className='prose mt-5 min-w-full'>
-								Ao acessar ao site{' '}
+								Ao acessar ao site
 								<a
 									className='underline text-brand-orange-500 font-medium hover:text-brand-orange-700 transition-all duration-200 ease-linear'
 									href='https://www.defenderinfo.com/'>
 									Defender Soluções Em TI
 								</a>
 								, concorda em cumprir estes termos de serviço, todas as leis e
-								regulamentos aplicáveis ​​e concorda que é responsável pelo
+								regulamentos aplicáveis e concorda que é responsável pelo
 								cumprimento de todas as leis locais aplicáveis. Se você não
 								concordar com algum desses termos, está proibido de usar ou
 								acessar este site. Os materiais contidos neste site são
@@ -37,22 +37,21 @@ export default function Terms() {
 								materiais (informações ou software) no site Defender Soluções Em
 								TI , apenas para visualização transitória pessoal e não
 								comercial. Esta é a concessão de uma licença, não uma
-								transferência de título e, sob esta licença, você não
-								pode:&nbsp;
+								transferência de título e, sob esta licença, você não pode;
 							</p>
 							<ol className='prose mt-5 min-w-full list-decimal flex flex-col items-start justify-start'>
-								<li>Modificar ou copiar os materiais;&nbsp;</li>
+								<li>Modificar ou copiar os materiais;</li>
 								<li>
 									Usar os materiais para qualquer finalidade comercial ou para
-									exibição pública (comercial ou não comercial);&nbsp;
+									exibição pública (comercial ou não comercial);
 								</li>
 								<li>
 									Tentar descompilar ou fazer engenharia reversa de qualquer
-									software contido no site Defender Soluções Em TI;&nbsp;
+									software contido no site Defender Soluções Em TI;
 								</li>
 								<li>
 									Remover quaisquer direitos autorais ou outras notações de
-									propriedade dos materiais; ou&nbsp;
+									propriedade dos materiais;
 								</li>
 								<li>
 									Transferir os materiais para outra pessoa ou 'espelhe' os
@@ -84,7 +83,7 @@ export default function Terms() {
 								<li>
 									Além disso, o Defender Soluções Em TI não garante ou faz
 									qualquer representação relativa à precisão, aos resultados
-									prováveis ​​ou à confiabilidade do uso dos materiais em seu
+									prováveis ou à confiabilidade do uso dos materiais em seu
 									site ou de outra forma relacionado a esses materiais ou em
 									sites vinculados a este site.
 								</li>
