@@ -43,10 +43,9 @@ export default function BenefitsList() {
 						<ul className='w-full mt-10 grid grid-cols-2 lg:grid-cols-4 gap-10'>
 							{benefits.map((b, index) => {
 								return (
-									<li
-										key={index}
-										className='flex flex-col justify-center items-center gap-5 w-full'>
+									<li key={index}>
 										<MotionDiv
+											className='flex flex-col justify-center items-center gap-5 w-full'
 											variants={RevealAimation}
 											viewport={{ once: true }}
 											transition={{ delay: 0.2 * index, type: 'spring' }}
