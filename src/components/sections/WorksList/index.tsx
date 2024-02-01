@@ -1,5 +1,4 @@
 /** @format */
-'use server';
 
 import Container from '@/components/molecules/Container';
 import Tag from '@/components/molecules/Tag';
