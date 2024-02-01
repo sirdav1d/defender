@@ -50,9 +50,9 @@ export default function WorksCard(props: WorksCardProps) {
 						<MoveRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />
 					</Button>
 				</DrawerTrigger>
-				<DrawerContent className='h-3/4'>
+				<DrawerContent className='h-4/5'>
 					<DrawerHeader className='flex gap-5 items-center justify-center flex-col'>
-						<DrawerTitle className='text-xl lg:text-3xl text-brand-orange-500 '>
+						<DrawerTitle className='text-2xl lg:text-3xl text-brand-orange-500 '>
 							{props.client}
 						</DrawerTitle>
 						<DrawerDescription className='prose'>

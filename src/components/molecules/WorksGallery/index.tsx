@@ -23,9 +23,9 @@ export default function WorksGallery(props: ProjectGalleryprops) {
 			<CarouselContent>
 				{props.images.map((image: any, index: number) => {
 					return (
-						<CarouselItem key={index}>
+						<CarouselItem  key={index}>
 							<Image
-								className='rounded-lg shadow-md object-cover'
+								className='rounded-lg shadow-md object-contain'
 								data={image.responsiveImage}></Image>
 						</CarouselItem>
 					);
