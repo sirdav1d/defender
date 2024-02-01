@@ -28,7 +28,7 @@ export default function WorksCardList({ subscription }: { subscription: any }) {
 		hydrated && (
 			<div>
 				<Container>
-					<ul className='grid grid-cols-1 lg:grid-cols-2 w-full gap-10 items-baseline'>
+					<ul className='grid grid-cols-1 lg:grid-cols-2 w-full gap-10 items-end'>
 						{projects.map((p, index) => {
 							return (
 								<MotionDiv

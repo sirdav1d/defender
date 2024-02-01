@@ -38,9 +38,9 @@ export default function WorksCard(props: WorksCardProps) {
 
 				<p className='lg:prose prose-sm text-center'>{props.description}</p>
 			</div>
-			<div className='bg-stone-700'>
+			<div className='bg-stone-700 w-[368px] h-[200px] relative'>
 				<Image
-					className='absolute mix-blend-overlay bg-blend-darken'
+					className='absolute mix-blend-overlay w-full h-full bg-blend-darken object-contain'
 					data={props.coverImage.responsiveImage}></Image>
 			</div>
 			<Drawer>
