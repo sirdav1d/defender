@@ -12,8 +12,7 @@ export default function CTA() {
 	return (
 		<MotionDiv
 			variants={RevealAimation}
-
-			transition={{ delay: 0.4, type: 'spring' }}
+			transition={{ delay: 0.2, type: 'spring' }}
 			whileInView={'open'}
 			initial='close'
 			className='mb-20'>
