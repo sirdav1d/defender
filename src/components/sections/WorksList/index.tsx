@@ -3,11 +3,11 @@
 import Container from '@/components/molecules/Container';
 import Tag from '@/components/molecules/Tag';
 import { queryGallery, request } from '@/lib/datocms';
-import ProjectCardList from './ProjectCardList';
+import WorksCardList from '../../molecules/WorksCardList';
 import { MotionDiv } from '@/components/molecules/motionDIv';
 import { RevealAimation } from '@/animations/revealAnimation';
 
-export default async function ProjectsList() {
+export default async function WorksList() {
 	const data: any = await request({ query: queryGallery, revalidate: 30 });
 
 	return (
@@ -41,13 +41,13 @@ export default async function ProjectsList() {
 						</div>
 					</div>
 
-					{/* <ProjectCardList
+					<WorksCardList
 						subscription={{
 							initialData: data,
 							query: queryGallery,
 							token: process.env.NEXT_DATOCMS_TOKEN,
 						}}
-					/> */}
+					/>
 				</>
 			</Container>
 		</div>

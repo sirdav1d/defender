@@ -16,7 +16,7 @@ interface ProjectGalleryprops {
 	images: responsiveImage[];
 }
 
-export default function ProjectGallery(props: ProjectGalleryprops) {
+export default function WorksGallery(props: ProjectGalleryprops) {
 	return (
 		<Carousel
 			className='w-full max-w-2xl mx-auto mt-10'

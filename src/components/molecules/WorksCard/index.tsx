@@ -1,5 +1,5 @@
 /** @format */
-'use client'
+'use client';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -11,12 +11,12 @@ import {
 	DrawerTitle,
 	DrawerTrigger,
 } from '@/components/ui/drawer';
-import { Image } from 'react-datocms';
-import ProjectGallery from '../ProjectGallery';
 import { responsiveImage } from '@/lib/datocms';
 import { MoveRight, X } from 'lucide-react';
+import { Image } from 'react-datocms';
+import WorksGallery from '../WorksGallery';
 
-interface ProjectCardProps {
+interface WorksCardProps {
 	client: string;
 	description: string;
 	coverImage: any;
@@ -24,7 +24,7 @@ interface ProjectCardProps {
 	galleryProject: responsiveImage[];
 }
 
-export default function ProjectCard(props: ProjectCardProps) {
+export default function WorksCard(props: WorksCardProps) {
 	return (
 		<div className='flex flex-col my-10 items-center justify-center relative max-w-[368px]'>
 			<div className='w-full flex flex-col items-center justify-center py-4 gap-2'>
@@ -62,7 +62,7 @@ export default function ProjectCard(props: ProjectCardProps) {
 							<X className='hover:scale-125 duration-200 transition-all ease-linear drop-shadow-icon' />
 						</DrawerClose>
 					</DrawerHeader>
-					<ProjectGallery images={props.galleryProject} />
+					<WorksGallery images={props.galleryProject} />
 				</DrawerContent>
 			</Drawer>
 		</div>

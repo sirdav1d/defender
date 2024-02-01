@@ -5,9 +5,10 @@ import bgImage from '@/../public/images/projects-bg.png';
 import Hero from '@/components/sections/Hero';
 import Services from '@/components/sections/Services';
 import CTA from '@/components/molecules/CTA';
-import ProjectsList from '@/components/sections/ProjectsList';
+import WorksList from '@/components/sections/WorksList';
+// import ProjectsList from '@/components/sections/WorksList';
 
-export default function ProjectsPage() {
+export default async function Projects() {
 	return (
 		<div className='overflow-x-hidden w-full'>
 			<Hero
@@ -19,7 +20,7 @@ export default function ProjectsPage() {
 				}
 			/>
 			<Services />
-			{/* <ProjectsList /> */}
+<WorksList/>
 			<CTA />
 		</div>
 	);

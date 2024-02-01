@@ -5,15 +5,11 @@ import React, { useEffect, useState } from 'react';
 import { useQuerySubscription } from 'react-datocms';
 import { allDefenderProjects } from '@/lib/datocms';
 import Container from '@/components/molecules/Container';
-import ProjectCard from '../ProjectCard';
+import WorksCard from '../WorksCard';
 import { RevealAimation } from '@/animations/revealAnimation';
 import { MotionDiv } from '@/components/molecules/motionDIv';
 
-export default function ProjectCardList({
-	subscription,
-}: {
-	subscription: any;
-}) {
+export default function WorksCardList({ subscription }: { subscription: any }) {
 	const [hydrated, setHydrated] = useState(false);
 
 	useEffect(() => setHydrated(true), []);
@@ -42,7 +38,7 @@ export default function ProjectCardList({
 									whileInView={'open'}
 									key={index}
 									initial='close'>
-									<ProjectCard
+									<WorksCard
 										client={p.client}
 										description={p.description}
 										coverImage={p.coverImage}
