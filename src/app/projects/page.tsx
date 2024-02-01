@@ -19,7 +19,7 @@ export default function ProjectsPage() {
 				}
 			/>
 			<Services />
-			<ProjectsList />
+			{/* <ProjectsList /> */}
 			<CTA />
 		</div>
 	);
