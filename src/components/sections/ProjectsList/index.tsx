@@ -11,7 +11,7 @@ export default async function ProjectsList() {
 	const data: any = await request({ query: queryGallery, revalidate: 30 });
 
 	return (
-		<div>
+		<div className='w-full pb-20'>
 			<Container>
 				<>
 					<div className='flex flex-col gap-5 items-start w-full '>
