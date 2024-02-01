@@ -22,7 +22,6 @@ export default function WorksGallery(props: ProjectGalleryprops) {
 			opts={{ align: 'start', loop: true }}>
 			<CarouselContent>
 				{props.images.map((image: any, index: number) => {
-					console.log(image);
 					return (
 						<CarouselItem key={index}>
 							<Image
