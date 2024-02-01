@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function Culture() {
 	return (
-		<div className='py-20 w-full'>
+		<div className='pb-20 w-full'>
 			<Container>
 				<>
 					<div className='w-full flex items-start flex-col gap-5'>

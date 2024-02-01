@@ -5,6 +5,7 @@ import bgImage from '@/../public/images/projects-bg.png';
 import Hero from '@/components/sections/Hero';
 import Services from '@/components/sections/Services';
 import CTA from '@/components/molecules/CTA';
+import ProjectsList from '@/components/sections/ProjectsList';
 
 export default function ProjectsPage() {
 	return (
@@ -18,6 +19,7 @@ export default function ProjectsPage() {
 				}
 			/>
 			<Services />
+			<ProjectsList />
 			<CTA />
 		</div>
 	);

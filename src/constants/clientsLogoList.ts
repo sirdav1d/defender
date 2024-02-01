@@ -1,0 +1,20 @@
+/** @format */
+import logo04 from '@/../public/logos/clientes/jobim.jpg';
+import logo01 from '@/../public/logos/clientes/dargam.jpg';
+import logo02 from '@/../public/logos/clientes/ams.jpg';
+import logo03 from '@/../public/logos/clientes/ass_contabil.jpg';
+import logo05 from '@/../public/logos/clientes/odonto.jpg';
+import logo06 from '@/../public/logos/clientes/qr.jpg';
+import logo07 from '@/../public/logos/clientes/smirna.jpg';
+import logo08 from '@/../public/logos/clientes/elenco.jpg';
+
+export const logolist = [
+	logo04,
+	logo01,
+	logo02,
+	logo03,
+	logo05,
+	logo06,
+	logo07,
+	logo08,
+];

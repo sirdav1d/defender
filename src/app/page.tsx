@@ -9,6 +9,7 @@ import Rating from '@/components/sections/Rating';
 import Services from '@/components/sections/Services';
 import Who from '@/components/sections/Who';
 import { homeFeatures } from '@/constants/homeFeatures';
+import { logolist } from '@/constants/clientsLogoList';
 
 export default function Home() {
 	return (
@@ -33,7 +34,7 @@ export default function Home() {
 					featureList={homeFeatures}
 				/>
 				<Rating />
-				<LogoList />
+				<LogoList list={logolist} role={'client'} />
 				<CTA />
 			</>
 		</div>

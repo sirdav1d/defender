@@ -1,39 +1,40 @@
 /** @format */
 
+import { RevealAimation } from '@/animations/revealAnimation';
 import Container from '@/components/molecules/Container';
-import { logolist } from '@/constants/logolist';
-import Image from 'next/image';
-import React from 'react';
+import { MotionDiv } from '@/components/molecules/motionDIv';
+import Image, { StaticImageData } from 'next/image';
 
-export default function LogoList() {
+interface LogoListProps {
+	list: any;
+	role: string;
+}
+
+export default function LogoList({ list, role }: LogoListProps) {
 	return (
-		<div className='pb-20'>
+		<div className='py-20'>
 			<Container>
 				<>
-					<ul className='flex gap-5 justify-between items-center w-full'>
-						{logolist.map((l, index) => {
+					<ul
+						data-role={role}
+						className={`grid lg:grid-cols-4 lg:data-[role=partner]:grid-cols-3  gap-10 items-center mx-auto w-full`}>
+						{list.map((l: StaticImageData, index: number) => {
 							return (
-								<li key={index}>
-									<Image
-										className='grayscale hover:grayscale-0 transition-all duration-200 ease-linear'
-										width={160}
-										height={80}
-										src={l}
-										alt='Logo de clientes'></Image>
-								</li>
-							);
-						})}
-					</ul>
-					<ul className='flex gap-5 justify-between items-center w-full'>
-						{logolist.map((l, index) => {
-							return (
-								<li key={index}>
-									<Image
-										className='grayscale hover:grayscale-0 transition-all duration-200 ease-linear'
-										width={160}
-										height={80}
-										src={l}
-										alt='Logo de clientes'></Image>
+								<li
+									key={index}
+									className=' flex items-center justify-center'>
+									<MotionDiv
+										variants={RevealAimation}
+										transition={{ delay: 0.2 * index, type: 'spring' }}
+										whileInView={'open'}
+										initial='close'>
+										<Image
+											className='grayscale hover:grayscale-0 transition-all duration-200 ease-linear object-cover'
+											width={140}
+											height={140}
+											src={l}
+											alt='Logo de clientes'></Image>
+									</MotionDiv>
 								</li>
 							);
 						})}
