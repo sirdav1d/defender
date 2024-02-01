@@ -41,13 +41,13 @@ export default async function ProjectsList() {
 						</div>
 					</div>
 
-					<ProjectCardList
+					{/* <ProjectCardList
 						subscription={{
 							initialData: data,
 							query: queryGallery,
 							token: process.env.NEXT_DATOCMS_TOKEN,
 						}}
-					/>
+					/> */}
 				</>
 			</Container>
 		</div>
