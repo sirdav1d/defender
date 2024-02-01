@@ -23,7 +23,7 @@ export async function sendEmail(values: SendEmailProps) {
 	try {
 		const data = await resend.emails.send({
 			from: 'Website Institucional - Defender <onboarding@resend.dev>',
-			to: 'tars.projetos@gmail.com',
+			to: 'ulysses@defenderinfo.com',
 			subject: 'Um Novo Lead Chegou do Seu Site',
 			react: EmailTemplate({
 				fullName: fullname,

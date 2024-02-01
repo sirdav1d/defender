@@ -39,13 +39,15 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
 							Enviados Abaixo:
 						</Heading>
 						<Hr />
-						<Text>{fullName}</Text>
-						<Text>{email}</Text>
-						<Text>{cel}</Text>
+						<Text className='px-2 mx-auto'>{fullName}</Text>
+						<Text className='px-2 mx-auto'>{email}</Text>
+						<Text className='px-2 mx-auto'>{cel}</Text>
 						<Hr />
-						<Text>{message}</Text>
+						<Text className='px-2 mx-auto'>{message}</Text>
 						<Hr />
-						<Text>Retornaremos em breve com novidades</Text>
+						<Text className='px-2 mx-auto text-xs text-stone-400'>
+							Retornaremos em breve com novidades
+						</Text>
 					</Section>
 				</Container>
 			</Body>
