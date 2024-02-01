@@ -6,9 +6,8 @@ import Hero from '@/components/sections/Hero';
 import Services from '@/components/sections/Services';
 import CTA from '@/components/molecules/CTA';
 import WorksList from '@/components/sections/WorksList';
-// import ProjectsList from '@/components/sections/WorksList';
 
-export default async function Projects() {
+export default function ProjectPage() {
 	return (
 		<div className='overflow-x-hidden w-full'>
 			<Hero
@@ -20,7 +19,7 @@ export default async function Projects() {
 				}
 			/>
 			<Services />
-<WorksList/>
+			<WorksList />
 			<CTA />
 		</div>
 	);

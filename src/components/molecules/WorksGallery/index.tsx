@@ -1,5 +1,4 @@
 /** @format */
-'use client';
 
 import React from 'react';
 import { responsiveImage } from '@/lib/datocms';
