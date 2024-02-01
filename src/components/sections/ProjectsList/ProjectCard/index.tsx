@@ -1,4 +1,5 @@
 /** @format */
+'use client'
 
 import { Button } from '@/components/ui/button';
 import {
@@ -11,7 +12,7 @@ import {
 	DrawerTrigger,
 } from '@/components/ui/drawer';
 import { Image } from 'react-datocms';
-import ProjectGallery from './ProjectGallery';
+import ProjectGallery from '../ProjectGallery';
 import { responsiveImage } from '@/lib/datocms';
 import { MoveRight, X } from 'lucide-react';
 

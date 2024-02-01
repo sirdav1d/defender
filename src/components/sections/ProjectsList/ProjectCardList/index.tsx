@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { useQuerySubscription } from 'react-datocms';
 import { allDefenderProjects } from '@/lib/datocms';
 import Container from '@/components/molecules/Container';
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../ProjectCard';
 import { RevealAimation } from '@/animations/revealAnimation';
 import { MotionDiv } from '@/components/molecules/motionDIv';
 
