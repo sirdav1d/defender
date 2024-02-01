@@ -61,7 +61,7 @@ export default function WorksCard(props: WorksCardProps) {
 							<X className='hover:scale-125 duration-200 transition-all ease-linear drop-shadow-icon' />
 						</DrawerClose>
 					</DrawerHeader>
-					<WorksGallery images={props.galleryProject} />
+					{/* <WorksGallery images={props.galleryProject} /> */}
 				</DrawerContent>
 			</Drawer>
 		</div>
