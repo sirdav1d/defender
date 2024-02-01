@@ -12,12 +12,12 @@ interface LogoListProps {
 
 export default function LogoList({ list, role }: LogoListProps) {
 	return (
-		<div className='py-20'>
+		<div data-role={role} className='data-[role=partner]:py-20 data-[role=client]:pb-20'>
 			<Container>
 				<>
 					<ul
 						data-role={role}
-						className={`grid lg:grid-cols-4 lg:data-[role=partner]:grid-cols-3  gap-10 items-center mx-auto w-full`}>
+						className={`grid lg:grid-cols-4 lg:data-[role=partner]:grid-cols-3 grid-cols-2  gap-10 items-center mx-auto w-full`}>
 						{list.map((l: StaticImageData, index: number) => {
 							return (
 								<li
