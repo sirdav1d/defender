@@ -19,7 +19,7 @@ import { MoveRight } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { useToast } from '@/components/ui/use-toast';
-import { sendEmail } from '@/app/action/send';
+import { sendEmail } from '@/action/send';
 import { useEffect, useState } from 'react';
 import { Checkbox } from '@/components/ui/checkbox';
 
