@@ -179,7 +179,7 @@ export default function FormComponent() {
 										className='bg-stone-50 border checked:bg-brand-orange-300 border-brand-orange-500 focus-visible:ring-1 focus-visible:ring-brand-orange-300'
 									/>
 								</FormControl>
-								<FormLabel className='uppercase font-bold text-xs flex gap-1 flex-row'>
+								<FormLabel className='text-xs text-stone-600 flex gap-1 flex-row'>
 									<p>
 										Aceito receber contatos, {''}
 										<a

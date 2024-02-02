@@ -1,10 +1,8 @@
 /** @format */
 
-import React from 'react';
 import bgImage from '@/../public/images/contact-bg.png';
-import Hero from '@/components/sections/Hero';
 import ContactInfo from '@/components/sections/ContactInfo';
-import CTA from '@/components/molecules/CTA';
+import Hero from '@/components/sections/Hero';
 
 export default function ContactPage() {
 	return (
@@ -18,7 +16,6 @@ export default function ContactPage() {
 				}
 			/>
 			<ContactInfo />
-			<CTA />
 		</div>
 	);
 }
