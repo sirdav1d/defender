@@ -58,7 +58,7 @@ export default function WorksCard(props: WorksCardProps) {
 						<DrawerDescription className='prose'>
 							{props.description}
 						</DrawerDescription>
-						<DrawerClose className='absolute right-10 top-10 text-xl lg:text-2xl text-brand-orange-500 '>
+						<DrawerClose className='absolute right-5 top-5 text-xl lg:text-2xl text-brand-orange-500 '>
 							<X className='hover:scale-125 duration-200 transition-all ease-linear drop-shadow-icon' />
 						</DrawerClose>
 					</DrawerHeader>
