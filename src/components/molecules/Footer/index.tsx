@@ -28,6 +28,7 @@ export default function Footer() {
 								</h2>
 								<div className=' flex gap-5 items-center justify-center'>
 									<a
+										aria-label='contato direto via instagram'
 										href='https://www.instagram.com/defenderinfo/'
 										target='_blank'
 										rel='noopener noreferrer'>
@@ -38,6 +39,7 @@ export default function Footer() {
 									</a>
 
 									<a
+										aria-label='contato direto via whatsapp'
 										className='hover:text-brand-orange-500 transition-all duration-300 ease-in-out text-brand-orange-500 lg:text-stone-100'
 										href='https://api.whatsapp.com/send?phone=5521998966588&text=Ol%C3%A1,%20estava%20navegando%20em%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento'
 										target='_blank'
@@ -45,6 +47,7 @@ export default function Footer() {
 										<FaWhatsapp size={32} />
 									</a>
 									<a
+										aria-label='pagina de envio de email'
 										href='/contact'
 										rel='noopener noreferrer'>
 										<Mail

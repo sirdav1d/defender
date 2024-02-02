@@ -32,7 +32,7 @@ export default function BannerLGPD() {
 		setCookieConsent(true);
 	}
 
-		const { toast } = useToast();
+	const { toast } = useToast();
 
 	function handleDeny() {
 		setCanShow(true);
@@ -57,7 +57,7 @@ export default function BannerLGPD() {
 					initial={{ y: -80, opacity: 0 }}
 					exit={{ y: 80, opacity: 0, transition: { duration: 0.3 } }}
 					className={`fixed bottom-0 center 'flex'   items-center w-full mx-auto h-fit text-brand-neutral-100 text-xs lg:text-sm p-3  z-[999999999999999]`}>
-					<div className=' max-w-[1024px]  rounded-lg gap-1 lg:gap-5 shadow-lg flex flex-col lg:flex-row justify-center items-center mx-auto p-5 bg-stone-50/70 backdrop-blur-sm lg:py-8 lg:px-8 text-stone-200'>
+					<div className=' max-w-[1024px]  rounded-lg gap-1 lg:gap-5 shadow-lg flex flex-col lg:flex-row justify-center items-center mx-auto p-5 bg-stone-50/70 backdrop-blur-sm lg:py-8 lg:px-8 text-stone-50'>
 						<p className='prose-xs text-stone-900 drop-shadow-sm'>
 							Nós utilizamos cookies para melhorar sua experiência como usuário.
 							Para conferir detalhadamente nossas boas práticas, acesse nossas{' '}
@@ -80,15 +80,15 @@ export default function BannerLGPD() {
 							<button
 								onClick={() => handleAccept()}
 								type='button'
-								className={`w-fit px-4 py-2 lg:w-28 lg:h-12 bg-brand-orange-700 rounded-full z-50 disabled:grayscale disabled:hover:grayscale flex gap-2 items-center justify-center text-center hover:bg-brand-orange-500  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide`}>
-								<p className='flex gap-3 items-center justify-center drop-shadow-sm '>
+								className={`w-fit px-4 py-2 lg:w-28 lg:h-12 bg-brand-orange-700 rounded-full   z-50 disabled:grayscale disabled:hover:grayscale flex gap-2 items-center justify-center text-center hover:bg-brand-orange-500  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide`}>
+								<p className='flex gap-3 items-center justify-center drop-shadow-md '>
 									Aceitar
 								</p>
 							</button>
 							<button
 								onClick={() => handleDeny()}
 								type='button'
-								className={`flex items-center justify-center w-fit text-center hover:opacity-80 text-stone-800 hover:text-brand-orange-700  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide`}>
+								className={`flex items-center justify-center w-fit text-center drop-shadow-md hover:opacity-80 text-stone-800 hover:text-brand-orange-700  transition duration-300 mt-3 lg:text-base text-xs font-bold tracking-wide`}>
 								<p className='flex gap-3 items-center justify-center underline '>
 									Recusar
 								</p>

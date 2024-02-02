@@ -35,17 +35,15 @@ export default function Navigation() {
 			{isRouting && <Transition />}
 			{links.map((l, index) => {
 				return (
-					<Link
-						className='hover:text-brand-orange-500 group transition-all duration-300 ease-linear text-xl lg:text-sm flex flex-col'
-						key={index}
-						href={l.href}>
-						<>
-							<li
-								className={`${
-									path === l.href ? 'text-brand-orange-500' : 'text-stone-700'
-								} hover:text-brand-orange-500 transition-all ease-linear duration-200`}>
-								{l.nameLink}
-							</li>
+					<li
+						className={`${
+							path === l.href ? 'text-brand-orange-500' : 'text-stone-700'
+						} hover:text-brand-orange-500 transition-all ease-linear duration-200`}>
+						<Link
+							className='hover:text-brand-orange-500 group transition-all duration-300 ease-linear text-xl lg:text-sm flex flex-col'
+							key={index}
+							href={l.href}>
+							{l.nameLink}
 							<span
 								className={`${
 									path === l.href
@@ -53,8 +51,8 @@ export default function Navigation() {
 										: 'bg-transparent translate-x-4'
 								} h-[2px] w-6  rounded-full mt-1 transition-all duration-300 ease-linear`}
 							/>
-						</>
-					</Link>
+						</Link>
+					</li>
 				);
 			})}
 		</ul>
