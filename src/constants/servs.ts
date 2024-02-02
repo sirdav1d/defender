@@ -10,9 +10,9 @@ import secIcon from '@/../public/icons/camera-de-cftv.png';
 export const servs = [
 	{
 		icon: supIcon,
-		title: 'Suporte Técnico Proativo 24/7',
+		title: 'Monitoramento Proativo 24/7',
 		description:
-			'Mantenha-se operacional o tempo todo com nosso suporte técnico proativo disponível 24/7, garantindo a continuidade do seu negócio',
+			'Mantenha-se operacional o tempo todo com nosso monitoramento proativo disponível 24/7, garantindo a segurança e integridade do seu negócio',
 	},
 	{
 		icon: protecIcon,
