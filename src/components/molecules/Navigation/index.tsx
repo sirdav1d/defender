@@ -38,7 +38,8 @@ export default function Navigation() {
 					<li
 						className={`${
 							path === l.href ? 'text-brand-orange-500' : 'text-stone-700'
-						} hover:text-brand-orange-500 transition-all ease-linear duration-200`}>
+						} hover:text-brand-orange-500 transition-all ease-linear duration-200`}
+						key={index}>
 						<Link
 							className='hover:text-brand-orange-500 group transition-all duration-300 ease-linear text-xl lg:text-sm flex flex-col'
 							key={index}
