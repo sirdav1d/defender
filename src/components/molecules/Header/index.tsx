@@ -1,30 +1,23 @@
 /** @format */
-'use client';
 
 import logo from '@/../public/logos/defender-logo.png';
-import { useScroll } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { SquareUserRound } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Container from '../Container';
 import MenuSheet from '../MenuSheet';
 import Navigation from '../Navigation';
 import { MotionDiv } from '../motionDIv';
-import Transition from '../Transition';
 
 export default function Header() {
-	const { scrollYProgress } = useScroll({
-		offset: ['0% 100%', '10% 100%'],
-	});
-
 	return (
 		<MotionDiv
 			initial={{ y: -20, opacity: 0 }}
 			animate={{ y: 0, opacity: 1 }}
-			className={`z-50 backdrop-blur-sm w-full fixed py-5 shadow-md`}>
+			className={`z-50 backdrop-blur-sm w-full fixed py-4 shadow-md`}>
 			<>
-				<MotionDiv
-					style={{ opacity: scrollYProgress }}
-					className='w-full absolute h-full top-0 left-0 bg-stone-50 -z-10'
-				/>
+				<MotionDiv className='w-full absolute h-full top-0 left-0 bg-stone-50 -z-10' />
 				<Container>
 					<>
 						<div className='flex justify-between items-center w-full opacity-100 '>
@@ -36,8 +29,14 @@ export default function Header() {
 									alt='Logo Defender Soluções Em TI'
 								/>
 							</a>
-							<div className='hidden lg:flex border-l-brand-orange-500'>
+							<div className='hidden lg:flex gap-20 border-l-brand-orange-500 items-center'>
 								<Navigation />
+								<Link href='https://defenderinfo.tomticket.com/' target='_blank'>
+									<Button className='font-medium tracking-wider text-sm p-6 flex gap-3 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] group rounded-none drop-shadow-xl'>
+										<SquareUserRound />
+										Área Do Cliente
+									</Button>
+								</Link>
 							</div>
 							<MenuSheet />
 						</div>

@@ -11,7 +11,7 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from '@/components/ui/sheet';
-import { AlignJustify } from 'lucide-react';
+import { AlignJustify, SquareUserRound } from 'lucide-react';
 import Image from 'next/image';
 import Navigation from '../Navigation';
 import { FaWhatsapp } from 'react-icons/fa6';
@@ -67,7 +67,7 @@ export default function MenuSheet() {
 						</SheetTitle>
 					</SheetHeader>
 
-					<ul className='gap-5 text-stone-100 font-medium flex flex-col lg:flex-row'>
+					<ul className='gap-5 text-stone-100 font-semibold uppercase flex flex-col lg:flex-row'>
 						{isRouting && <Transition />}
 						{links.map((l, index) => {
 							return (
@@ -100,11 +100,14 @@ export default function MenuSheet() {
 						})}
 					</ul>
 
-					<Button className='bg-gradient-to-r from-[#128c7e] to-brand-orange-500 uppercase py-6 w-full flex gap-3 items-center text-sm text-stone-50'>
-						<>
-							<FaWhatsapp size={32} /> Chamar Agora
-						</>
-					</Button>
+					<Link
+						href='https://defenderinfo.tomticket.com/'
+						target='_blank'>
+						<Button className='font-medium tracking-wider text-sm p-6 flex gap-3 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] group rounded-none drop-shadow-xl'>
+							<SquareUserRound />
+							Área Do Cliente
+						</Button>
+					</Link>
 				</SheetContent>
 			</Sheet>
 		</div>

@@ -31,12 +31,12 @@ export default function Navigation() {
 	}, [isRouting]);
 
 	return (
-		<ul className='gap-5 text-stone-100 font-semibold flex flex-col lg:flex-row uppercase'>
+		<ul className='gap-4 text-stone-100 font-semibold flex flex-col lg:flex-row uppercase'>
 			{isRouting && <Transition />}
 			{links.map((l, index) => {
 				return (
 					<Link
-						className='hover:text-brand-orange-500 group transition-all duration-300 ease-linear text-xl lg:text-base flex flex-col'
+						className='hover:text-brand-orange-500 group transition-all duration-300 ease-linear text-xl lg:text-sm flex flex-col'
 						key={index}
 						href={l.href}>
 						<>

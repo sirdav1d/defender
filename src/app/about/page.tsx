@@ -1,13 +1,11 @@
 /** @format */
 
-import React from 'react';
 import bgImage from '@/../public/images/about-bg.png';
-import Hero from '@/components/sections/Hero';
 import CTA from '@/components/molecules/CTA';
 import Culture from '@/components/sections/Culture';
-import Team from '@/components/sections/Team';
-import Timeline from '@/components/sections/Timeline';
+import Hero from '@/components/sections/Hero';
 import LogoList from '@/components/sections/LogoList';
+import Timeline from '@/components/sections/Timeline';
 import { logolist } from '@/constants/partnerLogoList';
 
 export default function AboutPage() {
@@ -26,8 +24,6 @@ export default function AboutPage() {
 				role={'partner'}
 			/>
 			<Culture />
-
-			<Team />
 			<Timeline />
 			<CTA />
 		</div>

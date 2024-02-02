@@ -1,7 +1,9 @@
 /** @format */
 
+import { RevealAimation } from '@/animations/revealAnimation';
 import Container from '@/components/molecules/Container';
 import Tag from '@/components/molecules/Tag';
+import { MotionDiv } from '@/components/molecules/motionDIv';
 import React from 'react';
 
 export default function Timeline() {
@@ -12,20 +14,40 @@ export default function Timeline() {
 					<div className='w-full flex  gap-10 flex-col lg:flex-row'>
 						<div className='xl:w-1/2 w-full flex items-start flex-col gap-5'>
 							<Tag text={'história'}></Tag>
-							<h2 className='font-bold text-2xl lg:text-3xl uppercase mt-2'>
-								Desbravando Fronteiras Tecnológicas
-							</h2>
-							<p className='prose prose-sm lg:prose-lg'>
-								Desbravamos Fronteiras Tecnológicas em Cada Etapa. Conheça os
-								Desafios que Superamos e Como Continuamos a Moldar o Futuro com
-								Inovação
-							</p>
+							<MotionDiv
+								variants={RevealAimation}
+								viewport={{ once: true }}
+								transition={{ delay: 0.2, type: 'spring' }}
+								whileInView={'open'}
+								initial='close'>
+								<h2 className='font-bold text-2xl lg:text-3xl uppercase mt-2'>
+									Desbravando Fronteiras Tecnológicas
+								</h2>
+							</MotionDiv>
+							<MotionDiv
+								variants={RevealAimation}
+								viewport={{ once: true }}
+								transition={{ delay: 0.4, type: 'spring' }}
+								whileInView={'open'}
+								initial='close'>
+								<p className='prose prose-sm lg:prose-lg'>
+									Desbravamos Fronteiras Tecnológicas em Cada Etapa. Conheça os
+									Desafios que Superamos e Como Continuamos a Moldar o Futuro
+									com Inovação
+								</p>
+							</MotionDiv>
 						</div>
 						<div className='xl:w-1/2 w-full'>
-							<div className='relative flex flex-col gap-10 w-full h-full justify-between  '>
+							<div className='relative flex flex-col gap-10 w-full h-full justify-between '>
 								<span className='absolute h-[90%] w-1 rounded-full -z-10 bg-brand-orange-100 translate-x-3 xl:translate-x-4' />
 
-								<div className='flex gap-5 w-full'>
+								<MotionDiv
+									variants={RevealAimation}
+									viewport={{ once: true }}
+									transition={{ delay: 0.2, type: 'spring' }}
+									whileInView={'open'}
+									initial='close'
+									className='flex gap-5 w-full '>
 									<span className='rounded-full bg-brand-orange-300 w-12 h-8 md:w-10 md:h-10 flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
 										1
 									</span>
@@ -40,9 +62,15 @@ export default function Timeline() {
 											inovação e compromisso com o cliente
 										</p>
 									</div>
-								</div>
+								</MotionDiv>
 
-								<div className='flex gap-5 w-full'>
+								<MotionDiv
+									variants={RevealAimation}
+									viewport={{ once: true }}
+									transition={{ delay: 0.4, type: 'spring' }}
+									whileInView={'open'}
+									initial='close'
+									className='flex gap-5 w-full '>
 									<span className=' rounded-full bg-brand-orange-300 w-12 h-8 md:w-10 md:h-10  flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
 										2
 									</span>
@@ -56,8 +84,14 @@ export default function Timeline() {
 											gerenciado, e monitoramento remoto
 										</p>
 									</div>
-								</div>
-								<div className='flex gap-5 w-full'>
+								</MotionDiv>
+								<MotionDiv
+									variants={RevealAimation}
+									viewport={{ once: true }}
+									transition={{ delay: 0.6, type: 'spring' }}
+									whileInView={'open'}
+									initial='close'
+									className='flex gap-5 w-full '>
 									<span className=' rounded-full bg-brand-orange-300 w-12 h-8 md:w-10 md:h-10  flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
 										3
 									</span>
@@ -72,9 +106,15 @@ export default function Timeline() {
 											expertise da empresa em tecnologias de ponta
 										</p>
 									</div>
-								</div>
+								</MotionDiv>
 
-								<div className='flex gap-5 w-full'>
+								<MotionDiv
+									variants={RevealAimation}
+									viewport={{ once: true }}
+									transition={{ delay: 0.8, type: 'spring' }}
+									whileInView={'open'}
+									initial='close'
+									className='flex gap-5 w-full '>
 									<span className=' rounded-full bg-brand-orange-300 w-12 h-8 md:w-10 md:h-10  flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
 										4
 									</span>
@@ -89,9 +129,15 @@ export default function Timeline() {
 											soluções de firewall avançadas
 										</p>
 									</div>
-								</div>
+								</MotionDiv>
 
-								<div className='flex gap-5 w-full'>
+								<MotionDiv
+									variants={RevealAimation}
+									viewport={{ once: true }}
+									transition={{ delay: 1, type: 'spring' }}
+									whileInView={'open'}
+									initial='close'
+									className='flex gap-5 w-full '>
 									<span className=' rounded-full bg-brand-orange-300 w-12 h-8 md:w-10 md:h-10  flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
 										5
 									</span>
@@ -105,7 +151,7 @@ export default function Timeline() {
 											compromisso com o cliente e inovação
 										</p>
 									</div>
-								</div>
+								</MotionDiv>
 							</div>
 						</div>
 					</div>

@@ -10,11 +10,11 @@ import logo08 from '@/../public/logos/clientes/elenco.jpg';
 
 export const logolist = [
 	logo04,
-	logo01,
 	logo02,
+	logo06,
+	logo01,
+	logo07,
 	logo03,
 	logo05,
-	logo06,
-	logo07,
 	logo08,
 ];

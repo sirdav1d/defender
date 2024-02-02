@@ -6,4 +6,4 @@ import logo04 from '@/../public/logos/parceiros/dell.jpg';
 import logo05 from '@/../public/logos/parceiros/microsoft.jpg';
 import logo06 from '@/../public/logos/parceiros/starti.jpg';
 
-export const logolist = [logo01, logo02, logo03, logo04, logo05, logo06];
+export const logolist = [logo05, logo01, logo04, logo02, logo03, logo06];

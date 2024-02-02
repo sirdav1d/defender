@@ -54,18 +54,6 @@ export default function ContactInfo() {
 									<MotionDiv
 										variants={RevealAimation}
 										viewport={{ once: true }}
-										transition={{ delay: 0.8, type: 'spring' }}
-										whileInView={'open'}
-										initial='close'
-										className='flex flex-col gap-3'>
-										<h4 className='uppercase font-bold text-base lg:text-lg'>
-											E-mail
-										</h4>
-										<p className='prose prose-sm'>ulysses@defenderinfo.com</p>
-									</MotionDiv>
-									<MotionDiv
-										variants={RevealAimation}
-										viewport={{ once: true }}
 										transition={{ delay: 1, type: 'spring' }}
 										whileInView={'open'}
 										initial='close'
@@ -73,7 +61,7 @@ export default function ContactInfo() {
 										<h4 className='uppercase font-bold text-base lg:text-lg'>
 											Telefone
 										</h4>
-										<p className='prose prose-sm'>(21) 98378 - 0161</p>
+										<p className='prose prose-sm'>(21) 99896 - 6588</p>
 									</MotionDiv>
 								</div>
 							</div>
@@ -82,7 +70,7 @@ export default function ContactInfo() {
 						<MotionDiv
 							variants={RevealAimation}
 							viewport={{ once: true }}
-							transition={{ delay: 0.2, type: 'spring' }}
+							transition={{ delay: 0.25, type: 'spring' }}
 							whileInView={'open'}
 							initial='close'
 							className='lg:w-1/2 w-full flex items-end justify-center lg:justify-end '>
