@@ -1,5 +1,4 @@
 /** @format */
-'use client';
 
 import logo from '@/../public/logos/defender-logo.png';
 import { Button } from '@/components/ui/button';
@@ -11,41 +10,12 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from '@/components/ui/sheet';
+import { links } from '@/constants/links';
 import { AlignJustify, SquareUserRound } from 'lucide-react';
 import Image from 'next/image';
-import Navigation from '../Navigation';
-import { FaWhatsapp } from 'react-icons/fa6';
-
-import { links } from '@/constants/links';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import Transition from '../Transition';
 
 export default function MenuSheet() {
-	const [isRouting, setIsRouting] = useState(false);
-	const path = usePathname();
-	const [prevPath, setPrevPath] = useState('/');
-
-	useEffect(() => {
-		if (prevPath !== path) {
-			setIsRouting(true);
-		}
-
-		console.log({ path, prevPath });
-	}, [path, prevPath]);
-
-	useEffect(() => {
-		if (isRouting) {
-			setPrevPath(path);
-			const timeout = setTimeout(() => {
-				setIsRouting(false);
-			}, 800);
-
-			return () => clearTimeout(timeout);
-		}
-	}, [isRouting]);
-
 	return (
 		<div className='block lg:hidden'>
 			<Sheet>
@@ -68,7 +38,6 @@ export default function MenuSheet() {
 					</SheetHeader>
 
 					<ul className='gap-5 text-stone-100 font-semibold uppercase flex flex-col lg:flex-row'>
-						{isRouting && <Transition />}
 						{links.map((l, index) => {
 							return (
 								<Link
@@ -77,21 +46,12 @@ export default function MenuSheet() {
 									href={l.href}>
 									<SheetClose className='self-start'>
 										<>
-											<li
-												className={`${
-													path === l.href
-														? 'text-brand-orange-500'
-														: 'text-stone-950'
-												} hover:text-brand-orange-500 transition-all ease-linear duration-200`}>
+											<li className='text-stone-950 hover:text-brand-orange-500 transition-all ease-linear duration-200'>
 												{l.nameLink}
 											</li>
 											<span
 												key={l.href}
-												className={`${
-													path === l.href
-														? 'bg-brand-orange-500'
-														: 'bg-transparent translate-x-4'
-												} h-[2px] w-6  rounded-full mt-2 transition-all duration-300 ease-linear`}
+												className='bg-brand-orange-500	bg-transparent translate-x-4 h-[2px] w-6  rounded-full mt-2 transition-all duration-300 ease-linear'
 											/>
 										</>
 									</SheetClose>

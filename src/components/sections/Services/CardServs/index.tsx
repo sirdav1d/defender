@@ -15,7 +15,7 @@ export default function CardServs({
 	title,
 }: CardServsProps) {
 	return (
-		<Card className='w-full md:w-[368px] h-[248px] bg-stone-100 rounded-none shadow-cardShadow border-none'>
+		<Card className='w-full h-full md:w-[368px] md:h-[248px] bg-stone-100 rounded-none shadow-cardShadow border-none'>
 			<CardHeader>
 				<Image
 					className='drop-shadow-icon'

@@ -26,7 +26,7 @@ interface WorksCardProps {
 
 export default function WorksCard(props: WorksCardProps) {
 	return (
-		<div className='flex flex-col my-10 items-center justify-center relative max-w-[368px]'>
+		<div className='flex flex-col my-10 items-center justify-center relative w-full md:max-w-[368px] '>
 			<div className='w-full flex flex-col items-center justify-center py-4 gap-2'>
 				<Image
 					className='object-contain scale-75'
@@ -38,14 +38,14 @@ export default function WorksCard(props: WorksCardProps) {
 
 				<p className='lg:prose prose-sm text-center'>{props.description}</p>
 			</div>
-			<div className='bg-stone-700 w-[368px] h-[200px] relative'>
+			<div className='bg-stone-700 md:w-[368px] md:h-[200px] relative'>
 				<Image
-					className='absolute mix-blend-overlay w-full h-full bg-blend-darken object-contain'
+					className='absolute mix-blend-overlay bg-blend-darken object-contain'
 					data={props.coverImage.responsiveImage}></Image>
 			</div>
 			<Drawer>
 				<DrawerTrigger asChild>
-					<Button className='font-medium tracking-wider text-lg p-8 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:896px_100px] group rounded-none drop-shadow-xl w-[368px]'>
+					<Button className='font-medium tracking-wider w-full  text-base p-4 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:896px_100px] group rounded-none drop-shadow-xl md:w-[368px]'>
 						Ver Galeria
 						<MoveRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />
 					</Button>

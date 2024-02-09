@@ -39,31 +39,20 @@ export default function ContactInfo() {
 									</p>
 								</MotionDiv>
 							</div>
-							<div className='flex flex-col mt-10 gap-5'>
+
+							<div className='flex w-full justify-between items-center mt-10'>
 								<MotionDiv
 									variants={RevealAimation}
 									viewport={{ once: true }}
-									transition={{ delay: 0.6, type: 'spring' }}
+									transition={{ delay: 1, type: 'spring' }}
 									whileInView={'open'}
-									initial='close'>
-									<h3 className='font-bold text-xl uppercase'>
-										Se Preferir, entre em contato diretamente
-									</h3>
+									initial='close'
+									className='flex flex-col gap-3'>
+									<h4 className='uppercase font-bold text-base lg:text-lg'>
+										Telefone
+									</h4>
+									<p className='prose prose-sm'>(21) 99896 - 6588</p>
 								</MotionDiv>
-								<div className='flex w-full justify-between items-center'>
-									<MotionDiv
-										variants={RevealAimation}
-										viewport={{ once: true }}
-										transition={{ delay: 1, type: 'spring' }}
-										whileInView={'open'}
-										initial='close'
-										className='flex flex-col gap-3'>
-										<h4 className='uppercase font-bold text-base lg:text-lg'>
-											Telefone
-										</h4>
-										<p className='prose prose-sm'>(21) 99896 - 6588</p>
-									</MotionDiv>
-								</div>
 							</div>
 						</div>
 

@@ -53,7 +53,7 @@ export default function Hero({ heading, img, subHead, altImg }: HeroProps) {
 							animate={'open'}
 							initial='close'>
 							<Link href={'/contact'}>
-								<Button className='font-medium tracking-wider text-lg p-8 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:696px_100px] group rounded-none drop-shadow-xl'>
+								<Button className='font-medium tracking-wider text-lg px-6 py-4 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:696px_100px] group rounded-none drop-shadow-xl'>
 									Solicitar Orçamento{' '}
 									<MoveRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />
 								</Button>

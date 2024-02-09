@@ -32,7 +32,7 @@ export default function Header() {
 							<div className='hidden lg:flex gap-20 border-l-brand-orange-500 items-center'>
 								<Navigation />
 								<Link href='https://defenderinfo.tomticket.com/' target='_blank'>
-									<Button className='font-medium tracking-wider text-sm p-6 flex gap-3 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] group rounded-none drop-shadow-xl'>
+									<Button className='font-medium tracking-wider text-sm p-3 flex gap-3 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] group rounded-none drop-shadow-xl'>
 										<SquareUserRound />
 										Área Do Cliente
 									</Button>

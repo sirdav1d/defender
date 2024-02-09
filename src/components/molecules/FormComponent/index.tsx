@@ -205,7 +205,7 @@ export default function FormComponent() {
 					/>
 					<Button
 						disabled={form.formState !== null ? disabled : true}
-						className='font-medium active:bg-right disabled:grayscale hover:disabled:grayscale checked:bg-right w-full tracking-wider text-lg p-8 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:896px_100px] group rounded-none drop-shadow-xl'
+						className='font-medium active:bg-right disabled:grayscale hover:disabled:grayscale checked:bg-right w-full tracking-wider text-lg py-4 px-6 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:896px_100px] group rounded-none drop-shadow-xl'
 						type='submit'>
 						Enviar Mensagem
 						<MoveRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />
