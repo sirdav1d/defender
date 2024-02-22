@@ -28,6 +28,11 @@ const config = {
 					'-6px -6px 18px 0px #FFF, 6px 6px 18px 0px rgba(0, 0, 0, 0.25);',
 			},
 			backgroundImage: {
+				bgHome: "url('/images/seguranca-do-computador.webp')",
+				bgAbout: "url('/images/about-bg.webp')",
+				bgSolutions: "url('/images/solutions-bg.webp')",
+				bgProjects: "url('/images/projects-bg.webp')",
+				bgContact: "url('/images/contact-bg.webp')",
 				bgButtomOrange:
 					'linear-gradient(93deg, #F27405 -5%, #914603 46.15%, #337A74 60.19%, #023531 105.16%)',
 				bgCTA: 'linear-gradient(104deg, #035951 42.57%, #F27405 92.18%)',

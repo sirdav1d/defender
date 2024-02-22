@@ -2,18 +2,24 @@
 'use client';
 import { MotionDiv } from '@/components/molecules/motionDIv';
 import React from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, easeInOut } from 'framer-motion';
 
 export default function Template({ children }: { children: React.ReactNode }) {
 	return (
-		<AnimatePresence mode='wait'>
-			<MotionDiv
-				initial={{ opacity: 0.85, y: 28 }}
-				animate={{ opacity: 1, y: 0, scale: 1 }}
-				exit={{ opacity: 0, y: -28 }}
-				transition={{ duration: 0.5, ease: 'easeInOut' }}>
-				{children}
-			</MotionDiv>
+		<AnimatePresence mode='sync'>
+			{children && (
+				<MotionDiv
+					key={String(children)}
+					initial={{ opacity: 0.9, y: 28 }}
+					animate={{
+						opacity: 1,
+						y: 0,
+						transition: { delay: 0.2, duration: 0.8, ease: 'easeInOut' },
+					}}
+					exit={{ opacity: 0, y: 28 }}>
+					{children}
+				</MotionDiv>
+			)}
 		</AnimatePresence>
 	);
 }

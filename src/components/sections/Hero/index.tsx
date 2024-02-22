@@ -5,29 +5,21 @@ import Container from '@/components/molecules/Container';
 import { MotionDiv } from '@/components/molecules/motionDIv';
 import { Button } from '@/components/ui/button';
 import { MoveRight } from 'lucide-react';
-import Image, { StaticImageData } from 'next/image';
-import React from 'react';
 import Link from 'next/link';
 
 interface HeroProps {
-	img: StaticImageData;
-	altImg: string;
 	heading: string;
 	subHead: string;
+	page: string;
 }
 
-export default function Hero({ heading, img, subHead, altImg }: HeroProps) {
+export default function Hero({ heading, subHead, page }: HeroProps) {
 	return (
-		<div className='relative h-screen'>
+		<div
+			data-page={page}
+			className={`relative h-screen data-[page=home]:bg-bgHome data-[page=about]:bg-bgAbout data-[page=solutions]:bg-bgSolutions  data-[page=projects]:bg-bgProjects data-[page=contact]:bg-bgContact bg-cover bg-no-repeat`}>
 			<Container>
 				<>
-					<Image
-						className='w-full lg:w-screen h-screen absolute object-cover object-left-bottom -z-10 bg-fixed'
-						width={1600}
-						height={800}
-						src={img}
-						alt={altImg}
-					/>
 					<div className='flex flex-col gap-5 w-full h-full lg:max-w-2xl  items-start justify-center lg:mr-auto'>
 						<MotionDiv
 							variants={RevealAimation}

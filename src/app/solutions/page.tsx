@@ -1,19 +1,19 @@
 /** @format */
 
-import React from 'react';
-import bgImage from '@/../public/images/solutions-bg.webp';
-import Hero from '@/components/sections/Hero';
 import CTA from '@/components/molecules/CTA';
 import BenefitsList from '@/components/sections/BenefitsList';
 import Feature from '@/components/sections/Feature';
+import Hero from '@/components/sections/Hero';
+import LogoList from '@/components/sections/LogoList';
+import Rating from '@/components/sections/Rating';
+import { logolist } from '@/constants/clientsLogoList';
 import { solutionsFeatures } from '@/constants/solutionsFeatures';
 
 export default function SolutionsPage() {
 	return (
 		<div className='overflow-x-hidden w-full'>
 			<Hero
-				img={bgImage}
-				altImg={'Técnico de TI Escrevendo em Prancheta'}
+				page='solutions'
 				heading={'Soluções de TI Sob Medida para Seu Sucesso Empresarial'}
 				subHead={
 					'Inovando, Protegendo e Impulsionando Empresas por Meio de Soluções Tecnológicas'
@@ -29,6 +29,11 @@ export default function SolutionsPage() {
 				featureList={solutionsFeatures}
 			/>
 			<CTA />
+			<Rating />
+			<LogoList
+				list={logolist}
+				role={'client'}
+			/>
 		</div>
 	);
 }

@@ -12,6 +12,7 @@ export default function CTA() {
 	return (
 		<MotionDiv
 			variants={RevealAimation}
+			viewport={{ once: true }}
 			transition={{ delay: 0.2, type: 'spring' }}
 			whileInView={'open'}
 			initial='close'
