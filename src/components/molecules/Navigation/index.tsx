@@ -5,27 +5,11 @@
 import { links } from '@/constants/links';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+
 
 export default function Navigation() {
-	const [isRouting, setIsRouting] = useState(false);
+	
 	const path = usePathname();
-	const [prevPath, setPrevPath] = useState('/');
-
-	useEffect(() => {
-		if (prevPath !== path) {
-			setIsRouting(true);
-		}
-	}, [path, prevPath]);
-
-	useEffect(() => {
-		if (isRouting) {
-			setPrevPath(path);
-			setTimeout(() => {
-				setIsRouting(false);
-			}, 5000);
-		}
-	}, [isRouting]);
 
 	return (
 		<ul className='gap-4 text-stone-100 font-semibold flex flex-col lg:flex-row uppercase'>
@@ -37,6 +21,7 @@ export default function Navigation() {
 						} hover:text-brand-orange-500 transition-all ease-linear duration-200`}
 						key={index}>
 						<Link
+							prefetch={true}
 							className='hover:text-brand-orange-500 group transition-all duration-300 ease-linear text-xl lg:text-sm flex flex-col'
 							key={index}
 							href={l.href}>
