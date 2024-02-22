@@ -1,6 +1,6 @@
 /** @format */
 
-import bgImage from '@/../public/images/contact-bg.png';
+import bgImage from '@/../public/images/contact-bg.webp';
 import ContactInfo from '@/components/sections/ContactInfo';
 import Hero from '@/components/sections/Hero';
 

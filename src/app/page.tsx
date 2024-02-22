@@ -1,6 +1,6 @@
 /** @format */
 
-import bgImage from '@/../public/images/seguranca-do-computador.png';
+import bgImage from '@/../public/images/seguranca-do-computador.webp';
 import CTA from '@/components/molecules/CTA';
 import Feature from '@/components/sections/Feature';
 import Hero from '@/components/sections/Hero';
@@ -34,7 +34,10 @@ export default function Home() {
 					featureList={homeFeatures}
 				/>
 				<Rating />
-				<LogoList list={logolist} role={'client'} />
+				<LogoList
+					list={logolist}
+					role={'client'}
+				/>
 				<CTA />
 			</>
 		</div>

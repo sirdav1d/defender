@@ -2,7 +2,7 @@
 
 'use server';
 
-import { EmailTemplate } from '@/components/molecules/Template/emailTemplate';
+import { EmailTemplate } from '@/components/molecules/TemplateEmail/emailTemplate';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);

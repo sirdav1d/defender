@@ -2,7 +2,7 @@
 
 
 import React from 'react';
-import bgImage from '@/../public/images/projects-bg.png';
+import bgImage from '@/../public/images/projects-bg.webp';
 import Hero from '@/components/sections/Hero';
 import Services from '@/components/sections/Services';
 import CTA from '@/components/molecules/CTA';

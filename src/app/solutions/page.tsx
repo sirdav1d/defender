@@ -1,7 +1,7 @@
 /** @format */
 
 import React from 'react';
-import bgImage from '@/../public/images/solutions-bg.png';
+import bgImage from '@/../public/images/solutions-bg.webp';
 import Hero from '@/components/sections/Hero';
 import CTA from '@/components/molecules/CTA';
 import BenefitsList from '@/components/sections/BenefitsList';

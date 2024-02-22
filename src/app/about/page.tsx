@@ -1,6 +1,6 @@
 /** @format */
 
-import bgImage from '@/../public/images/about-bg.png';
+import bgImage from '@/../public/images/about-bg.webp';
 import CTA from '@/components/molecules/CTA';
 import Culture from '@/components/sections/Culture';
 import Hero from '@/components/sections/Hero';

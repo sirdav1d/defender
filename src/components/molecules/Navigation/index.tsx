@@ -6,7 +6,6 @@ import { links } from '@/constants/links';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import Transition from '../Transition';
 
 export default function Navigation() {
 	const [isRouting, setIsRouting] = useState(false);
@@ -17,8 +16,6 @@ export default function Navigation() {
 		if (prevPath !== path) {
 			setIsRouting(true);
 		}
-
-		console.log({ path, prevPath });
 	}, [path, prevPath]);
 
 	useEffect(() => {
@@ -32,7 +29,6 @@ export default function Navigation() {
 
 	return (
 		<ul className='gap-4 text-stone-100 font-semibold flex flex-col lg:flex-row uppercase'>
-			{isRouting && <Transition />}
 			{links.map((l, index) => {
 				return (
 					<li
