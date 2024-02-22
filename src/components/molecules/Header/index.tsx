@@ -12,10 +12,7 @@ import { MotionDiv } from '../motionDIv';
 
 export default function Header() {
 	return (
-		<MotionDiv
-			initial={{ y: -20, opacity: 0 }}
-			animate={{ y: 0, opacity: 1 }}
-			className={`z-50 backdrop-blur-sm w-full fixed py-4 shadow-md`}>
+		<div className={`z-50 backdrop-blur-sm w-full fixed py-4 shadow-md`}>
 			<>
 				<MotionDiv className='w-full absolute h-full top-0 left-0 bg-stone-50 -z-10' />
 				<Container>
@@ -31,7 +28,9 @@ export default function Header() {
 							</a>
 							<div className='hidden lg:flex gap-20 border-l-brand-orange-500 items-center'>
 								<Navigation />
-								<Link href='https://defenderinfo.tomticket.com/' target='_blank'>
+								<Link
+									href='https://defenderinfo.tomticket.com/'
+									target='_blank'>
 									<Button className='font-medium tracking-wider text-sm p-3 flex gap-3 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] group rounded-none drop-shadow-xl'>
 										<SquareUserRound />
 										Área Do Cliente
@@ -43,6 +42,6 @@ export default function Header() {
 					</>
 				</Container>
 			</>
-		</MotionDiv>
+		</div>
 	);
 }
