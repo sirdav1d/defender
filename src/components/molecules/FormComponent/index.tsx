@@ -86,7 +86,7 @@ export default function FormComponent() {
 						control={form.control}
 						name='email'
 						render={({ field }) => (
-							<FormItem className='w-full flex flex-col gap-3'>
+							<FormItem className='w-full flex flex-col gap-2'>
 								<FormLabel className='uppercase font-bold text-base flex gap-1'>
 									<span className='text-sm text-red-500'>*</span>
 									E-mail:
@@ -107,7 +107,7 @@ export default function FormComponent() {
 						control={form.control}
 						name='name'
 						render={({ field }) => (
-							<FormItem className='w-full flex flex-col gap-3'>
+							<FormItem className='w-full flex flex-col gap-2'>
 								<FormLabel className='uppercase font-bold text-base flex gap-1'>
 									<span className='text-sm text-red-500'>*</span>
 									Nome Completo:
@@ -128,7 +128,7 @@ export default function FormComponent() {
 						control={form.control}
 						name='cel'
 						render={({ field }) => (
-							<FormItem className='w-full flex flex-col gap-3'>
+							<FormItem className='w-full flex flex-col gap-2'>
 								<FormLabel
 									aria-required
 									className='uppercase font-bold text-base flex gap-1'>
@@ -151,7 +151,7 @@ export default function FormComponent() {
 						control={form.control}
 						name='message'
 						render={({ field }) => (
-							<FormItem className='w-full flex flex-col gap-3'>
+							<FormItem className='w-full flex flex-col gap-2'>
 								<FormLabel className='uppercase font-bold text-base'>
 									Mensagem:
 								</FormLabel>
@@ -170,7 +170,7 @@ export default function FormComponent() {
 						control={form.control}
 						name='consent'
 						render={({ field }) => (
-							<FormItem className='w-full flex gap-3 items-center justify-center'>
+							<FormItem className='w-full flex gap-2 items-center justify-center'>
 								<FormControl>
 									<Checkbox
 										checked={field.value}
