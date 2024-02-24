@@ -7,7 +7,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
 	return (
 		<MotionDiv
 			key={String(children)}
-			initial={{ opacity: 0.9, y: 28 }}
+			initial={{ opacity: 0.85, y: 28 }}
 			animate={{
 				opacity: 1,
 				y: 0,

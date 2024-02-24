@@ -27,7 +27,7 @@ export default function NotFound() {
 							Algo deu errado, clique no link abaixo e retorne a página inicial
 						</p>
 						<Link href='/'>
-							<Button className='font-medium tracking-wider p-8 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:696px_100px] group rounded-none drop-shadow-xl text-base mt-5 lg:mt-10'>
+							<Button className='font-lg tracking-wider p-4 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:696px_100px] group rounded-none drop-shadow-xl text-base mt-5 lg:mt-10'>
 								Retornar À Página Inicial
 								<MoveRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />
 							</Button>
