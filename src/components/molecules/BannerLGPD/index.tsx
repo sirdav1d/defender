@@ -63,14 +63,12 @@ export default function BannerLGPD() {
 							Para conferir detalhadamente nossas boas práticas, acesse nossas{' '}
 							<a
 								className='hover:text-brand-orange-700 transition duration-300 underline'
-								target='_blank'
 								href='/politics'>
 								Políticas de Privacidade
 							</a>{' '}
 							e{' '}
 							<a
 								className='hover:text-brand-orange-700  transition duration-300 underline'
-								target='_blank'
 								href='/terms'>
 								Termos de uso
 							</a>

@@ -14,7 +14,7 @@ export default function Terms() {
 								1. Termos
 							</h2>
 							<p className='prose mt-5 min-w-full'>
-								Ao acessar ao site
+								Ao acessar ao site&nbsp;
 								<a
 									className='underline text-brand-orange-500 font-medium hover:text-brand-orange-700 transition-all duration-200 ease-linear'
 									href='https://www.defenderinfo.com/'>
@@ -83,9 +83,9 @@ export default function Terms() {
 								<li>
 									Além disso, o Defender Soluções Em TI não garante ou faz
 									qualquer representação relativa à precisão, aos resultados
-									prováveis ou à confiabilidade do uso dos materiais em seu
-									site ou de outra forma relacionado a esses materiais ou em
-									sites vinculados a este site.
+									prováveis ou à confiabilidade do uso dos materiais em seu site
+									ou de outra forma relacionado a esses materiais ou em sites
+									vinculados a este site.
 								</li>
 							</ol>
 							<br />
