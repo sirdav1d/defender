@@ -4,39 +4,39 @@ import supIcon from '@/../public/icons/apoio-suporte.png';
 import protecIcon from '@/../public/icons/protecao-de-dados.png';
 import fireIcon from '@/../public/icons/firewall.png';
 import wifiIcon from '@/../public/icons/sinal-wifi.png';
-import recIcon from '@/../public/icons/recuperacao-de-desastres.png';
+import recIcon from '@/../public/icons/escritorio.png';
 import secIcon from '@/../public/icons/camera-de-cftv.png';
 
 export const servs = [
 	{
 		icon: supIcon,
-		title: 'Monitoramento Proativo 24/7',
+		title: 'Suporte TI Para Empresas',
 		description:
 			'Mantenha-se operacional o tempo todo com nosso monitoramento proativo disponível 24/7, garantindo a segurança e integridade do seu negócio',
 	},
 	{
 		icon: protecIcon,
-		title: 'Proteção Avançada de Dados',
+		title: 'Proteção Avançada De Dados',
 		description:
 			'Salve e guarde informações cruciais com nossa proteção avançada de dados, incluindo backup em nuvem para garantir segurança e recuperação eficientes',
 	},
 	{
 		icon: fireIcon,
-		title: 'Segurança com Firewall',
+		title: 'Segurança De Rede Com Firewall',
 		description:
 			'Garanta a defesa da sua infraestrutura com nossa segurança de redes, incluindo firewall, para proteger contra ameaças cibernéticas e garantir a integridade dos dados',
 	},
 	{
 		icon: wifiIcon,
-		title: 'Rede Wi-Fi Corporativa ',
+		title: 'Instalação De Rede De Dados',
 		description:
 			'Mantenha sua equipe conectada com nossa infraestrutura de rede Wi-Fi corporativa, proporcionando uma conectividade confiável e eficiente no ambiente empresarial',
 	},
 	{
 		icon: recIcon,
-		title: 'Recuperação de Desastres',
+		title: 'Soluções Microsoft',
 		description:
-			'Minimize impactos com nossos serviços de recuperação de desastres, assegurando a rápida retomada das operações após eventos adversos',
+			'A Microsoft oferece uma ampla variedade de serviços que abrangem desde sistemas operacionais e aplicativos de produtividade até soluções de nuvem e desenvolvimento de software',
 	},
 	{
 		icon: secIcon,

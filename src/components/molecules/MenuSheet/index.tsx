@@ -10,10 +10,11 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from '@/components/ui/sheet';
-import { links } from '@/constants/links';
+import { linksMobile } from '@/constants/links';
 import { AlignJustify, SquareUserRound } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function MenuSheet() {
 	return (
@@ -37,23 +38,17 @@ export default function MenuSheet() {
 						</SheetTitle>
 					</SheetHeader>
 
-					<ul className='gap-5 text-stone-100 font-semibold uppercase flex flex-col lg:flex-row'>
-						{links.map((l, index) => {
+					<ul className='gap-5 font-semibold flex flex-col'>
+						{linksMobile.map((l, index) => {
 							return (
 								<Link
-									className='hover:text-brand-orange-500 group transition-all duration-300 ease-linear text-xl lg:text-base flex flex-col'
+									className='hover:text-brand-orange-500 group transition-all duration-300 ease-linear text-xl flex flex-col'
 									key={index}
 									href={l.href}>
-									<SheetClose className='self-start'>
-										<>
-											<li className='text-stone-950 hover:text-brand-orange-500 transition-all ease-linear duration-200'>
-												{l.nameLink}
-											</li>
-											<span
-												key={l.href}
-												className='bg-brand-orange-500	bg-transparent translate-x-4 h-[2px] w-6  rounded-full mt-2 transition-all duration-300 ease-linear'
-											/>
-										</>
+									<SheetClose>
+										<li className='text-stone-700 hover:text-brand-orange-500 transition-all ease-linear duration-200 uppercase '>
+											{l.label}
+										</li>
 									</SheetClose>
 								</Link>
 							);
@@ -63,7 +58,7 @@ export default function MenuSheet() {
 					<Link
 						href='https://defenderinfo.tomticket.com/'
 						target='_blank'>
-						<Button className='font-medium tracking-wider text-sm p-6 flex gap-3 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] group rounded-none drop-shadow-xl'>
+						<Button className='font-medium tracking-wider text-sm p-3 flex gap-3 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] group rounded-none drop-shadow-xl'>
 							<SquareUserRound />
 							Área Do Cliente
 						</Button>

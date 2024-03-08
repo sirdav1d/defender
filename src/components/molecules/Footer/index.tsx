@@ -3,7 +3,7 @@
 import logo from '@/../public/logos/defender-logo.png';
 import { siteMap } from '@/constants/siteMap';
 import Image from 'next/image';
-import { FaWhatsapp } from 'react-icons/fa6';
+import { FaWhatsapp, FaFacebook } from 'react-icons/fa6';
 import Container from '../Container';
 import { Instagram, Mail } from 'lucide-react';
 
@@ -45,6 +45,14 @@ export default function Footer() {
 										target='_blank'
 										rel='noopener noreferrer'>
 										<FaWhatsapp size={32} />
+									</a>
+									<a
+										aria-label='contato direto via facebook'
+										className='hover:text-brand-orange-500 transition-all duration-300 ease-in-out text-brand-orange-500 lg:text-stone-100'
+										href='https://www.facebook.com/defenderinformatica'
+										target='_blank'
+										rel='noopener noreferrer'>
+										<FaFacebook size={32} />
 									</a>
 									<a
 										aria-label='pagina de envio de email'

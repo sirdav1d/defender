@@ -23,7 +23,7 @@ export default function CardServs({
 					height={32}
 					src={icon}
 					alt={title}></Image>
-				<CardTitle className='text-xl bg-clip-text bg-gradient-to-r from-brand-orange-500 to-brand-blue-500 text-transparent'>
+				<CardTitle className='text-xl w-fit bg-clip-text bg-gradient-to-r from-brand-orange-500 to-brand-blue-500 text-transparent'>
 					{title}
 				</CardTitle>
 			</CardHeader>

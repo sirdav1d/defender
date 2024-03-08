@@ -18,6 +18,7 @@ export default function AboutPage() {
 				}
 			/>
 			<LogoList
+			title='Principais Parceiros'
 				list={logolist}
 				role={'partner'}
 			/>

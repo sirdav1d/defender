@@ -47,7 +47,7 @@ export default function Services() {
 							initial='close'>
 							<Link href={'/solutions'}>
 								<Button className='font-medium tracking-wider  text-base px-6 py-4 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:696px_100px] group rounded-none drop-shadow-xl max-w-fit'>
-									Ver Mais Serviços
+									Ver Todas As Soluções
 									<MoveRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />
 								</Button>
 							</Link>

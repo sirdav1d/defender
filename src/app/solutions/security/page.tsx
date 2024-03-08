@@ -8,10 +8,11 @@ import LogoList from '@/components/sections/LogoList';
 import Rating from '@/components/sections/Rating';
 import { logolist } from '@/constants/clientsLogoList';
 import { solutionsFeatures } from '@/constants/solutionsFeatures';
+import React from 'react';
 
-export default function SolutionsPage() {
+export default function Page() {
 	return (
-		<div className='overflow-x-hidden w-full'>
+		<div className='overflow-x-hidden w-full '>
 			<Hero
 				page='solutions'
 				heading={'Soluções de TI Sob Medida para Seu Sucesso Empresarial'}

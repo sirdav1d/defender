@@ -34,6 +34,7 @@ export default function Home() {
 				<CTA />
 				<Rating />
 				<LogoList
+				title='Principais Clientes'
 					list={logolist}
 					role={'client'}
 				/>

@@ -35,9 +35,9 @@ export default function Rating() {
 							whileInView={'open'}
 							initial='close'>
 							<p className='mb-5 lg:prose prose-sm'>
-								Conheça as opiniões de empresas que se tornaram parceiras de
-								sucesso com a Defender Soluções em TI. Suas vozes ressoam a
-								confiança e eficácia dos nossos serviços.
+								Conheça as empresas que se tornaram parceiras de sucesso com a
+								Defender Soluções em TI. Suas vozes ressoam a confiança e
+								eficácia dos nossos serviços.
 							</p>
 						</MotionDiv>
 						<MotionDiv
@@ -54,7 +54,7 @@ export default function Rating() {
 							</Link>{' '}
 						</MotionDiv>
 					</div>
-					<ul className='flex gap-10 justify-between w-full items-end mt-10 flex-col lg:flex-row'>
+					<ul className='gap-10 justify-between w-full items-end mt-10 flex-col lg:flex-row hidden'>
 						{ratings.map((r, index) => {
 							return (
 								<li
