@@ -1,7 +1,9 @@
-import feat01 from '@/../public/images/features-solutions/empresario-fazendo-login-em-seu-tablet 1.png'
-import feat02 from '@/../public/images/features-solutions/standard-quality-control-concept-m 1.png';
-import feat03 from '@/../public/images/features-solutions/network-switch-with-cables 1.png';
-import feat04 from '@/../public/images/features-solutions/cctv-security-technology-with-lock-icon-digital-remix 1.png';
+/** @format */
+
+import feat01 from '@/../public/images/solutions/empresario-fazendo-login-em-seu-tablet 1.png';
+import feat02 from '@/../public/images/solutions/standard-quality-control-concept-m 1.png';
+import feat03 from '@/../public/images/solutions/network-switch-with-cables 1.png';
+import feat04 from '@/../public/images/solutions/cctv-security-technology-with-lock-icon-digital-remix 1.png';
 
 export const solutionsFeatures = [
 	{

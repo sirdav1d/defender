@@ -8,6 +8,8 @@ import LogoList from '@/components/sections/LogoList';
 import Rating from '@/components/sections/Rating';
 import { logolist } from '@/constants/clientsLogoList';
 import { solutionsFeatures } from '@/constants/solutionsFeatures';
+import Solutions from '@/components/sections/Solutons';
+import { solutions } from '@/constants/solutions';
 
 export default function SolutionsPage() {
 	return (
@@ -20,14 +22,17 @@ export default function SolutionsPage() {
 				}
 			/>
 			<BenefitsList />
-			<Feature
-				tag={'experiência'}
-				heading={'Explorando Nossas inovações Tecnológicas'}
-				description={
-					'Descubra Como Nossos Serviços Personalizados Elevam Sua Experiência Tecnológica Empresarial'
-				}
-				featureList={solutionsFeatures}
-			/>
+
+			{solutions.map((s, index) => {
+				return (
+					<Solutions
+						key={index}
+						title={s.title}
+						bullets={s.bullets}
+						side={s.side}
+						img={s.img}></Solutions>
+				);
+			})}
 			<CTA />
 			<Rating />
 			<LogoList
