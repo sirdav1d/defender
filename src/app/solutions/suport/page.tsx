@@ -7,19 +7,14 @@ import Hero from '@/components/sections/Hero';
 import LogoList from '@/components/sections/LogoList';
 import Rating from '@/components/sections/Rating';
 import { logolist } from '@/constants/clientsLogoList';
-import { solutionsFeatures } from '@/constants/solutionsFeatures';
+import { supFeatures } from '@/constants/supFeatures';
 import React from 'react';
+import HeroSup from '../../../components/sections/heroSolution/hero';
 
 export default function Page() {
 	return (
 		<div className='overflow-x-hidden w-full '>
-			<Hero
-				page='solutions'
-				heading={'Soluções de TI Sob Medida para Seu Sucesso Empresarial'}
-				subHead={
-					'Inovando, Protegendo e Impulsionando Empresas por Meio de Soluções Tecnológicas'
-				}
-			/>
+			<HeroSup />
 			<BenefitsList />
 			<Feature
 				tag={'experiência'}
@@ -27,7 +22,7 @@ export default function Page() {
 				description={
 					'Descubra Como Nossos Serviços Personalizados Elevam Sua Experiência Tecnológica Empresarial'
 				}
-				featureList={solutionsFeatures}
+				featureList={supFeatures}
 			/>
 			<CTA />
 			<Rating />

@@ -69,7 +69,7 @@ export default function Feature(props: AllFeatureProps) {
 											initial='close'>
 											<Image
 												className='drop-shadow-md'
-												width={580}
+												width={400}
 												height={240}
 												src={b.image}
 												alt={b.title}></Image>

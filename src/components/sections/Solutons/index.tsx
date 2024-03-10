@@ -5,12 +5,14 @@ import Container from '@/components/molecules/Container';
 import { MoveRight, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 interface SolutionProps {
 	title: string;
 	bullets: string[];
 	img: StaticImageData;
 	side: string;
+	href: string;
 }
 
 export default function Solutions({
@@ -18,6 +20,7 @@ export default function Solutions({
 	img,
 	bullets,
 	side,
+	href,
 }: SolutionProps) {
 	return (
 		<section className='w-full h-[80vh] overflow-x-hidden py-10 '>
@@ -41,10 +44,14 @@ export default function Solutions({
 								);
 							})}
 						</ul>
-						<Button className='font-medium w-fit tracking-wider text-lg px-6 py-4 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:696px_100px] group rounded-none drop-shadow-xl'>
-							Saiba Mais{' '}
-							<MoveRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />
-						</Button>
+						<Link
+							href={href}
+							prefetch>
+							<Button className='font-medium w-fit tracking-wider text-lg px-6 py-4 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:696px_100px] group rounded-none drop-shadow-xl'>
+								Saiba Mais{' '}
+								<MoveRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />
+							</Button>
+						</Link>
 					</div>
 
 					<div className='lg:w-1/2 w-full h-full relative overflow-hidden'>

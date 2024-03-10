@@ -19,6 +19,7 @@ export const solutions = [
 			'Manutenção Preventiva Automatizada',
 		],
 		img: supImage,
+		href: '/solutions/suport',
 	},
 	{
 		title: 'Proteção de Dados',
@@ -31,6 +32,7 @@ export const solutions = [
 			'Backup De Dados Microsoft Office 365',
 		],
 		img: protImage,
+		href: '/solutions/protect',
 	},
 	{
 		title: 'Segurança De Rede (FIREWALL)',
@@ -43,6 +45,7 @@ export const solutions = [
 			'Gerenciamento De Provedores De Internet',
 		],
 		img: fireImage,
+		href: '/solutions/firewall',
 	},
 	{
 		title: 'Instalação De Rede De Dados',
@@ -55,6 +58,7 @@ export const solutions = [
 			'Instalação E Configuração De Equipamentos De Rede',
 		],
 		img: installImage,
+		href: '/solutions/install',
 	},
 	{
 		title: 'Soluções Microsoft',
@@ -67,6 +71,7 @@ export const solutions = [
 			'Implantação De Microsoft Azure',
 		],
 		img: microsoftImage,
+		href: '/solutions/microsoft',
 	},
 	{
 		title: 'Segurança Eletrõnica',
@@ -79,5 +84,6 @@ export const solutions = [
 			'Integração Com Sistema De Controle De Acesso',
 		],
 		img: secImage,
+		href: '/solutions/security',
 	},
 ];

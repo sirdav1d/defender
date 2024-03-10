@@ -2,13 +2,11 @@
 
 import CTA from '@/components/molecules/CTA';
 import BenefitsList from '@/components/sections/BenefitsList';
-import Feature from '@/components/sections/Feature';
 import Hero from '@/components/sections/Hero';
 import LogoList from '@/components/sections/LogoList';
 import Rating from '@/components/sections/Rating';
-import { logolist } from '@/constants/clientsLogoList';
-import { solutionsFeatures } from '@/constants/solutionsFeatures';
 import Solutions from '@/components/sections/Solutons';
+import { logolist } from '@/constants/clientsLogoList';
 import { solutions } from '@/constants/solutions';
 
 export default function SolutionsPage() {
@@ -30,7 +28,8 @@ export default function SolutionsPage() {
 						title={s.title}
 						bullets={s.bullets}
 						side={s.side}
-						img={s.img}></Solutions>
+						img={s.img}
+						href={s.href}></Solutions>
 				);
 			})}
 			<CTA />
