@@ -12,7 +12,13 @@ import HeroSolution from '../../../components/sections/heroSolution';
 export default function Page() {
 	return (
 		<div className='overflow-x-hidden w-full '>
-			<HeroSolution />
+			<HeroSolution
+				title={'Transforme Desafios Em Oportunidades Com Nosso'}
+				spanTitle={'Suporte TI'}
+				subHeadLine={
+					'Soluções tecnológicas e sob medida para sua sua Equipe para se Concentrar em Prioridades Estratégicas e alcançar novos patamares'
+				}
+			/>
 			<BenefitsList />
 			<Feature
 				tag={'experiência'}

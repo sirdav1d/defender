@@ -8,14 +8,24 @@ import { MoveRight } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 
-export default function HeroSolution() {
+interface HeroSolutionProps {
+	title: string;
+	spanTitle: string;
+	subHeadLine: string;
+}
+
+export default function HeroSolution({
+	spanTitle,
+	title,
+	subHeadLine,
+}: HeroSolutionProps) {
 	return (
 		<div className={`relative h-screen `}>
 			<Container>
 				<>
 					<span className='h-6 w-40 lg:w-80 blur-3xl bg-brand-orange-500 absolute top-40  lg:top-80 left-0  lg:left-1/4 -rotate-45'></span>
 					<span className='h-6 w-40 lg:w-56 blur-3xl bg-brand-orange-500 absolute bottom-80 right-0 lg:right-1/3 rotate-45'></span>
-					<div className='absolute bottom-16 h-16 w-8 border-2 rounded-full border-brand-orange-500 bg-transparent'>
+					<div className='absolute bottom-12 h-16 w-8 border-2 rounded-full border-brand-orange-500 bg-transparent'>
 						<MotionSpan
 							animate={{ y: 40 }}
 							initial={{ y: 0 }}
@@ -26,15 +36,15 @@ export default function HeroSolution() {
 							}}
 							className='bg-brand-orange-500 flex w-4 h-4 rounded-full z-10 m-auto'></MotionSpan>
 					</div>
-					<div className='flex flex-col gap-5 w-full h-full lg:max-w-2xl text-center  items-center justify-center'>
+					<div className='flex flex-col gap-5 w-full h-full lg:max-w-2xl xl:max-w-4xl lg:text-center  lg:items-center justify-center'>
 						<MotionDiv
 							variants={RevealAimation}
 							transition={{ delay: 0.2, type: 'spring' }}
 							animate={'open'}
 							initial='close'>
-							<h1 className='text-stone-900 font-extrabold text-3xl lg:text-4xl tracking-wider uppercase drop-shadow-md text-center leading-snug lg:leading-tight'>
-								Nosso Time Está Pronto para
-								<span className='text-brand-orange-500'> Atender Você</span>
+							<h1 className='text-stone-900 font-extrabold text-2xl lg:text-4xl tracking-wider uppercase drop-shadow-md lg:text-center leading-snug lg:leading-tight'>
+								{title}
+								<span className='text-brand-orange-500'> {spanTitle}</span>
 							</h1>
 						</MotionDiv>
 						<MotionDiv
@@ -43,8 +53,7 @@ export default function HeroSolution() {
 							animate={'open'}
 							initial='close'>
 							<h2 className='text-stone-700 prose prose-sm lg:prose-lg font-normal leading-relaxed tracking-wide capitalize drop-shadow-md mb-10'>
-								Estamos à Disposição. Entre em Contato e Descubra Como Podemos
-								Fortalecer Sua Presença Digital e Impulsionar Seu Sucesso
+								{subHeadLine}
 							</h2>
 						</MotionDiv>
 						<MotionDiv

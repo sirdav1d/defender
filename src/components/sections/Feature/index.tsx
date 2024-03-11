@@ -1,6 +1,7 @@
 /** @format */
 
 import { RevealAimation } from '@/animations/revealAnimation';
+import { SlideUpAnimation } from '@/animations/slideUp';
 import Container from '@/components/molecules/Container';
 import Tag from '@/components/molecules/Tag';
 import { MotionDiv } from '@/components/molecules/motionDIv';
@@ -62,13 +63,14 @@ export default function Feature(props: AllFeatureProps) {
 										data-role={b.side}
 										className='flex items-center w-full flex-col-reverse lg:flex-row  justify-between gap-10 lg:data-[role=right]:flex-row-reverse'>
 										<MotionDiv
-											variants={RevealAimation}
+											className='overflow-hidden'
+											variants={SlideUpAnimation}
 											viewport={{ once: true }}
 											transition={{ delay: 0.2, type: 'spring' }}
 											whileInView={'open'}
 											initial='close'>
 											<Image
-												className='drop-shadow-md'
+												className='drop-shadow-md hover:scale-110 duration-200 ease-linear transition-all'
 												width={400}
 												height={240}
 												src={b.image}
