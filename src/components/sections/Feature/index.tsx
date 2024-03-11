@@ -28,7 +28,7 @@ export default function Feature(props: AllFeatureProps) {
 	return (
 		<div
 			id='solutions'
-			className='py-20 w-full'>
+			className='py-12 my-12 w-full'>
 			<Container>
 				<>
 					<ul className=' w-full'>
