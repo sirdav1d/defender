@@ -26,7 +26,9 @@ interface AllFeatureProps {
 
 export default function Feature(props: AllFeatureProps) {
 	return (
-		<div className='py-20 w-full'>
+		<div
+			id='solutions'
+			className='py-20 w-full'>
 			<Container>
 				<>
 					<ul className=' w-full'>

@@ -23,7 +23,7 @@ export default function Solutions({
 	href,
 }: SolutionProps) {
 	return (
-		<section className='w-full h-[80vh] overflow-x-hidden py-10 '>
+		<section  className='w-full h-[80vh] overflow-x-hidden py-10 '>
 			<Container>
 				<div
 					data-side={side}
