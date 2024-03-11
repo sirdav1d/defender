@@ -26,7 +26,7 @@ export default function HeroSolution({
 					<span className='h-6 w-40 lg:w-80 blur-3xl bg-brand-orange-500 absolute top-40  lg:top-80 left-0  lg:left-1/4 -rotate-45'></span>
 					<span className='h-6 w-40 lg:w-56 blur-3xl bg-brand-orange-500 absolute bottom-80 right-0 lg:right-1/3 rotate-45'></span>
 					<a href='#solutions'>
-						<div className='absolute bottom-12 h-16 w-8 border-2 rounded-full border-brand-orange-500 bg-transparent'>
+						<div className='absolute bottom-20 lg:bottom-12 h-16 w-8 border-2 rounded-full border-brand-orange-500 bg-transparent'>
 							<MotionSpan
 								animate={{ y: 40 }}
 								initial={{ y: 0 }}
