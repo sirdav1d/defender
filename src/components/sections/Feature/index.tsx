@@ -35,7 +35,7 @@ export default function Feature(props: AllFeatureProps) {
 							return (
 								<li
 									key={index}
-									className=' w-full '>
+									className=' w-full mb-10'>
 									<div
 										data-role={b.side}
 										className='flex items-center w-full flex-col-reverse lg:flex-row  justify-between gap-10 lg:data-[role=right]:flex-row-reverse'>
