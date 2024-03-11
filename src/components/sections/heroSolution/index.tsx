@@ -8,7 +8,7 @@ import { MoveRight } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 
-export default function HeroSup() {
+export default function HeroSolution() {
 	return (
 		<div className={`relative h-screen `}>
 			<Container>

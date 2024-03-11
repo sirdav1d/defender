@@ -3,18 +3,16 @@
 import CTA from '@/components/molecules/CTA';
 import BenefitsList from '@/components/sections/BenefitsList';
 import Feature from '@/components/sections/Feature';
-import Hero from '@/components/sections/Hero';
 import LogoList from '@/components/sections/LogoList';
 import Rating from '@/components/sections/Rating';
 import { logolist } from '@/constants/clientsLogoList';
 import { supFeatures } from '@/constants/supFeatures';
-import React from 'react';
-import HeroSup from '../../../components/sections/heroSolution/hero';
+import HeroSolution from '../../../components/sections/heroSolution';
 
 export default function Page() {
 	return (
 		<div className='overflow-x-hidden w-full '>
-			<HeroSup />
+			<HeroSolution />
 			<BenefitsList />
 			<Feature
 				tag={'experiência'}
