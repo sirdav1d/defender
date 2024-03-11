@@ -29,36 +29,13 @@ export default function Feature(props: AllFeatureProps) {
 		<div className='py-20 w-full'>
 			<Container>
 				<>
-					<div className='flex flex-col gap-5 w-full'>
-						<Tag text={props.tag}></Tag>
-						<div className='flex justify-between mt-2 items-start flex-col xl:flex-row gap-5 w-full'>
-							<MotionDiv
-								variants={RevealAimation}
-								viewport={{ once: true }}
-								transition={{ delay: 0.2, type: 'spring' }}
-								whileInView={'open'}
-								initial='close'>
-								<h2 className='font-bold uppercase text-2xl lg:text-3xl  mt-2'>
-									{props.heading}
-								</h2>
-							</MotionDiv>
-							<MotionDiv
-								variants={RevealAimation}
-								viewport={{ once: true }}
-								transition={{ delay: 0.4, type: 'spring' }}
-								whileInView={'open'}
-								initial='close'>
-								<p className='lg:prose prose-sm'>{props.description}</p>
-							</MotionDiv>
-						</div>
-					</div>
 					<ul className=' w-full'>
 						{' '}
 						{props.featureList?.map((b, index) => {
 							return (
 								<li
 									key={index}
-									className='mt-10 w-full '>
+									className=' w-full '>
 									<div
 										data-role={b.side}
 										className='flex items-center w-full flex-col-reverse lg:flex-row  justify-between gap-10 lg:data-[role=right]:flex-row-reverse'>
