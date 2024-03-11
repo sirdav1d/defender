@@ -70,7 +70,7 @@
   * {
     @apply border-border;
     scroll-behavior: smooth;
-    scroll-margin: 112px;
+    scroll-margin: 128px;
   }
   body {
     @apply bg-background text-foreground;

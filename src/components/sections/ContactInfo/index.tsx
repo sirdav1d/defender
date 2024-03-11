@@ -12,7 +12,9 @@ export default function ContactInfo() {
 		<div className='py-20'>
 			<Container>
 				<>
-					<div className='flex w-full justify-between items-baseline flex-col gap-10 lg:gap-0 lg:flex-row'>
+					<div
+						id='form'
+						className='flex w-full justify-between items-baseline flex-col gap-10 lg:gap-0 lg:flex-row'>
 						<div className='lg:w-1/2 justify-between flex flex-col  '>
 							<div className='flex flex-col gap-5 '>
 								<Tag text={'iniciativa'}></Tag>
@@ -42,13 +44,12 @@ export default function ContactInfo() {
 						</div>
 
 						<MotionDiv
-							id='form'
 							variants={RevealAimation}
 							viewport={{ once: true }}
 							transition={{ delay: 0.25, type: 'spring' }}
 							whileInView={'open'}
 							initial='close'
-							className='lg:w-1/2 w-full flex items-end justify-center lg:justify-end '>
+							className='lg:w-1/2 w-full flex items-end justify-center lg:justify-end'>
 							<FormComponent />
 						</MotionDiv>
 					</div>

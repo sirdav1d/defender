@@ -81,12 +81,12 @@ export default function FormComponent() {
 			<Form {...form}>
 				<form
 					onSubmit={form.handleSubmit(onSubmit)}
-					className='border border-brand-orange-500/20 shadow-cardShadow flex flex-col bg-stone-50 items-center py-5 px-10 justify-center gap-10 w-full lg:max-w-[480px]'>
+					className='border border-brand-orange-500/20 shadow-cardShadow flex flex-col bg-stone-50 items-center py-5 px-10 justify-center gap-7 w-full lg:max-w-[480px]'>
 					<FormField
 						control={form.control}
 						name='email'
 						render={({ field }) => (
-							<FormItem className='w-full flex flex-col gap-2'>
+							<FormItem className='w-full flex flex-col gap-1'>
 								<FormLabel className='uppercase font-bold text-base flex gap-1'>
 									<span className='text-sm text-red-500'>*</span>
 									E-mail:
@@ -107,7 +107,7 @@ export default function FormComponent() {
 						control={form.control}
 						name='name'
 						render={({ field }) => (
-							<FormItem className='w-full flex flex-col gap-2'>
+							<FormItem className='w-full flex flex-col gap-1'>
 								<FormLabel className='uppercase font-bold text-base flex gap-1'>
 									<span className='text-sm text-red-500'>*</span>
 									Nome Completo:
@@ -128,7 +128,7 @@ export default function FormComponent() {
 						control={form.control}
 						name='cel'
 						render={({ field }) => (
-							<FormItem className='w-full flex flex-col gap-2'>
+							<FormItem className='w-full flex flex-col gap-1'>
 								<FormLabel
 									aria-required
 									className='uppercase font-bold text-base flex gap-1'>
@@ -151,7 +151,7 @@ export default function FormComponent() {
 						control={form.control}
 						name='message'
 						render={({ field }) => (
-							<FormItem className='w-full flex flex-col gap-2'>
+							<FormItem className='w-full flex flex-col gap-1'>
 								<FormLabel className='uppercase font-bold text-base'>
 									Mensagem:
 								</FormLabel>
