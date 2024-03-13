@@ -20,14 +20,7 @@ export default function Page() {
 				}
 			/>
 			<BenefitsList />
-			<Feature
-				tag={'experiência'}
-				heading={'Explorando Nossas inovações Tecnológicas'}
-				description={
-					'Descubra Como Nossos Serviços Personalizados Elevam Sua Experiência Tecnológica Empresarial'
-				}
-				featureList={supFeatures}
-			/>
+			<Feature featureList={supFeatures} />
 			<CTA />
 			<Rating />
 			<LogoList

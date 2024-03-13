@@ -18,9 +18,9 @@ interface FeatureProps {
 }
 
 interface AllFeatureProps {
-	tag: string;
-	heading: string;
-	description: string;
+	tag?: string;
+	heading?: string;
+	description?: string;
 	featureList: FeatureProps[];
 }
 

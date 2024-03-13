@@ -39,7 +39,7 @@ export default function HeroSolution({
 						</div>
 					</a>
 
-					<div className='flex flex-col -mt-10 gap-3 w-full h-full lg:max-w-2xl lg:text-center  lg:items-center justify-center lg:mt-10'>
+					<div className='flex flex-col -mt-5 gap-3 w-full h-full lg:max-w-2xl lg:text-center  lg:items-center justify-center lg:mt-10'>
 						<MotionDiv
 							variants={RevealAimation}
 							transition={{ delay: 0.2, type: 'spring' }}
@@ -61,6 +61,7 @@ export default function HeroSolution({
 							</h2>
 						</MotionDiv>
 						<MotionDiv
+						className='lg:mt-10'
 							variants={RevealAimation}
 							transition={{ delay: 0.6, type: 'spring' }}
 							animate={'open'}

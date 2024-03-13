@@ -10,6 +10,16 @@ import feat07 from '@/../public/images/solutions/install/wifi.png';
 import feat08 from '@/../public/images/solutions/install/infra.png';
 import feat09 from '@/../public/images/solutions/install/conector.png';
 import feat10 from '@/../public/images/solutions/network-switch-with-cables 1.png';
+import feat11 from '@/../public/images/solutions/protec/backup.png';
+import feat12 from '@/../public/images/solutions/protec/custos.png';
+import feat13 from '@/../public/images/solutions/protec/armazenamento.png';
+import feat14 from '@/../public/images/solutions/protec/backup-monitorado.png';
+import feat15 from '@/../public/images/solutions/protec/microsoft.png';
+import feat16 from '@/../public/images/solutions/suporte/antivirus.png';
+import feat17 from '@/../public/images/solutions/suporte/monitoramento.png';
+import feat18 from '@/../public/images/solutions/protec-rede/vpn.png';
+import feat19 from '@/../public/images/solutions/protec-rede/acesso.png';
+import feat20 from '@/../public/images/solutions/protec-rede/provedor.png';
 
 export const supFeatures = [
 	{
@@ -94,5 +104,91 @@ export const instFeatures = [
 		title: 'Instalação e configuração de Equipamentos de Rede',
 		description:
 			'A instalação e configuração de equipamentos de rede são passos essenciais para garantir uma infraestrutura de comunicação eficiente. Com expertise técnica, instalamos e configuramos roteadores, switches e outros dispositivos, otimizando o desempenho da rede. Isso resulta em conectividade estável, segura e adaptável às necessidades de sua empresa',
+	},
+];
+
+export const protFeatures = [
+	{
+		image: feat11,
+		side: 'left',
+		tag: 'Recuperação',
+		title: 'Backup e Recuperação de Dados',
+		description:
+			'Backup e recuperação de dados são pilares da segurança cibernética. Ao implementar estratégias de backup robustas e processos de recuperação eficientes, protegemos seus dados contra ameaças e desastres. Confie em nossa expertise para manter seus dados seguros e sua empresa protegida contra qualquer eventualidade',
+	},
+	{
+		image: feat12,
+		side: 'right',
+		tag: 'Eficiência',
+		title: 'Redução de Custos Operacionais',
+		description:
+			'A redução de custos operacionais é o caminho para aumentar a rentabilidade. Com uma abordagem focada na eficiência, você diminui gastos desnecessários e aumenta a produtividade. Isso garante uma operação mais enxuta e competitiva no mercado',
+	},
+	{
+		image: feat13,
+		side: 'left',
+		tag: 'Proteção',
+		title: 'Armazenamento Seguro de Dados',
+		description:
+			'O armazenamento seguro de dados é a base da confiança e segurança da sua empresa. Com soluções avançadas de armazenamento em infraestruturas protegidas, garantimos a proteção e acessibilidade dos seus dados. Isso oferece tranquilidade e confiança aos seus clientes, fortalecendo sua posição no mercado',
+	},
+	{
+		image: feat14,
+		side: 'right',
+		tag: 'Automação',
+		title: 'Backup Monitorado e Automatizado',
+		description:
+			'O backup monitorado e automatizado oferece proteção robusta para seus dados. Com supervisão constante e automação inteligente, garantimos a integridade e disponibilidade das informações cruciais da sua empresa. Isso proporciona segurança e confiança, mantendo seus negócios em pleno funcionamento em qualquer situação',
+	},
+	{
+		image: feat15,
+		side: 'left',
+		tag: 'Conta Protegida',
+		title: 'Backup De Dados Microsoft Office 365',
+		description:
+			'O Backup de Dados Microsoft Office 365 é a proteção essencial para sua colaboração na nuvem. Com soluções de backup eficientes, preservamos a integridade e disponibilidade dos seus dados críticos. Isso assegura que sua equipe possa colaborar sem interrupções, mantendo a produtividade e o sucesso dos projetos',
+	},
+];
+
+export const fireFeatures = [
+	{
+		image: feat16,
+		side: 'left',
+		tag: 'Segurança',
+		title: 'Proteção contra Ameaças Cibernéticas',
+		description:
+			'A Proteção contra Ameaças Cibernéticas é a barreira entre sua empresa e os perigos online. Com tecnologias de ponta e monitoramento contínuo, protegemos seus ativos digitais contra ameaças como ransomware e phishing. Isso assegura a operação segura e ininterrupta do seu negócio',
+	},
+	{
+		image: feat17,
+		side: 'right',
+		tag: 'Supervisão',
+		title: 'Monitoramento DE REDE em Tempo Real',
+		description:
+			'O Monitoramento de Rede em Tempo Real é sua linha de defesa contra ameaças ocultas e interrupções não planejadas. Com análise em tempo real e relatórios detalhados, detectamos e mitigamos problemas rapidamente, minimizando o tempo de inatividade. Proteja seus ativos digitais e mantenha sua empresa funcionando sem problemas com nosso monitoramento proativo',
+	},
+	{
+		image: feat18,
+		side: 'left',
+		tag: 'Rede Privada Virtual',
+		title: 'Acesso remoto seguro (vpn)',
+		description:
+			'O Acesso Remoto Seguro (VPN) é a solução para manter a continuidade dos negócios em qualquer circunstância. Com conexões criptografadas, garantimos que seus funcionários acessem a rede corporativa de forma segura, de qualquer lugar do mundo. Isso proporciona flexibilidade e eficiência operacional, mesmo em situações adversas',
+	},
+	{
+		image: feat19,
+		side: 'right',
+		tag: 'Produtividade',
+		title: 'Controle de Acesso À INTERNET',
+		description:
+			'O Controle de Acesso à Internet é uma medida fundamental para gerenciar e proteger o uso da rede em sua empresa. Com ferramentas avançadas, podemos restringir o acesso a sites maliciosos e não relacionados ao trabalho, garantindo a segurança dos dados e a produtividade dos funcionários',
+	},
+	{
+		image: feat20,
+		side: 'left',
+		tag: 'Velocidade',
+		title: 'gerenciamento de provedores de internet',
+		description:
+			'O Gerenciamento de Provedores de Internet é a chave para garantir uma conexão estável e eficiente em sua empresa. Com supervisão especializada, monitoramos o desempenho dos provedores, otimizando a largura de banda e resolvendo problemas rapidamente. Isso assegura uma conectividade confiável para suas operações comerciais',
 	},
 ];

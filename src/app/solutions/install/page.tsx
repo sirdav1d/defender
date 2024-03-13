@@ -3,14 +3,12 @@
 import CTA from '@/components/molecules/CTA';
 import BenefitsList from '@/components/sections/BenefitsList';
 import Feature from '@/components/sections/Feature';
-import Hero from '@/components/sections/Hero';
 import LogoList from '@/components/sections/LogoList';
 import Rating from '@/components/sections/Rating';
 import HeroSolution from '@/components/sections/heroSolution';
 import { logolist } from '@/constants/clientsLogoList';
 import { instFeatures } from '@/constants/features';
 
-import React from 'react';
 
 export default function Page() {
 	return (
@@ -23,14 +21,7 @@ export default function Page() {
 				}
 			/>
 			<BenefitsList />
-			<Feature
-				tag={'experiência'}
-				heading={'Explorando Nossas inovações Tecnológicas'}
-				description={
-					'Descubra Como Nossos Serviços Personalizados Elevam Sua Experiência Tecnológica Empresarial'
-				}
-				featureList={instFeatures}
-			/>
+			<Feature featureList={instFeatures} />
 			<CTA />
 			<Rating />
 			<LogoList
