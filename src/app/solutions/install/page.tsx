@@ -16,7 +16,7 @@ export default function Page() {
 	return (
 		<div className='overflow-x-hidden w-full '>
 			<HeroSolution
-				title={'Transforme sua Infraestrutura com Nossa'}
+				title={'Transforme sua operação com Nossa'}
 				spanTitle={'Instalação de Rede de Dados'}
 				subHeadLine={
 					'Soluções Profissionais e Uma Infraestrutura Confíavel para Impulsionar sua Comunicação e Eficiência Empresarial'
