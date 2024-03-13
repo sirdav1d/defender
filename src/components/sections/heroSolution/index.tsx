@@ -26,9 +26,9 @@ export default function HeroSolution({
 					<span className='h-6 w-44 lg:w-80 blur-3xl bg-brand-orange-500 absolute top-40  lg:top60 left-0  lg:left-28 -rotate-45'></span>
 					<span className='h-6 w-40 lg:w-56 blur-3xl bg-brand-orange-500 absolute bottom-80 right-0 lg:right-1/4 rotate-45'></span>
 					<a href='#solutions'>
-						<div className='absolute bottom-8 h-16 w-8 border-2 rounded-full border-brand-orange-500 bg-transparent'>
+						<div className='absolute bottom-14 lg:bottom-10 h-12 w-6 border-2 rounded-full border-brand-orange-500 bg-transparent'>
 							<MotionSpan
-								animate={{ y: 40 }}
+								animate={{ y: 24 }}
 								initial={{ y: 0 }}
 								transition={{
 									type: 'spring',
@@ -39,7 +39,7 @@ export default function HeroSolution({
 						</div>
 					</a>
 
-					<div className='flex flex-col gap-5 w-full h-full lg:max-w-2xl lg:text-center  lg:items-center justify-center lg:mt-10'>
+					<div className='flex flex-col gap-3 w-full h-full lg:max-w-2xl lg:text-center  lg:items-center justify-center lg:mt-10'>
 						<MotionDiv
 							variants={RevealAimation}
 							transition={{ delay: 0.2, type: 'spring' }}
@@ -56,7 +56,7 @@ export default function HeroSolution({
 							transition={{ delay: 0.4, type: 'spring' }}
 							animate={'open'}
 							initial='close'>
-							<h2 className='text-stone-700 prose prose-sm lg:prose-lg font-normal leading-relaxed tracking-wide capitalize drop-shadow-md mb-8'>
+							<h2 className='text-stone-700 prose prose-sm lg:prose-lg font-normal leading-relaxed tracking-wide capitalize drop-shadow-md mb-5'>
 								{subHeadLine}
 							</h2>
 						</MotionDiv>
