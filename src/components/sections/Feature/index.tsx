@@ -31,13 +31,13 @@ export default function Feature(props: AllFeatureProps) {
 			className='py-12 my-12 w-full'>
 			<Container>
 				<>
-					<ul className=' w-full'>
+					<ul className=' w-full '>
 						{' '}
 						{props.featureList?.map((b, index) => {
 							return (
 								<li
 									key={index}
-									className=' w-full mb-10'>
+									className=' w-full mb-24'>
 									<div
 										data-role={b.side}
 										className='flex items-center w-full flex-col-reverse lg:flex-row  justify-between gap-10 lg:data-[role=right]:flex-row-reverse'>
@@ -49,7 +49,7 @@ export default function Feature(props: AllFeatureProps) {
 											whileInView={'open'}
 											initial='close'>
 											<Image
-												className='w-full h-[324px] max-w-[600px] object-cover drop-shadow-md hover:scale-110 duration-200 ease-linear transition-all'
+												className='w-full lg:h-[324px] max-w-[600px] object-cover drop-shadow-md hover:scale-110 duration-200 ease-linear transition-all'
 												width={1000}
 												height={1080}
 												src={b.image}
