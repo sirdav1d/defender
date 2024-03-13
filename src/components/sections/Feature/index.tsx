@@ -42,20 +42,20 @@ export default function Feature(props: AllFeatureProps) {
 										data-role={b.side}
 										className='flex items-center w-full flex-col-reverse lg:flex-row  justify-between gap-10 lg:data-[role=right]:flex-row-reverse'>
 										<MotionDiv
-											className='overflow-hidden'
+											className='overflow-hidden  w-full'
 											variants={SlideUpAnimation}
 											viewport={{ once: true }}
 											transition={{ delay: 0.2, type: 'spring' }}
 											whileInView={'open'}
 											initial='close'>
 											<Image
-												className='w-full max-w-[600px] drop-shadow-md hover:scale-110 duration-200 ease-linear transition-all'
+												className='w-full h-[324px] max-w-[600px] object-cover drop-shadow-md hover:scale-110 duration-200 ease-linear transition-all'
 												width={1000}
 												height={1080}
 												src={b.image}
 												alt={b.title}></Image>
 										</MotionDiv>
-										<div className='flex flex-col gap-5'>
+										<div className='flex flex-col gap-5 w-full'>
 											<Tag text={b.tag}></Tag>
 											<MotionDiv
 												variants={RevealAimation}

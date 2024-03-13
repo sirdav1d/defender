@@ -19,7 +19,7 @@ export default function Page() {
 				title={'Mantenha sua Empresa Segura com Nossas Soluções de'}
 				spanTitle={'Proteção de Dados'}
 				subHeadLine={
-					'Soluções Profissionais e Uma Infraestrutura Confíavel para Impulsionar sua Comunicação e Eficiência Empresarial'
+					'Mantenha seus Dados Seguros com Nossa Abordagem Proativa e Personalizada para a Segurança Cibernética'
 				}
 			/>
 			<BenefitsList />

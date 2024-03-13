@@ -17,7 +17,7 @@ export default function Page() {
 				title={'Transforme sua operação com Nossa'}
 				spanTitle={'Instalação de Rede de Dados'}
 				subHeadLine={
-					'Soluções Profissionais e Uma Infraestrutura Confíavel para Impulsionar sua Comunicação e Eficiência Empresarial'
+					'Velocidade, Segurança e Estabilidade para uma Comunicação Sem Interrupções na sua Empresa'
 				}
 			/>
 			<BenefitsList />

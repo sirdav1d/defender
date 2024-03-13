@@ -16,7 +16,7 @@ export default function Page() {
 				title={'Proteja sua Empresa Com'}
 				spanTitle={'Nossa Segurança de Rede'}
 				subHeadLine={
-					'Soluções Profissionais e Uma Infraestrutura Confíavel para Impulsionar sua Comunicação e Eficiência Empresarial'
+					'Soluções De Firewall Avançado e Medidas de Segurança para Defender sua Rede de Ameaças Cibernéticas'
 				}
 			/>
 			<BenefitsList />
