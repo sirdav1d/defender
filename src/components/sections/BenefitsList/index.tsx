@@ -23,7 +23,7 @@ export default function BenefitsList() {
 									transition={{ delay: 0.2, type: 'spring' }}
 									whileInView={'open'}
 									initial='close'>
-									<h2 className='font-bold uppercase text-2xl lg:text-3xl  mt-2'>
+									<h2 className='font-bold uppercase text-2xl lg:text-3xl lg:max-w-[80%] mt-2'>
 										Benefícios Personalizados para Sua Empresa
 									</h2>
 								</MotionDiv>

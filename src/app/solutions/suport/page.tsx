@@ -6,7 +6,7 @@ import Feature from '@/components/sections/Feature';
 import LogoList from '@/components/sections/LogoList';
 import Rating from '@/components/sections/Rating';
 import { logolist } from '@/constants/clientsLogoList';
-import { supFeatures } from '@/constants/supFeatures';
+import { supFeatures } from '@/constants/features';
 import HeroSolution from '../../../components/sections/heroSolution';
 
 export default function Page() {

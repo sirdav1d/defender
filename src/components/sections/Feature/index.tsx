@@ -49,9 +49,9 @@ export default function Feature(props: AllFeatureProps) {
 											whileInView={'open'}
 											initial='close'>
 											<Image
-												className='drop-shadow-md hover:scale-110 duration-200 ease-linear transition-all'
-												width={400}
-												height={240}
+												className='w-full max-w-[600px] drop-shadow-md hover:scale-110 duration-200 ease-linear transition-all'
+												width={1000}
+												height={1080}
 												src={b.image}
 												alt={b.title}></Image>
 										</MotionDiv>

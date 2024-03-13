@@ -23,8 +23,8 @@ export default function HeroSolution({
 		<div className={`relative h-screen `}>
 			<Container>
 				<>
-					<span className='h-6 w-40 lg:w-80 blur-3xl bg-brand-orange-500 absolute top-40  lg:top-80 left-0  lg:left-1/4 -rotate-45'></span>
-					<span className='h-6 w-40 lg:w-56 blur-3xl bg-brand-orange-500 absolute bottom-80 right-0 lg:right-1/3 rotate-45'></span>
+					<span className='h-6 w-44 lg:w-80 blur-3xl bg-brand-orange-500 absolute top-40  lg:top60 left-0  lg:left-28 -rotate-45'></span>
+					<span className='h-6 w-40 lg:w-56 blur-3xl bg-brand-orange-500 absolute bottom-80 right-0 lg:right-1/4 rotate-45'></span>
 					<a href='#solutions'>
 						<div className='absolute bottom-20 lg:bottom-12 h-16 w-8 border-2 rounded-full border-brand-orange-500 bg-transparent'>
 							<MotionSpan
@@ -39,7 +39,7 @@ export default function HeroSolution({
 						</div>
 					</a>
 
-					<div className='flex flex-col gap-5 w-full h-full lg:max-w-2xl xl:max-w-4xl lg:text-center  lg:items-center justify-center'>
+					<div className='flex flex-col gap-5 w-full h-full lg:max-w-2xl lg:text-center  lg:items-center justify-center mt-10'>
 						<MotionDiv
 							variants={RevealAimation}
 							transition={{ delay: 0.2, type: 'spring' }}
@@ -47,6 +47,7 @@ export default function HeroSolution({
 							initial='close'>
 							<h1 className='text-stone-900 font-extrabold text-2xl lg:text-4xl tracking-wider uppercase drop-shadow-md lg:text-center leading-snug lg:leading-tight'>
 								{title}
+								<br />
 								<span className='text-brand-orange-500'> {spanTitle}</span>
 							</h1>
 						</MotionDiv>
@@ -60,7 +61,6 @@ export default function HeroSolution({
 							</h2>
 						</MotionDiv>
 						<MotionDiv
-							className='mt-10'
 							variants={RevealAimation}
 							transition={{ delay: 0.6, type: 'spring' }}
 							animate={'open'}
