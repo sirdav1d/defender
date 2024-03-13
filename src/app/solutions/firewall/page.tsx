@@ -13,8 +13,8 @@ export default function Page() {
 	return (
 		<div className='overflow-x-hidden w-full '>
 			<HeroSolution
-				title={'Proteja sua Empresa Com'}
-				spanTitle={'Nossa Segurança de Rede'}
+				title={'Proteja sua Empresa Com Nossa'}
+				spanTitle={'Segurança de Rede'}
 				subHeadLine={
 					'Soluções De Firewall Avançado e Medidas de Segurança para Defender sua Rede de Ameaças Cibernéticas'
 				}
