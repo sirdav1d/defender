@@ -20,6 +20,16 @@ import feat17 from '@/../public/images/solutions/suporte/monitoramento.png';
 import feat18 from '@/../public/images/solutions/protec-rede/vpn.png';
 import feat19 from '@/../public/images/solutions/protec-rede/acesso.png';
 import feat20 from '@/../public/images/solutions/protec-rede/provedor.png';
+import feat21 from '@/../public/images/solutions/microsoft-solutions.png';
+import feat22 from '@/../public/images/solutions/microsoft/email.png';
+import feat23 from '@/../public/images/solutions/protec-data/backup-monitorado.png';
+import feat24 from '@/../public/images/solutions/microsoft/servidor-windows.png';
+import feat25 from '@/../public/images/solutions/microsoft/azure.png';
+import feat26 from '@/../public/images/solutions/security/planejamento.png';
+import feat27 from '@/../public/images/solutions/security/install.png';
+import feat28 from '@/../public/images/solutions/security/monitoramento.png';
+import feat29 from '@/../public/images/solutions/security/software.png';
+import feat30 from '@/../public/images/solutions/security/acesso.png';
 
 export const supFeatures = [
 	{
@@ -190,5 +200,91 @@ export const fireFeatures = [
 		title: 'gerenciamento de provedores de internet',
 		description:
 			'O Gerenciamento de Provedores de Internet é a chave para garantir uma conexão estável e eficiente em sua empresa. Com supervisão especializada, monitoramos o desempenho dos provedores, otimizando a largura de banda e resolvendo problemas rapidamente. Isso assegura uma conectividade confiável para suas operações comerciais',
+	},
+];
+
+export const microFeatures = [
+	{
+		image: feat21,
+		side: 'left',
+		tag: 'colaboração online',
+		title: 'Produtividade em nuvem (office 365)',
+		description:
+			'A Produtividade em Nuvem (Office 365) revoluciona a forma como sua equipe trabalha. Com ferramentas de colaboração online, como o Microsoft Word, Excel e Outlook, você pode acessar, editar e compartilhar arquivos de qualquer lugar. Isso aumenta a eficiência, promove a colaboração e permite que sua empresa cresça em um ambiente digital',
+	},
+	{
+		image: feat22,
+		side: 'right',
+		tag: 'Credibilidade',
+		title: 'configuração de e-mail profissional',
+		description:
+			'A Configuração de E-mail Profissional é o primeiro passo para uma comunicação empresarial de sucesso. Com configuração personalizada e segura, garantimos que sua empresa tenha um e-mail profissional confiável. Desde a configuração inicial até a integração com dispositivos, cuidamos de todos os detalhes para garantir uma experiência de e-mail perfeita e produtiva',
+	},
+	{
+		image: feat23,
+		side: 'left',
+		tag: 'Segurança',
+		title: 'compartilhamento de arquivos em nuvem',
+		description:
+			'O Compartilhamento de Arquivos em Nuvem é a chave para uma colaboração ágil e eficaz. Com armazenamento seguro na nuvem e acesso instantâneo a documentos importantes, sua equipe pode colaborar em projetos de forma transparente e eficiente. Isso promove a inovação, impulsiona o crescimento e fortalece a competitividade da sua empresa no mercado',
+	},
+	{
+		image: feat24,
+		side: 'right',
+		tag: 'Armazenamento',
+		title: 'instalação de servidores windows',
+		description:
+			'A Instalação de Servidores Windows é o alicerce para uma operação de TI sólida e escalável. Com profissionais qualificados, configuramos servidores Windows para atender às necessidades específicas da sua empresa. Isso proporciona uma plataforma robusta para executar aplicativos essenciais, armazenar dados com segurança e garantir a continuidade dos negócios',
+	},
+	{
+		image: feat25,
+		side: 'left',
+		tag: 'infraestrutura',
+		title: 'implantação de Microsoft Azure',
+		description:
+			'A Implantação de Microsoft Azure transforma sua empresa digitalmente. Com uma abordagem personalizada, migramos seus aplicativos e dados para a nuvem Azure de forma eficiente. Isso proporciona escalabilidade, segurança avançada e uma ampla gama de serviços para impulsionar a inovação e o crescimento dos negócios',
+	},
+];
+
+export const secFeatures = [
+	{
+		image: feat26,
+		side: 'left',
+		tag: 'Desenvolvimento Integral',
+		title: 'Planejamento de Infraestrutura de cftv',
+		description:
+			'O Planejamento de Infraestrutura de CFTV é crucial para garantir uma vigilância eficaz e abrangente. Com análise detalhada do ambiente, identificamos pontos críticos e necessidades de cobertura. Isso resulta em um sistema de vigilância bem projetado, maximizando a segurança e a proteção do seu espaço',
+	},
+	{
+		image: feat27,
+		side: 'right',
+		tag: 'Implantação Completa',
+		title: 'instalação de sistema cftv completo',
+		description:
+			'A Instalação de Sistema CFTV Completo oferece proteção abrangente para sua propriedade. Com planejamento detalhado e instalação profissional, configuramos câmeras estrategicamente para cobrir todos os pontos críticos. Isso proporciona monitoramento contínuo e gravação de alta qualidade, fortalecendo a segurança e prevenindo incidentes indesejados',
+	},
+	{
+		image: feat28,
+		side: 'left',
+		tag: 'Monitoramento online',
+		title: 'Monitoramento em tempo real',
+		description:
+			'A Implantação de Visualização e Monitoramento em Tempo Real é a chave para uma segurança proativa e eficaz. Com tecnologia avançada, configuramos sistemas de vigilância para fornecer acesso instantâneo a imagens ao vivo. Isso permite detectar e responder a ameaças em tempo real, garantindo a proteção contínua da sua propriedade e das pessoas que a frequentam',
+	},
+	{
+		image: feat29,
+		side: 'right',
+		tag: 'Integração de dispositivos',
+		title: 'configuração de software de monitoremanto integrado',
+		description:
+			'A Configuração de Software de Monitoramento Integrado oferece uma solução completa para a segurança da sua propriedade. Com a integração de diferentes sistemas de vigilância em uma plataforma centralizada, garantimos uma visão unificada e controle total sobre sua segurança. Isso proporciona eficiência operacional, facilitando a detecção e resposta a eventos de segurança de forma rápida e eficaz',
+	},
+	{
+		image: feat30,
+		side: 'left',
+		tag: 'sistemas escaláveis',
+		title: 'INTEGRAÇÃO COM SISTEMA DE CONTROLE DE ACESSO',
+		description:
+			'A Integração com Sistema de Controle de Acesso é a chave para uma segurança abrangente e eficiente. Ao unir sistemas de vigilância e controle de acesso, garantimos um controle centralizado sobre quem entra e sai da sua propriedade. Isso fortalece a segurança, permitindo uma resposta rápida a eventos e garantindo a proteção de pessoas e bens',
 	},
 ];
