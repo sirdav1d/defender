@@ -12,36 +12,42 @@ export const servs = [
 		icon: supIcon,
 		title: 'Suporte TI Para Empresas',
 		description:
-			'Mantenha-se operacional o tempo todo com nosso monitoramento proativo disponível 24/7, garantindo a segurança e integridade do seu negócio',
+			'Foco no monitoramento remoto proativo 24X7, suporte a instalações e configurações para estações de trabalhos, servidores, dispositivos de rede. Apoio ao usuário final com atendimentos remotos e presenciais',
+		href: '/solutions/suport',
 	},
 	{
 		icon: protecIcon,
-		title: 'Proteção Avançada De Dados',
+		title: 'Proteção De Dados',
 		description:
-			'Salve e guarde informações cruciais com nossa proteção avançada de dados, incluindo backup em nuvem para garantir segurança e recuperação eficientes',
+			'Quando o inesperado acontece, tenha a tranquilidade de saber que pode restaurar os dados da sua Empresa com segurança. Este é um serviço primordial para manter os dados da sua empresa seguros na nuvem',
+		href: '/solutions/protect',
 	},
 	{
 		icon: fireIcon,
 		title: 'Segurança De Rede Com Firewall',
 		description:
-			'Garanta a defesa da sua infraestrutura com nossa segurança de redes, incluindo firewall, para proteger contra ameaças cibernéticas e garantir a integridade dos dados',
+			'Aumente a proteção da rede da sua Empresa com nosso serviço de segurança de redes com Firewall. Proteja-se contra ameaças cibernéticas e ataques Hackers',
+		href: '/solutions/firewall',
 	},
 	{
 		icon: wifiIcon,
 		title: 'Instalação De Rede De Dados',
 		description:
-			'Mantenha sua equipe conectada com nossa infraestrutura de rede Wi-Fi corporativa, proporcionando uma conectividade confiável e eficiente no ambiente empresarial',
+			'Planejamos e Implantamos redes locais com Cabeamento Estruturado e Redes WI-FI de alta performance',
+		href: '/solutions/install',
 	},
 	{
 		icon: recIcon,
 		title: 'Soluções Microsoft',
 		description:
-			'A Microsoft oferece uma ampla variedade de serviços que abrangem desde sistemas operacionais e aplicativos de produtividade até soluções de nuvem e desenvolvimento de software',
+			'A Microsoft oferece uma ampla variedade de serviços, desde aplicativos de produtividade a soluções em nuvem! Entre em contato e conheça soluções que podem te ajudar a evoluir ainda mais',
+		href: '/solutions/microsoft',
 	},
 	{
 		icon: secIcon,
 		title: 'Segurança Eletrônica',
 		description:
-			'Oferecemos soluções abrangentes de segurança, incluindo sistemas avançados de monitoramento de CFTV para proteger seu ambiente empresarial',
+			'Oferecemos soluções de monitoramento CFTV e Controle de acesso para proteger a sua Empresa',
+		href: '/solutions/security',
 	},
 ];

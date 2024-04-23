@@ -16,7 +16,7 @@ export default function Services() {
 			<Container>
 				<>
 					<div className='flex flex-col gap-5 max-w-3xl w-full mr-auto  '>
-						<Tag text={'Inovação'} />
+						<Tag text={'INOVAÇÃO CONSTANTE'} />
 						<MotionDiv
 							variants={RevealAimation}
 							viewport={{ once: true }}
@@ -24,7 +24,7 @@ export default function Services() {
 							whileInView={'open'}
 							initial='close'>
 							<h2 className='font-bold text-2xl lg:text-3xl uppercase mt-2'>
-								Soluções Integradas de TI
+								SOLUÇÕES GERENCIADAS DE TI
 							</h2>
 						</MotionDiv>
 						<MotionDiv
@@ -34,41 +34,31 @@ export default function Services() {
 							whileInView={'open'}
 							initial='close'>
 							<p className='mb-5 lg:prose prose-sm '>
-								Integramos suporte personalizado, segurança avançada
-								einfraestrutura de rede para proporcionar soluções de TI
-								abrangentes e eficientes
+								Aumente a produtividade da sua Empresa e diminua as dores de
+								cabeça com incidentes tecnológicos
 							</p>
-						</MotionDiv>
-						<MotionDiv
-							variants={RevealAimation}
-							transition={{ delay: 0.6, type: 'spring' }}
-							viewport={{ once: true }}
-							whileInView={'open'}
-							initial='close'>
-							<Link href={'/solutions'}>
-								<Button className='font-medium tracking-wider  text-base px-6 py-4 flex gap-4 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:696px_100px] group rounded-none drop-shadow-xl max-w-fit'>
-									Ver Todas As Soluções
-									<MoveRight className='transition-all duration-300 ease-linear group-hover:translate-x-2' />
-								</Button>
-							</Link>
 						</MotionDiv>
 					</div>
 					<ul className='grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-5 w-full   mt-10  '>
 						{servs.map((s, index) => {
 							return (
 								<li key={index}>
-									<MotionDiv
-										variants={RevealAimation}
-										transition={{ delay: 0.15 * index, type: 'spring' }}
-										viewport={{ once: true }}
-										whileInView={'open'}
-										initial='close'>
-										<CardServs
-											icon={s.icon}
-											title={s.title}
-											description={s.description}
-										/>
-									</MotionDiv>
+									<Link
+										href={s.href}
+										className='hover:drop-shadow-2xl transition-all duration-300 ease-linear '>
+										<MotionDiv
+											variants={RevealAimation}
+											transition={{ delay: 0.15 * index, type: 'spring' }}
+											viewport={{ once: true }}
+											whileInView={'open'}
+											initial='close'>
+											<CardServs
+												icon={s.icon}
+												title={s.title}
+												description={s.description}
+											/>
+										</MotionDiv>
+									</Link>
 								</li>
 							);
 						})}

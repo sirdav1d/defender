@@ -37,7 +37,7 @@ export const solutions: {
 	icon: any;
 }[] = [
 	{
-		nameLink: 'Suporte TI',
+		nameLink: 'Suporte TI Para Empresas',
 		href: '/solutions/suport',
 		description:
 			'Mantenha-se operacional o tempo todo com nosso suporte corporativo',

@@ -17,14 +17,15 @@ export default function AboutPage() {
 					'Somos uma Equipe Orientada por Pessoas, Movida por Inovação e Focada em Gerar Resultados para Nossos Clientes'
 				}
 			/>
-			<LogoList
-			title='Principais Parceiros'
-				list={logolist}
-				role={'partner'}
-			/>
+
 			<Culture />
 			<CTA />
 			<Timeline />
+			<LogoList
+				title='Principais Parceiros'
+				list={logolist}
+				role={'partner'}
+			/>
 		</div>
 	);
 }

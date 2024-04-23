@@ -31,15 +31,16 @@ export default function Timeline() {
 								whileInView={'open'}
 								initial='close'>
 								<p className='prose prose-sm lg:prose-lg'>
-									Desbravamos Fronteiras Tecnológicas em Cada Etapa. Conheça os
-									Desafios que Superamos e Como Continuamos a Moldar o Futuro
-									com Inovação
+									Com pouco mais de 15 anos de existência, a empresa já cresceu
+									fortemente e forma um respeitável portfólio de clientes e
+									parceiros que utilizam seus serviços de suporte, manutenção e
+									consultoria de TI
 								</p>
 							</MotionDiv>
 						</div>
 						<div className='xl:w-1/2 w-full'>
 							<div className='relative flex flex-col gap-10 w-full h-full justify-between '>
-								<span className='absolute h-[90%] w-1 rounded-full -z-10 bg-brand-orange-100 translate-x-3 xl:translate-x-4' />
+								<span className='absolute h-[70%] w-1 rounded-full -z-10 bg-brand-orange-100 translate-x-3.5 xl:translate-x-5' />
 
 								<MotionDiv
 									variants={RevealAimation}
@@ -48,18 +49,16 @@ export default function Timeline() {
 									whileInView={'open'}
 									initial='close'
 									className='flex gap-5 w-full '>
-									<span className='rounded-full bg-brand-orange-300 w-12 h-8 md:w-10 md:h-10 flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
+									<span className='rounded-full bg-brand-orange-300 h-8 w-12 md:h-10 flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
 										1
 									</span>
 									<div className='flex flex-col gap-2'>
 										<h3 className='font-bold uppercase text-base'>
-											2005 - Fundação da Defender Soluções em TI
+											2009 - Fundação da Defender Soluções em TI
 										</h3>
 										<p className='prose lg:prose-sm text-xs'>
-											A empresa nasce com a missão de fornecer serviços e
-											consultoria em TI para empresas de diversos segmentos. Os
-											fundadores estabelecem os princípios fundamentais de
-											inovação e compromisso com o cliente
+											Uma empresa que nasceu da paixão de seus profissionais
+											pela utilização da tecnologia da informação
 										</p>
 									</div>
 								</MotionDiv>
@@ -71,17 +70,18 @@ export default function Timeline() {
 									whileInView={'open'}
 									initial='close'
 									className='flex gap-5 w-full '>
-									<span className=' rounded-full bg-brand-orange-300 w-12 h-8 md:w-10 md:h-10  flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
+									<span className=' rounded-full bg-brand-orange-300 w-12 h-8  md:h-10  flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
 										2
 									</span>
 									<div className='flex flex-col gap-2'>
 										<h3 className='font-bold uppercase text-base'>
-											2010 - Expansão do Portfólio de Serviços
+											2012 - Expansão do Portfólio de Serviços
 										</h3>
 										<p className='prose lg:prose-sm text-xs'>
-											Em resposta às demandas do mercado, a Defender expande seu
-											portfólio para incluir suporte proativo 24/7, antivírus
-											gerenciado, e monitoramento remoto
+											No intuito de atender micro, pequenas e medias empresas,
+											desenvolvemos planos de atendimentos personalizados,
+											soluções e serviços com valores competitivos para este
+											seguimento do mercado
 										</p>
 									</div>
 								</MotionDiv>
@@ -92,63 +92,19 @@ export default function Timeline() {
 									whileInView={'open'}
 									initial='close'
 									className='flex gap-5 w-full '>
-									<span className=' rounded-full bg-brand-orange-300 w-12 h-8 md:w-10 md:h-10  flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
+									<span className=' rounded-full bg-brand-orange-300 w-12 h-8 md:h-10  flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
 										3
 									</span>
 									<div className='flex flex-col gap-2'>
 										<h3 className='font-bold uppercase text-base'>
-											2015 - Parceria Estratégica com a Microsoft
+											Atualmente - Parcerias Estratégicas
 										</h3>
 										<p className='prose lg:prose-sm text-xs'>
-											A Defender estabelece uma parceria estratégica com a
-											Microsoft, ampliando seu escopo para incluir soluções
-											Microsoft, como o Office 365. A colaboração reforça a
-											expertise da empresa em tecnologias de ponta
-										</p>
-									</div>
-								</MotionDiv>
-
-								<MotionDiv
-									variants={RevealAimation}
-									viewport={{ once: true }}
-									transition={{ delay: 0.8, type: 'spring' }}
-									whileInView={'open'}
-									initial='close'
-									className='flex gap-5 w-full '>
-									<span className=' rounded-full bg-brand-orange-300 w-12 h-8 md:w-10 md:h-10  flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
-										4
-									</span>
-									<div className='flex flex-col gap-2'>
-										<h3 className='font-bold uppercase text-base'>
-											2020 - Inovações em Redes e Segurança
-										</h3>
-										<p className='prose lg:prose-sm text-xs'>
-											Em resposta à evolução do cenário digital, a Defender foca
-											em inovações em redes corporativas, oferecendo serviços de
-											cabeamento estruturado e fortalecendo a segurança com
-											soluções de firewall avançadas
-										</p>
-									</div>
-								</MotionDiv>
-
-								<MotionDiv
-									variants={RevealAimation}
-									viewport={{ once: true }}
-									transition={{ delay: 1, type: 'spring' }}
-									whileInView={'open'}
-									initial='close'
-									className='flex gap-5 w-full '>
-									<span className=' rounded-full bg-brand-orange-300 w-12 h-8 md:w-10 md:h-10  flex items-center justify-center text-brand-orange-900 xl:text-xl drop-shadow-md'>
-										5
-									</span>
-									<div className='flex flex-col gap-2'>
-										<h3 className='font-bold uppercase text-base'>
-											2023 - Reconhecimento como Líder em Soluções Tecnológicas
-										</h3>
-										<p className='prose lg:prose-sm text-xs'>
-											A Defender consolida sua posição como líder em soluções
-											tecnológicas, sendo reconhecida pela excelência,
-											compromisso com o cliente e inovação
+											Hoje a Defender Soluções em TI é uma empresa que entrega
+											diversos tipos de serviços: Suporte TI para Empresas,
+											Proteção De Dados, Soluções Microsoft, Segurança de redes
+											com Firewall, Instalação de Redes (Cabo e WI-FI) e
+											Sistemas de Segurança Eletrônica
 										</p>
 									</div>
 								</MotionDiv>

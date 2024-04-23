@@ -10,7 +10,7 @@ import { RevealAimation } from '@/animations/revealAnimation';
 
 export default function Culture() {
 	return (
-		<div className='pb-20 w-full'>
+		<div className='py-20 w-full'>
 			<Container>
 				<>
 					<div className='w-full flex items-start flex-col gap-5'>
@@ -32,11 +32,10 @@ export default function Culture() {
 							whileInView={'open'}
 							initial='close'>
 							<p className='prose prose-sm lg:prose-lg'>
-								Com dedicação, responsabilidade e segurança a Defender
-								Informática vêm conquistando a confiança de diversos escritórios
-								e empresas dos mais diversos segmentos. A Defender Informática é
-								capaz de atender clientes corporativos e residenciais com
-								rapidez, eficiência e qualidade
+								Em 2009 se concretizou um projeto pensado, idealizado e sonhado
+								por seus sócios-fundadores: a Defender Soluções em TI. Uma
+								empresa que nasceu da paixão de seus profissionais pela
+								utilização da tecnologia da informação
 							</p>
 						</MotionDiv>
 					</div>
@@ -45,7 +44,7 @@ export default function Culture() {
 							return (
 								<li key={index}>
 									<MotionDiv
-										className='flex flex-col gap-4 h-full  justify-center shadow-cardShadow p-5'
+										className='flex flex-col gap-4 h-full  justify-start items-start shadow-cardShadow p-5 w-[368px]'
 										variants={RevealAimation}
 										viewport={{ once: true }}
 										transition={{ delay: 0.25 * index, type: 'spring' }}

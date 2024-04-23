@@ -9,18 +9,17 @@ export const culture = [
 		icon: missionIcon,
 		title: 'missão',
 		description:
-			'Otimizar e conservar os investimentos em TI de nossos clientes através de Consultoria, Suporte e Manutenção',
+			'Otimizar e conservar os investimentos em TI de nossos clientes através de Monitoramento, Suporte e Consultoria',
 	},
 	{
 		icon: visionIcon,
 		title: 'Visão',
 		description:
-			'Tornar-se uma das principais empresas prestadoras de serviços de TI, evoluindo continuamente suas metodologias e seus processos de informática',
+			'Tornar-se uma das principais empresas prestadoras de serviços de TI de Niterói, evoluindo continuamente suas metodologias, ferramentas e sua expertise em serviços de TI',
 	},
 	{
 		icon: valuesIcon,
 		title: 'Valores',
-		description:
-			'Integridade e Transparência - Colaboração e Trabalho em Equipe - Excelência e Compromisso Com a Qualidade Técnica',
+		description: `Os valores essenciais da Denferder Soluções Em TI: Inovação, Comprometimento, Transparência e Integridade. `,
 	},
 ];
