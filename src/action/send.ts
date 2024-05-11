@@ -8,7 +8,7 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 interface SendEmailProps {
-	message: string;
+	message?: string;
 	email: string;
 	name: string;
 	cel: string;
