@@ -24,12 +24,12 @@ export default function GoogleADS({
 	return (
 		<>
 			<Script
-				strategy='afterInteractive'
+				strategy='beforeInteractive'
 				src={`https://www.googletagmanager.com/gtag/js?id=${ADS_MEASUREMENT_ID}`}
 			/>
 			<Script
 				id='google-analytics'
-				strategy='lazyOnload'
+				strategy='beforeInteractive'
 				dangerouslySetInnerHTML={{
 					__html: `
                 window.dataLayer = window.dataLayer || [];

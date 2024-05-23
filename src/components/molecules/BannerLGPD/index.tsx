@@ -25,6 +25,8 @@ export default function BannerLGPD() {
 		}
 		window.gtag('consent', 'update', {
 			analytics_storage: newValue,
+			ad_user_data: newValue,
+			ad_personalization: newValue,
 		});
 		setLocalStorage('cookie_consent', cookieConsent);
 		console.log(cookieConsent);
