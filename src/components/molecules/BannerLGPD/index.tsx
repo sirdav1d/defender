@@ -23,6 +23,9 @@ export default function BannerLGPD() {
 		} else {
 			setCanShow(true);
 		}
+		window.gtag('consent', 'update', {
+			analytics_storage: newValue,
+		});
 		setLocalStorage('cookie_consent', cookieConsent);
 		console.log(cookieConsent);
 	}, [cookieConsent]);

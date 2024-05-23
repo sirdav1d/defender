@@ -18,6 +18,7 @@
     "@radix-ui/react-toast": "^1.1.5",
     "@react-email/components": "0.0.14",
     "@react-email/tailwind": "0.0.14",
+    "@types/gtag.js": "^0.0.19",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "embla-carousel-react": "^8.0.0-rc20",
