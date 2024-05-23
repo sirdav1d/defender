@@ -24,18 +24,17 @@ export default function GoogleADS({
 	return (
 		<>
 			<Script
-				strategy='beforeInteractive'
+				strategy='afterInteractive'
 				src={`https://www.googletagmanager.com/gtag/js?id=${ADS_MEASUREMENT_ID}`}
 			/>
 			<Script
 				id='google-analytics'
-				strategy='beforeInteractive'
+				strategy='afterInteractive'
 				dangerouslySetInnerHTML={{
 					__html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                
                 gtag('config', '${ADS_MEASUREMENT_ID}');
                 `,
 				}}
