@@ -35,13 +35,6 @@ export default function RootLayout({
 			/>
 			<GoogleADS ADS_MEASUREMENT_ID={'AW-16565419797'} />
 			<body className={poppins.className}>
-				<noscript>
-					<iframe
-						src='https://www.googletagmanager.com/ns.html?id=AW-16565419797'
-						height='0'
-						width='0'
-						className='hidden'></iframe>
-				</noscript>
 				<Header />
 				<Toaster />
 				<BannerLGPD />
