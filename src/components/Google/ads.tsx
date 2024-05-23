@@ -41,6 +41,7 @@ export default function GoogleADS({
 			/>
 
 			<Script
+				id='google-event-view'
 				strategy='afterInteractive'
 				dangerouslySetInnerHTML={{
 					__html: `
