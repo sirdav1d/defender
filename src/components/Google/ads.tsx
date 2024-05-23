@@ -6,8 +6,9 @@ import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 import { pageview } from '@/helpers/gtag';
+import { Suspense } from 'react';
 
-export default function GoogleADS({
+function GoogleADS({
 	ADS_MEASUREMENT_ID,
 }: {
 	ADS_MEASUREMENT_ID: string;
@@ -41,5 +42,13 @@ export default function GoogleADS({
 				}}
 			/>
 		</>
+	);
+}
+
+export default function WrapperGtag() {
+	return (
+		<Suspense>
+			<GoogleADS ADS_MEASUREMENT_ID={'GTM-K9TB9BWD'}></GoogleADS>
+		</Suspense>
 	);
 }
