@@ -33,11 +33,11 @@ export default function RootLayout({
 				href='/icons/favicon.ico'
 				type='image/x-icon'
 			/>
-			<GoogleADS ADS_MEASUREMENT_ID={'GTM-K9TB9BWD'} />
+			<GoogleADS ADS_MEASUREMENT_ID={'AW-16565419797'} />
 			<body className={poppins.className}>
 				<noscript>
 					<iframe
-						src='https://www.googletagmanager.com/ns.html?id=GTM-K9TB9BWD'
+						src='https://www.googletagmanager.com/ns.html?id=AW-16565419797'
 						height='0'
 						width='0'
 						className='hidden'></iframe>
