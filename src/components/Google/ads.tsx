@@ -2,13 +2,12 @@
 
 'use client';
 
-import Script from 'next/script';
-import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
 import { pageview } from '@/helpers/gtag';
-import { Suspense } from 'react';
+import { usePathname, useSearchParams } from 'next/navigation';
+import Script from 'next/script';
+import { useEffect } from 'react';
 
-function GoogleADS({
+export default function GoogleADS({
 	ADS_MEASUREMENT_ID,
 }: {
 	ADS_MEASUREMENT_ID: string;
@@ -42,13 +41,5 @@ function GoogleADS({
 				}}
 			/>
 		</>
-	);
-}
-
-export default function WrapperGtag() {
-	return (
-		<Suspense>
-			<GoogleADS ADS_MEASUREMENT_ID={'GTM-K9TB9BWD'}></GoogleADS>
-		</Suspense>
 	);
 }
