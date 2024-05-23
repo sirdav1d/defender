@@ -39,6 +39,15 @@ export default function GoogleADS({
                 `,
 				}}
 			/>
+
+			<Script
+				strategy='afterInteractive'
+				dangerouslySetInnerHTML={{
+					__html: `
+               gtag('event', 'conversion', {'send_to': '${ADS_MEASUREMENT_ID}/gu8_CI6E3rIZEJX-gNs9'});
+         `,
+				}}
+			/>
 		</>
 	);
 }
