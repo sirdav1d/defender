@@ -10,9 +10,9 @@ export default function Template({ children }: { children: React.ReactNode }) {
 	return (
 		<>
 			<Suspense>
-				<BannerLGPD />
+				
+				<GoogleADS ADS_MEASUREMENT_ID={'AW-16565419797'} />
 			</Suspense>
-			<GoogleADS ADS_MEASUREMENT_ID={'AW-16565419797'} />
 			<MotionDiv
 				initial={{ opacity: 0.85, y: 28 }}
 				animate={{
