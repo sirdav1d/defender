@@ -7,6 +7,7 @@ import { Toaster } from '@/components/ui/toaster';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
+import { Suspense } from 'react';
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -36,8 +37,9 @@ export default function RootLayout({
 			<body className={poppins.className}>
 				<Header />
 				<Toaster />
-				<BannerLGPD />
-				
+				<Suspense>
+					<BannerLGPD />
+				</Suspense>
 				{children}
 				<Footer />
 			</body>
