@@ -6,6 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
+import { GoogleTagManager } from '@next/third-parties/google';
 import BannerLGPD from '@/components/molecules/BannerLGPD';
 
 const poppins = Poppins({
@@ -36,6 +37,7 @@ export default function RootLayout({
 			<body className={poppins.className}>
 				<Header />
 				<BannerLGPD />
+				<GoogleTagManager gtmId='AW-16565419797' />
 				<Toaster />
 				{children}
 				<Footer />

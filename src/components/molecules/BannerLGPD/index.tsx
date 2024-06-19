@@ -2,10 +2,10 @@
 
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
-import { getLocalStorage, setLocalStorage } from '@/helpers/storageHelper';
-import { useEffect, useState } from 'react';
 import { useToast } from '@/components/ui/use-toast';
+import { getLocalStorage, setLocalStorage } from '@/helpers/storageHelper';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 export default function BannerLGPD() {
 	const [cookieConsent, setCookieConsent] = useState(false);

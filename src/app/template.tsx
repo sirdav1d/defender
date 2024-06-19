@@ -10,7 +10,6 @@ export default function Template({ children }: { children: React.ReactNode }) {
 	return (
 		<>
 			<Suspense>
-				
 				<GoogleADS ADS_MEASUREMENT_ID={'AW-16565419797'} />
 			</Suspense>
 			<MotionDiv
