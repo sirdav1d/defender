@@ -1,6 +1,5 @@
 /** @format */
 
-
 import logo from '@/../public/logos/defender-logo.png';
 import { Button } from '@/components/ui/button';
 import { SquareUserRound } from 'lucide-react';
@@ -27,14 +26,13 @@ export default function Header() {
 									alt='Logo Defender Soluções Em TI'
 								/>
 							</a>
-							<div className='hidden lg:flex gap-20 border-l-brand-orange-500 items-center'>
+							<div className='hidden lg:flex gap-5 justify-between items-center'>
 								<Navigation />
 								<Link
 									href='https://defenderinfo.tomticket.com/'
 									target='_blank'>
 									<Button className='font-medium tracking-wider text-sm p-3 flex gap-3 bg-bgButtomOrange bg-left transition-all duration-200 ease-linear hover:bg-right bg-[length:496px_100px] group rounded-none drop-shadow-xl'>
-										<SquareUserRound />
-										Área Do Cliente
+										Área Do Cliente <SquareUserRound />
 									</Button>
 								</Link>
 							</div>

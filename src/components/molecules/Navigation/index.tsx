@@ -22,7 +22,7 @@ export default function Navigation() {
 	return (
 		<>
 			<NavigationMenu>
-				<NavigationMenuList className='gap-4 text-stone-700 font-semibold flex flex-col lg:flex-row uppercase'>
+				<NavigationMenuList className='gap-3 text-stone-700 font-semibold flex flex-col lg:flex-row uppercase'>
 					<NavigationMenuItem
 						className={`${
 							path === links.Home.href
@@ -33,7 +33,7 @@ export default function Navigation() {
 							href={links.Home.href}
 							legacyBehavior
 							passHref>
-							<NavigationMenuLink className='hover:text-brand-orange-500 group transition-all duration-200 ease-in-out text-xl lg:text-sm flex flex-col'>
+							<NavigationMenuLink className='hover:text-brand-orange-500 group transition-all duration-200 ease-in-out text-xl lg:text-base flex flex-col'>
 								{links.Home.label}
 							</NavigationMenuLink>
 						</Link>
@@ -48,7 +48,7 @@ export default function Navigation() {
 							href={links.About.href}
 							legacyBehavior
 							passHref>
-							<NavigationMenuLink className='hover:text-brand-orange-500 group transition-all duration-200 ease-in-out text-xl lg:text-sm flex flex-col'>
+							<NavigationMenuLink className='hover:text-brand-orange-500 group transition-all duration-200 ease-in-out text-xl lg:text-base flex flex-col'>
 								{links.About.label}
 							</NavigationMenuLink>
 						</Link>
@@ -59,12 +59,12 @@ export default function Navigation() {
 								? 'text-brand-orange-500'
 								: 'text-stone-700'
 						} hover:text-brand-orange-500 transition-all ease-in-out duration-200`}>
-						<NavigationMenuTrigger>
+						<NavigationMenuTrigger className='p-0'>
 							<Link
 								href={links.Solutions.href}
 								legacyBehavior
 								passHref>
-								<NavigationMenuLink className='hover:text-brand-orange-500 group transition-all duration-200 ease-in-out text-xl lg:text-sm flex flex-col'>
+								<NavigationMenuLink className='hover:text-brand-orange-500 group transition-all duration-200 ease-in-out text-xl lg:text-base flex flex-col'>
 									{links.Solutions.label}
 								</NavigationMenuLink>
 							</Link>
@@ -110,7 +110,7 @@ export default function Navigation() {
 							href={links.Projects.href}
 							legacyBehavior
 							passHref>
-							<NavigationMenuLink className='hover:text-brand-orange-500 group transition-all duration-200 ease-in-out text-xl lg:text-sm flex flex-col'>
+							<NavigationMenuLink className='hover:text-brand-orange-500 group transition-all duration-200 ease-in-out text-xl lg:text-base flex flex-col'>
 								{links.Projects.label}
 							</NavigationMenuLink>
 						</Link>
@@ -125,7 +125,7 @@ export default function Navigation() {
 							href={links.Contact.href}
 							legacyBehavior
 							passHref>
-							<NavigationMenuLink className='hover:text-brand-orange-500 group transition-all duration-200 ease-in-out text-xl lg:text-sm flex flex-col'>
+							<NavigationMenuLink className='hover:text-brand-orange-500 group transition-all duration-200 ease-in-out text-xl lg:text-base flex flex-col'>
 								{links.Contact.label}
 							</NavigationMenuLink>
 						</Link>

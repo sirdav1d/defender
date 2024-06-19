@@ -14,8 +14,8 @@ export default function LogoList({ list, role, title }: LogoListProps) {
 	return (
 		<div
 			data-role={role}
-			className='data-[role=partner]:py-20 data-[role=client]:pb-20'>
-			<Container>
+			className='data-[role=partner]:py-20 data-[role=client]:pb-20 border w-full'>
+		
 				<>
 					<h2 className='text-center uppercase font-bold mb-8 text-sm lg:text-xl'>
 						{title}
@@ -25,7 +25,7 @@ export default function LogoList({ list, role, title }: LogoListProps) {
 						direction='right'
 						speed='slow'></InfiniteMovingCards>
 				</>
-			</Container>
+		
 		</div>
 	);
 }
