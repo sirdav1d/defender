@@ -7,7 +7,6 @@ import { Toaster } from '@/components/ui/toaster';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
-import GoogleADS from '@/components/Google/ads';
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -33,11 +32,12 @@ export default function RootLayout({
 				href='/icons/favicon.ico'
 				type='image/x-icon'
 			/>
-			<GoogleADS ADS_MEASUREMENT_ID={'AW-16565419797'} />
+
 			<body className={poppins.className}>
 				<Header />
 				<Toaster />
 				<BannerLGPD />
+				
 				{children}
 				<Footer />
 			</body>

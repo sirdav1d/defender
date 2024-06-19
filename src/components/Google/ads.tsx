@@ -24,12 +24,12 @@ export default function GoogleADS({
 	return (
 		<>
 			<Script
-				strategy='afterInteractive'
+				strategy='lazyOnload'
 				src={`https://www.googletagmanager.com/gtag/js?id=${ADS_MEASUREMENT_ID}`}
 			/>
 			<Script
 				id='google-analytics'
-				strategy='afterInteractive'
+				strategy='lazyOnload'
 				dangerouslySetInnerHTML={{
 					__html: `
                 window.dataLayer = window.dataLayer || [];
@@ -42,7 +42,7 @@ export default function GoogleADS({
 
 			<Script
 				id='google-event-view'
-				strategy='afterInteractive'
+				strategy='lazyOnload'
 				dangerouslySetInnerHTML={{
 					__html: `
                gtag('event', 'conversion', {'send_to': '${ADS_MEASUREMENT_ID}/gu8_CI6E3rIZEJX-gNs9'});
