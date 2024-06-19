@@ -14,18 +14,16 @@ export default function LogoList({ list, role, title }: LogoListProps) {
 	return (
 		<div
 			data-role={role}
-			className='data-[role=partner]:py-20 data-[role=client]:pb-20 border w-full'>
-		
-				<>
-					<h2 className='text-center uppercase font-bold mb-8 text-sm lg:text-xl'>
-						{title}
-					</h2>
-					<InfiniteMovingCards
-						items={list}
-						direction='right'
-						speed='slow'></InfiniteMovingCards>
-				</>
-		
+			className='data-[role=partner]:py-20 data-[role=client]:pb-20 w-full'>
+			<>
+				<h2 className='text-center uppercase font-bold mb-8 text-sm lg:text-xl'>
+					{title}
+				</h2>
+				<InfiniteMovingCards
+					items={list}
+					direction='right'
+					speed='slow'></InfiniteMovingCards>
+			</>
 		</div>
 	);
 }
