@@ -36,11 +36,11 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
 				<Container>
 					<Section className='bg-stone-50 border border-stone-950/80 rounded-lg p-6'>
 						<Heading className='text-center'>
-							<Img
+							{/* <Img
 								src='/logos/defender-logo.png'
 								width={200}
 								height={200}
-								alt='Logo Defender Soluções Em TI'></Img>
+								alt='Logo Defender Soluções Em TI'></Img> */}
 							{fullName} Preencheu O Formulário Em Seu Website, Confira Os Dados
 							Enviados Abaixo:
 						</Heading>
