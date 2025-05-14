@@ -23,9 +23,10 @@ export default function WorksGallery(props: ProjectGalleryprops) {
 			<CarouselContent>
 				{props.images.map((image: any, index: number) => {
 					return (
-						<CarouselItem  key={index}>
+						<CarouselItem key={index}>
 							<Image
-								className='rounded-lg shadow-md object-contain'
+								style={{ width: '368px' }}
+								className='rounded-lg shadow-md h-auto object-contain pb-5 mx-auto aspect-auto'
 								data={image.responsiveImage}></Image>
 						</CarouselItem>
 					);

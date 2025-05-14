@@ -29,7 +29,8 @@ export default function WorksCard(props: WorksCardProps) {
 		<div className='flex flex-col my-10 items-center justify-center relative w-full md:max-w-[368px] '>
 			<div className='w-full flex flex-col items-center justify-center py-4 gap-2'>
 				<Image
-					className='object-contain scale-75'
+					className='object-contain w-30'
+					style={{ width: '100px' }}
 					data={props.logoClient.responsiveImage}></Image>
 
 				<h3 className='uppercase font-bold text-xl lg:text-2xl text-center '>
